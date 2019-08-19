@@ -1,0 +1,14 @@
+.animate.fade-in {
+    animation-name: fade-in;
+    animation-timing-function: $fadeInEasing;
+    animation-duration: $fadeInTime;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

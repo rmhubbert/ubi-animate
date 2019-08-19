@@ -1,0 +1,14 @@
+.animate.fade-out {
+    animation-name: fade-out;
+    animation-timing-function: $fadeOutEasing;
+    animation-duration: $fadeOutTime;
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}

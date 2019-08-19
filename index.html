@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>UbiAnimate</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css"
+        />
+        <link rel="stylesheet" href="./dist/ubianimate.css" />
+
+        <style type="text/css">
+            #notify {
+                visibility: hidden;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 20vw;
+                margin: 1rem;
+                z-index: 1000;
+                font-size: 0.9em;
+            }
+
+            #notify.animate {
+                visibility: visible;
+            }
+
+            #notify .notification {
+                padding: 0.7rem;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <section class="hero is-light">
+                <div class="hero-body">
+                    <div class="container">
+                        <h1 class="title">UbiAnimate</h1>
+                        <h2 class="subtitle">
+                            Lightweight & configurable CSS animations for toast
+                            / snackbar type notifications
+                        </h2>
+                        <form>
+                            <div class="select">
+                                <select id="position">
+                                    <option value="down right"
+                                        >Notify top left</option
+                                    >
+                                    <option value="down center"
+                                        >Notify top center</option
+                                    >
+                                    <option value="down left" selected
+                                        >Notify top right</option
+                                    >
+                                    <option value="up right"
+                                        >Notify bottom left</option
+                                    >
+                                    <option value="up center"
+                                        >Notify bottom center</option
+                                    >
+                                    <option value="up left"
+                                        >Notify bottom right</option
+                                    >
+                                </select>
+                            </div>
+
+                            <div class="select">
+                                <select id="enter">
+                                    <option value="fade-in">Fade in</option>
+                                    <option value="slide-in-horizontally"
+                                        >Slide in horizontally</option
+                                    >
+                                    <option value="slide-in-vertically"
+                                        >Slide in vertically</option
+                                    >
+                                </select>
+                            </div>
+                            <div class="select">
+                                <select class="select" id="leave">
+                                    <option value="fade-out">Fade out</option>
+                                    <option value="slide-out-horizontally"
+                                        >Slide out horizontally</option
+                                    >
+                                    <option value="slide-out-vertically"
+                                        >Slide out vertically</option
+                                    >
+                                </select>
+                            </div>
+                            <button class="button" onclick="UbiAnimate(event)">
+                                UbiAnimate!
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <div id="notify">
+                <div class="notification is-primary">
+                    <p><strong>UbiAnimate</strong></p>
+                    <p>
+                        Lightweight & configurable CSS animations for toast /
+                        snackbar type notifications
+                    </p>
+                </div>
+            </div>
+        </main>
+
+        <script type="text/javascript">
+            /* eslint-disable no-unused-vars */
+
+            var defaultEnterDuration = 1000;
+            var defaultShowDuration = 2000;
+            var defaultLeaveDuration = 850;
+            var isActive = false;
+
+            function UbiAnimate(event) {
+                event.preventDefault();
+                if (!isActive) {
+                    isActive = true;
+
+                    var positionSelect = document.getElementById("position");
+                    var position =
+                        positionSelect.options[positionSelect.selectedIndex]
+                            .value;
+                    var enterSelect = document.getElementById("enter");
+                    var enter =
+                        enterSelect.options[enterSelect.selectedIndex].value;
+                    var leaveSelect = document.getElementById("leave");
+                    var leave =
+                        leaveSelect.options[leaveSelect.selectedIndex].value;
+                    var notify = document.getElementById("notify");
+
+                    var enterVert = enter.includes("vertically");
+                    var leaveVert = leave.includes("vertically");
+
+                    var pos = position.split(" ");
+
+                    if (pos[0] === "down") {
+                        notify.style.bottom = "initial";
+                        notify.style.top = 0;
+                        if(enterVert) enter += " down";
+                        if(leaveVert) leave += " up";
+                    } else {
+                        notify.style.top = "initial";
+                        notify.style.bottom = 0;
+                        if(enterVert) enter += " up";
+                        if(leaveVert) leave += " down";
+                    }
+                    if (pos[1] === "center") {
+                        notify.style.right = "initial";
+                        notify.style.left = "50%";
+                        notify.style.marginLeft = "-10vw";
+                        if(!enterVert) enter += " right";
+                        if(!leaveVert) leave += " right";
+                    } else if (pos[1] === "left") {
+                        notify.style.marginLeft = "1rem";
+                        notify.style.left = "initial";
+                        notify.style.right = 0;
+                        if(!enterVert) enter += " left";
+                        if(!leaveVert) leave += " right";
+                    } else {
+                        notify.style.marginLeft = "1rem";
+                        notify.style.right = "initial";
+                        notify.style.left = 0;
+                        if(!enterVert) enter += " right";
+                        if(!leaveVert) leave += " left";
+                    }
+
+                    notify.className = "animate " + enter;
+
+                    setTimeout(function() {
+                        notify.className = notify.className.replace(
+                            enter,
+                            leave
+                        );
+                        setTimeout(function() {
+                            notify.className = "";
+                            isActive = false;
+                        }, defaultLeaveDuration);
+                    }, defaultEnterDuration + defaultShowDuration);
+                }
+            }
+        </script>
+    </body>
+</html>

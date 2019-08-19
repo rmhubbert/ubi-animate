@@ -1,0 +1,15 @@
+@import "variables";
+
+/**
+ * Fades
+ */
+@import "./animations/fades/fade-in";
+@import "./animations/fades/fade-out";
+
+/**
+ * Slides
+ */
+@import "./animations/slides/slide-in-horizontally";
+@import "./animations/slides/slide-out-horizontally";
+@import "./animations/slides/slide-in-vertically";
+@import "./animations/slides/slide-out-vertically";

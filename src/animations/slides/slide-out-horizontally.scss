@@ -1,0 +1,29 @@
+.animate.slide-out-horizontally.right {
+    animation-name: slide-out-right;
+    animation-timing-function: $slideOutEasing;
+    animation-duration: $slideOutTime;
+}
+
+.animate.slide-out-horizontally.left {
+    animation-name: slide-out-left;
+    animation-timing-function: $slideOutEasing;
+    animation-duration: $slideOutTime;
+}
+
+@keyframes slide-out-right {
+    from {
+        transform: none;
+    }
+    to {
+        transform: translateX(#{$rightClearance}#{$widthUnit});
+    }
+}
+
+@keyframes slide-out-left {
+    from {
+        transform: none;
+    }
+    to {
+        transform: translateX(-#{$leftClearance}#{$widthUnit});
+    }
+}

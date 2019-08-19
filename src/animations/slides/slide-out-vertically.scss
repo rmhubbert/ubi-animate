@@ -1,0 +1,25 @@
+.animate.slide-out-vertically.up {
+    animation: slide-out-up $slideOutEasing $slideOutTime;
+}
+
+.animate.slide-out-vertically.down {
+    animation: slide-out-down $slideOutEasing $slideOutTime;
+}
+
+@keyframes slide-out-up {
+    from {
+        transform: none;
+    }
+    to {
+        transform: translateY(-#{$topClearance}#{$heightUnit});
+    }
+}
+
+@keyframes slide-out-down {
+    from {
+        transform: none;
+    }
+    to {
+        transform: translateY(#{$bottomClearance}#{$heightUnit});
+    }
+}

@@ -1,0 +1,29 @@
+.animate.slide-in-horizontally.right {
+    animation-name: slide-in-right;
+    animation-timing-function: $slideInEasing;
+    animation-duration: $slideInTime;
+}
+
+.animate.slide-in-horizontally.left {
+    animation-name: slide-in-left;
+    animation-timing-function: $slideInEasing;
+    animation-duration: $slideInTime;
+}
+
+@keyframes slide-in-right {
+    from {
+        transform: translateX(-#{$rightClearance}#{$widthUnit});
+    }
+    to {
+        transform: none;
+    }
+}
+
+@keyframes slide-in-left {
+    from {
+        transform: translateX(#{$leftClearance}#{$widthUnit});
+    }
+    to {
+        transform: none;
+    }
+}
