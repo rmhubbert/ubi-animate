@@ -1,9 +1,9 @@
 .animate.slide-out-horizontally.right {
-    animation: slide-out-right $slideOutEasing $slideOutTime;
+    animation: slide-out-right $slideOutTime $slideOutEasing forwards;
 }
 
 .animate.slide-out-horizontally.left {
-    animation: slide-out-left $slideOutEasing $slideOutTime;
+    animation: slide-out-left $slideOutTime $slideOutEasing forwards;
 }
 
 @keyframes slide-out-right {

@@ -1,9 +1,9 @@
 .animate.slide-in-horizontally.right {
-    animation: slide-in-right $slideInEasing $slideInTime;
+    animation: slide-in-right $slideInTime $slideInEasing forwards;
 }
 
 .animate.slide-in-horizontally.left {
-    animation: slide-in-left $slideInEasing $slideInTime;
+    animation: slide-in-left $slideInTime $slideInEasing forwards;
 }
 
 @keyframes slide-in-right {

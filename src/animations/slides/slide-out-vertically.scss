@@ -1,9 +1,9 @@
 .animate.slide-out-vertically.up {
-    animation: slide-out-up $slideOutEasing $slideOutTime;
+    animation: slide-out-up $slideOutTime $slideOutEasing forwards;
 }
 
 .animate.slide-out-vertically.down {
-    animation: slide-out-down $slideOutEasing $slideOutTime;
+    animation: slide-out-down $slideOutTime $slideOutEasing forwards;
 }
 
 @keyframes slide-out-up {

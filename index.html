@@ -197,10 +197,8 @@
                     notify.className = "animate " + enter;
 
                     var templateElement = document.getElementById("notificationTemplate");
-                    console.log(templateElement);
                     var content = templateElement.content.querySelector("div");
                     var template = document.importNode(content, true);
-                    console.log(template);
                     notify.appendChild(template);
 
                     setTimeout(function() {
@@ -210,7 +208,6 @@
                         );
                         setTimeout(function() {
                             notify.removeChild(template);
-                            notify.className = "";
                             isActive = false;
                         }, defaultLeaveDuration);
                     }, defaultEnterDuration + defaultShowDuration);

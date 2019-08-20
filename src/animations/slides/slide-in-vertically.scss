@@ -1,9 +1,9 @@
 .animate.slide-in-vertically.up {
-    animation: slide-in-up $slideInEasing $slideInTime;
+    animation: slide-in-up $slideInTime $slideInEasing forwards;
 }
 
 .animate.slide-in-vertically.down {
-    animation: slide-in-down $slideInEasing $slideInTime;
+    animation: slide-in-down $slideInTime $slideInEasing forwards;
 }
 
 @keyframes slide-in-up {

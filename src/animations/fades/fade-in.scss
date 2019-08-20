@@ -1,5 +1,5 @@
 .animate.fade-in {
-    animation: fade-in $fadeInEasing $fadeInTime;
+    animation: fade-in $fadeInTime $fadeInEasing forwards;
 }
 
 @keyframes fade-in {
