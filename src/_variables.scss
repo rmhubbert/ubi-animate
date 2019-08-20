@@ -8,14 +8,15 @@ $fadeInTime: 1s;
 $fadeOutEasing: $fadeInEasing;
 $fadeOutTime: $fadeInTime;
 
-$slideInEasing: cubic-bezier(1, 0.55, 0.9, 1);
+$slideInEasing: cubic-bezier(0.9, 0.55, 0.9, 1);
 $slideInTime: 0.7s;
 $slideOutEasing: $slideInEasing;
 $slideOutTime: $slideInTime;
 
-$bounceInEasing: cubic-bezier(1, 0.55, 0.9, 1);
+$bounceInEasing: cubic-bezier(0.88, 0.54, 0.91, 0.99);
 $bounceInTime: 0.8s;
 $bounceOutEasing: $bounceInEasing;
 $bounceOutTime: $bounceInTime;
-$bounceIn: 6px;
-$bounceOut: 12px;
+$bounceIn: 5px;
+$bounceDuring: 3px;
+$bounceOut: 15px;

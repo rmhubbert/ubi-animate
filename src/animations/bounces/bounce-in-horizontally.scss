@@ -14,7 +14,7 @@
         transform: translate3d(#{$bounceIn}, 0, 0);
     }
     80% {
-        transform: translate3d(-#{$bounceIn}, 0, 0);
+        transform: translate3d(-#{$bounceDuring}, 0, 0);
     }
     100% {
         transform: none;
@@ -29,7 +29,7 @@
         transform: translate3d(-#{$bounceIn}, 0, 0);
     }
     80% {
-        transform: translate3d(#{$bounceIn}, 0, 0);
+        transform: translate3d(#{$bounceDuring}, 0, 0);
     }
     100% {
         transform: none;
