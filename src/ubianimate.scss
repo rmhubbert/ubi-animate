@@ -19,11 +19,7 @@
 @import "./animations/slides/slide-out-horizontally";
 @import "./animations/slides/slide-in-vertically";
 @import "./animations/slides/slide-out-vertically";
-
-/**
- * Bounces
- */
-@import "./animations/bounces/bounce-in-vertically";
-@import "./animations/bounces/bounce-out-vertically";
-@import "./animations/bounces/bounce-in-horizontally";
-@import "./animations/bounces/bounce-out-horizontally";
+@import "./animations/slides/slide-bounce-in-vertically";
+@import "./animations/slides/slide-bounce-out-vertically";
+@import "./animations/slides/slide-bounce-in-horizontally";
+@import "./animations/slides/slide-bounce-out-horizontally";

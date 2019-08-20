@@ -155,136 +155,133 @@
     transform: translate3d(0, 25vh, 0);
   }
 }
-/**
- * Bounces
- */
-.animate.bounce-in-vertically.up {
-  animation: bounce-in-up 0.8s cubic-bezier(0.88, 0.54, 0.91, 0.99) forwards;
+.animate.slide-bounce-in-vertically.up {
+  animation: slide-bounce-in-up 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
 }
 
-.animate.bounce-in-vertically.down {
-  animation: bounce-in-down 0.8s cubic-bezier(0.88, 0.54, 0.91, 0.99) forwards;
+.animate.slide-bounce-in-vertically.down {
+  animation: slide-bounce-in-down 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
 }
 
-@keyframes bounce-in-up {
+@keyframes slide-bounce-in-up {
   0% {
     transform: translate3d(0, 25vh, 0);
   }
   60% {
-    transform: translate3d(0, -5px, 0);
+    transform: translate3d(0, -6px, 0);
   }
   80% {
-    transform: translate3d(0, 3px, 0);
+    transform: translate3d(0, 4px, 0);
   }
   100% {
     transform: none;
   }
 }
-@keyframes bounce-in-down {
+@keyframes slide-bounce-in-down {
   0% {
     transform: translate3d(0, -25vh, 0);
   }
   60% {
-    transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 6px, 0);
   }
   80% {
-    transform: translate3d(0, -3px, 0);
+    transform: translate3d(0, -4px, 0);
   }
   100% {
     transform: none;
   }
 }
-.animate.bounce-out-vertically.up {
-  animation: bounce-out-up 0.8s cubic-bezier(0.88, 0.54, 0.91, 0.99) forwards;
+.animate.slide-bounce-out-vertically.up {
+  animation: slide-bounce-out-up 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
 }
 
-.animate.bounce-out-vertically.down {
-  animation: bounce-out-down 0.8s cubic-bezier(0.88, 0.54, 0.91, 0.99) forwards;
+.animate.slide-bounce-out-vertically.down {
+  animation: slide-bounce-out-down 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
 }
 
-@keyframes bounce-out-up {
+@keyframes slide-bounce-out-up {
   0%, 40% {
     transform: none;
   }
   70% {
-    transform: translate3d(0, 15px, 0);
+    transform: translate3d(0, 12px, 0);
   }
   100% {
     transform: translate3d(0, -25vh, 0);
   }
 }
-@keyframes bounce-out-down {
+@keyframes slide-bounce-out-down {
   0%, 40% {
     transform: none;
   }
   70% {
-    transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -12px, 0);
   }
   100% {
     transform: translate3d(0, 25vh, 0);
   }
 }
-.animate.bounce-in-horizontally.right {
-  animation: bounce-in-right 0.8s cubic-bezier(0.88, 0.54, 0.91, 0.99) forwards;
+.animate.slide-bounce-in-horizontally.right {
+  animation: slide-bounce-in-right 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
 }
 
-.animate.bounce-in-horizontally.left {
-  animation: bounce-in-left 0.8s cubic-bezier(0.88, 0.54, 0.91, 0.99) forwards;
+.animate.slide-bounce-in-horizontally.left {
+  animation: slide-bounce-in-left 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
 }
 
-@keyframes bounce-in-right {
+@keyframes slide-bounce-in-right {
   0% {
     transform: translate3d(-25vw, 0, 0);
   }
   60% {
-    transform: translate3d(5px, 0, 0);
+    transform: translate3d(6px, 0, 0);
   }
   80% {
-    transform: translate3d(-3px, 0, 0);
+    transform: translate3d(-4px, 0, 0);
   }
   100% {
     transform: none;
   }
 }
-@keyframes bounce-in-left {
+@keyframes slide-bounce-in-left {
   0% {
     transform: translate3d(25vw, 0, 0);
   }
   60% {
-    transform: translate3d(-5px, 0, 0);
+    transform: translate3d(-6px, 0, 0);
   }
   80% {
-    transform: translate3d(3px, 0, 0);
+    transform: translate3d(4px, 0, 0);
   }
   100% {
     transform: none;
   }
 }
-.animate.bounce-out-horizontally.right {
-  animation: bounce-out-right 0.8s cubic-bezier(0.88, 0.54, 0.91, 0.99) forwards;
+.animate.slide-bounce-out-horizontally.right {
+  animation: slide-bounce-out-right 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
 }
 
-.animate.bounce-out-horizontally.left {
-  animation: bounce-out-left 0.8s cubic-bezier(0.88, 0.54, 0.91, 0.99) forwards;
+.animate.slide-bounce-out-horizontally.left {
+  animation: slide-bounce-out-left 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
 }
 
-@keyframes bounce-out-right {
+@keyframes slide-bounce-out-right {
   0%, 40% {
     transform: none;
   }
   70% {
-    transform: translate3d(-15px, 0, 0);
+    transform: translate3d(-12px, 0, 0);
   }
   100% {
     transform: translate3d(25vw, 0, 0);
   }
 }
-@keyframes bounce-out-left {
+@keyframes slide-bounce-out-left {
   0%, 40% {
     transform: none;
   }
   70% {
-    transform: translate3d(15px, 0, 0);
+    transform: translate3d(12px, 0, 0);
   }
   100% {
     transform: translate3d(-25vw, 0, 0);

@@ -1,0 +1,35 @@
+.animate.slide-bounce-out-vertically.up {
+    animation: slide-bounce-out-up $slideBounceOutTime $slideBounceOutEasing
+        forwards;
+}
+
+.animate.slide-bounce-out-vertically.down {
+    animation: slide-bounce-out-down $slideBounceOutTime $slideBounceOutEasing
+        forwards;
+}
+
+@keyframes slide-bounce-out-up {
+    0%,
+    40% {
+        transform: none;
+    }
+    70% {
+        transform: translate3d(0, #{$slideBounceOut}, 0);
+    }
+    100% {
+        transform: translate3d(0, -#{$topClearance}, 0);
+    }
+}
+
+@keyframes slide-bounce-out-down {
+    0%,
+    40% {
+        transform: none;
+    }
+    70% {
+        transform: translate3d(0, -#{$slideBounceOut}, 0);
+    }
+    100% {
+        transform: translate3d(0, #{$bottomClearance}, 0);
+    }
+}

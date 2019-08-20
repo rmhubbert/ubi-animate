@@ -1,0 +1,39 @@
+.animate.slide-bounce-in-horizontally.right {
+    animation: slide-bounce-in-right $slideBounceInTime $slideBounceInEasing
+        forwards;
+}
+
+.animate.slide-bounce-in-horizontally.left {
+    animation: slide-bounce-in-left $slideBounceInTime $slideBounceInEasing
+        forwards;
+}
+
+@keyframes slide-bounce-in-right {
+    0% {
+        transform: translate3d(-#{$rightClearance}, 0, 0);
+    }
+    60% {
+        transform: translate3d(#{$slideBounceIn}, 0, 0);
+    }
+    80% {
+        transform: translate3d(-#{$slideBounceDuring}, 0, 0);
+    }
+    100% {
+        transform: none;
+    }
+}
+
+@keyframes slide-bounce-in-left {
+    0% {
+        transform: translate3d(#{$leftClearance}, 0, 0);
+    }
+    60% {
+        transform: translate3d(-#{$slideBounceIn}, 0, 0);
+    }
+    80% {
+        transform: translate3d(#{$slideBounceDuring}, 0, 0);
+    }
+    100% {
+        transform: none;
+    }
+}
