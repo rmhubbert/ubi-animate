@@ -56,6 +56,39 @@
     opacity: 0;
   }
 }
+.animate.zoom-bounce-in {
+  animation: zoom-bounce-in 0.6s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+}
+
+@keyframes zoom-bounce-in {
+  0% {
+    transform: scale(0, 0);
+  }
+  60% {
+    transform: scale(1.05, 1.05);
+  }
+  80% {
+    transform: scale(0.95, 0.95);
+  }
+  100% {
+    transform: none;
+  }
+}
+.animate.zoom-bounce-out {
+  animation: zoom-bounce-out 0.6s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+}
+
+@keyframes zoom-bounce-out {
+  0%, 40% {
+    transform: none;
+  }
+  70% {
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    transform: scale(0, 0);
+  }
+}
 /**
  * Slides
  */
