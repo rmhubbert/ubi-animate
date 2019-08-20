@@ -1,0 +1,14 @@
+.animate.zoom-in {
+    animation: zoom-in $zoomInTime $zoomInEasing forwards;
+}
+
+@keyframes zoom-in {
+    from {
+        transform: scale(0, 0);
+        opacity: 0;
+    }
+    to {
+        transform: none;
+        opacity: 1;
+    }
+}

@@ -8,6 +8,11 @@ $fadeInTime: 1s;
 $fadeOutEasing: $fadeInEasing;
 $fadeOutTime: $fadeInTime;
 
+$zoomInEasing: ease;
+$zoomInTime: 0.5s;
+$zoomOutEasing: $zoomInEasing;
+$zoomOutTime: $zoomInTime;
+
 $slideInEasing: cubic-bezier(0.9, 0.55, 0.9, 1);
 $slideInTime: 0.7s;
 $slideOutEasing: $slideInEasing;
