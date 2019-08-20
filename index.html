@@ -10,14 +10,17 @@
             type="text/css"
             href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css"
         />
-        <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700&display=swap" rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css?family=Rubik:400,500,700&display=swap"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="./dist/ubianimate.css" />
 
         <style type="text/css">
-
             body {
                 letter-spacing: 0.05rem;
-                font-family: Rubik, "Helvetica Neue", Helvetica, Arial, sans-serif;
+                font-family: Rubik, "Helvetica Neue", Helvetica, Arial,
+                    sans-serif;
             }
 
             #notify {
@@ -112,7 +115,10 @@
                                     >
                                 </select>
                             </div>
-                            <button class="button" onclick="UbiAnimate(event)">
+                            <button
+                                class="button is-primary"
+                                onclick="UbiAnimate(event)"
+                            >
                                 UbiAnimate!
                             </button>
                         </form>
@@ -164,32 +170,32 @@
                     if (pos[0] === "down") {
                         notify.style.bottom = "initial";
                         notify.style.top = 0;
-                        if(enterVert) enter += " down";
-                        if(leaveVert) leave += " up";
+                        if (enterVert) enter += " down";
+                        if (leaveVert) leave += " up";
                     } else {
                         notify.style.top = "initial";
                         notify.style.bottom = 0;
-                        if(enterVert) enter += " up";
-                        if(leaveVert) leave += " down";
+                        if (enterVert) enter += " up";
+                        if (leaveVert) leave += " down";
                     }
                     if (pos[1] === "center") {
                         notify.style.right = "initial";
                         notify.style.left = "50%";
                         notify.style.marginLeft = "-10vw";
-                        if(!enterVert) enter += " right";
-                        if(!leaveVert) leave += " right";
+                        if (!enterVert) enter += " right";
+                        if (!leaveVert) leave += " right";
                     } else if (pos[1] === "left") {
                         notify.style.marginLeft = "1rem";
                         notify.style.left = "initial";
                         notify.style.right = 0;
-                        if(!enterVert) enter += " left";
-                        if(!leaveVert) leave += " right";
+                        if (!enterVert) enter += " left";
+                        if (!leaveVert) leave += " right";
                     } else {
                         notify.style.marginLeft = "1rem";
                         notify.style.right = "initial";
                         notify.style.left = 0;
-                        if(!enterVert) enter += " right";
-                        if(!leaveVert) leave += " left";
+                        if (!enterVert) enter += " right";
+                        if (!leaveVert) leave += " left";
                     }
 
                     notify.className = "animate " + enter;
