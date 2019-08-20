@@ -1,6 +1,14 @@
 @import "variables";
 
 /**
+ * Global
+ */
+
+.animate {
+    animation-fill-mode: both;
+}
+
+/**
  * Fades
  */
 @import "./animations/fades/fade-in";

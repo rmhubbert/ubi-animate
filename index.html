@@ -10,18 +10,25 @@
             type="text/css"
             href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css"
         />
+        <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./dist/ubianimate.css" />
 
         <style type="text/css">
+
+            body {
+                letter-spacing: 0.05rem;
+                font-family: Rubik, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            }
+
             #notify {
                 visibility: hidden;
                 position: fixed;
                 top: 0;
                 left: 0;
-                width: 20vw;
                 margin: 1rem;
                 z-index: 1000;
                 font-size: 0.9em;
+                width: 20vw;
             }
 
             #notify.animate {
@@ -30,6 +37,22 @@
 
             #notify .notification {
                 padding: 0.7rem;
+            }
+
+            .select {
+                margin-right: 0.5rem;
+            }
+
+            .button {
+                margin-left: 0;
+                font-weight: bold;
+                letter-spacing: 0.05rem;
+            }
+
+            .title {
+                font-weight: 500;
+                font-size: 2.5rem;
+                letter-spacing: 0.15rem;
             }
         </style>
     </head>
@@ -113,7 +136,7 @@
 
             var defaultEnterDuration = 1000;
             var defaultShowDuration = 2000;
-            var defaultLeaveDuration = 850;
+            var defaultLeaveDuration = 550;
             var isActive = false;
 
             function UbiAnimate(event) {
