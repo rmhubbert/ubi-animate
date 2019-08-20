@@ -128,11 +128,11 @@
  * Bounces
  */
 .animate.bounce-in-vertically.up {
-  animation: bounce-in-up 0.7s cubic-bezier(1, 0.55, 0.9, 1) forwards;
+  animation: bounce-in-up 0.8s cubic-bezier(1, 0.55, 0.9, 1) forwards;
 }
 
 .animate.bounce-in-vertically.down {
-  animation: bounce-in-down 0.7s cubic-bezier(1, 0.55, 0.9, 1) forwards;
+  animation: bounce-in-down 0.8s cubic-bezier(1, 0.55, 0.9, 1) forwards;
 }
 
 @keyframes bounce-in-up {
@@ -153,32 +153,110 @@
   0% {
     transform: translateY(-25vh);
   }
+  60% {
+    transform: translateY(6px);
+  }
+  80% {
+    transform: translateY(-6px);
+  }
   100% {
     transform: none;
   }
 }
 .animate.bounce-out-vertically.up {
-  animation: bounce-out-up 0.7s cubic-bezier(1, 0.55, 0.9, 1) forwards;
+  animation: bounce-out-up 0.8s cubic-bezier(1, 0.55, 0.9, 1) forwards;
 }
 
 .animate.bounce-out-vertically.down {
-  animation: bounce-out-down 0.7s cubic-bezier(1, 0.55, 0.9, 1) forwards;
+  animation: bounce-out-down 0.8s cubic-bezier(1, 0.55, 0.9, 1) forwards;
 }
 
 @keyframes bounce-out-up {
-  from {
+  0%, 40% {
     transform: none;
   }
-  to {
+  70% {
+    transform: translateY(12px);
+  }
+  100% {
     transform: translateY(-25vh);
   }
 }
 @keyframes bounce-out-down {
-  from {
+  0%, 40% {
     transform: none;
   }
-  to {
+  70% {
+    transform: translateY(-12px);
+  }
+  100% {
     transform: translateY(25vh);
+  }
+}
+.animate.bounce-in-horizontally.right {
+  animation: bounce-in-right 0.8s cubic-bezier(1, 0.55, 0.9, 1) forwards;
+}
+
+.animate.bounce-in-horizontally.left {
+  animation: bounce-in-left 0.8s cubic-bezier(1, 0.55, 0.9, 1) forwards;
+}
+
+@keyframes bounce-in-right {
+  0% {
+    transform: translateX(-25vw);
+  }
+  60% {
+    transform: translateX(6px);
+  }
+  80% {
+    transform: translateX(-6px);
+  }
+  100% {
+    transform: none;
+  }
+}
+@keyframes bounce-in-left {
+  0% {
+    transform: translateX(25vw);
+  }
+  60% {
+    transform: translateX(-6px);
+  }
+  80% {
+    transform: translateX(6px);
+  }
+  100% {
+    transform: none;
+  }
+}
+.animate.bounce-out-horizontally.right {
+  animation: bounce-out-right 0.8s cubic-bezier(1, 0.55, 0.9, 1) forwards;
+}
+
+.animate.bounce-out-horizontally.left {
+  animation: bounce-out-left 0.8s cubic-bezier(1, 0.55, 0.9, 1) forwards;
+}
+
+@keyframes bounce-out-right {
+  0%, 40% {
+    transform: none;
+  }
+  70% {
+    transform: translateX(-12px);
+  }
+  100% {
+    transform: translateX(25vw);
+  }
+}
+@keyframes bounce-out-left {
+  0%, 40% {
+    transform: none;
+  }
+  70% {
+    transform: translateX(12px);
+  }
+  100% {
+    transform: translateX(-25vw);
   }
 }
 

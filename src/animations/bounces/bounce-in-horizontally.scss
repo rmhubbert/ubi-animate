@@ -1,0 +1,37 @@
+.animate.bounce-in-horizontally.right {
+    animation: bounce-in-right $bounceInTime $bounceInEasing forwards;
+}
+
+.animate.bounce-in-horizontally.left {
+    animation: bounce-in-left $bounceInTime $bounceInEasing forwards;
+}
+
+@keyframes bounce-in-right {
+    0% {
+        transform: translateX(-#{$rightClearance});
+    }
+    60% {
+        transform: translateX(#{$bounceIn});
+    }
+    80% {
+        transform: translateX(-#{$bounceIn});
+    }
+    100% {
+        transform: none;
+    }
+}
+
+@keyframes bounce-in-left {
+    0% {
+        transform: translateX(#{$leftClearance});
+    }
+    60% {
+        transform: translateX(-#{$bounceIn});
+    }
+    80% {
+        transform: translateX(#{$bounceIn});
+    }
+    100% {
+        transform: none;
+    }
+}

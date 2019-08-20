@@ -7,19 +7,27 @@
 }
 
 @keyframes bounce-out-up {
-    from {
+    0%,
+    40% {
         transform: none;
     }
-    to {
+    70% {
+        transform: translateY(#{$bounceOut});
+    }
+    100% {
         transform: translateY(-#{$topClearance});
     }
 }
 
 @keyframes bounce-out-down {
-    from {
+    0%,
+    40% {
         transform: none;
     }
-    to {
+    70% {
+        transform: translateY(-#{$bounceOut});
+    }
+    100% {
         transform: translateY(#{$bottomClearance});
     }
 }

@@ -14,6 +14,8 @@ $slideOutEasing: $slideInEasing;
 $slideOutTime: $slideInTime;
 
 $bounceInEasing: cubic-bezier(1, 0.55, 0.9, 1);
-$bounceInTime: 0.7s;
+$bounceInTime: 0.8s;
 $bounceOutEasing: $bounceInEasing;
 $bounceOutTime: $bounceInTime;
+$bounceIn: 6px;
+$bounceOut: 12px;

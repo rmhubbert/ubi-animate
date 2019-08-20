@@ -1,0 +1,33 @@
+.animate.bounce-out-horizontally.right {
+    animation: bounce-out-right $bounceOutTime $bounceOutEasing forwards;
+}
+
+.animate.bounce-out-horizontally.left {
+    animation: bounce-out-left $bounceOutTime $bounceOutEasing forwards;
+}
+
+@keyframes bounce-out-right {
+    0%,
+    40% {
+        transform: none;
+    }
+    70% {
+        transform: translateX(-#{$bounceOut});
+    }
+    100% {
+        transform: translateX(#{$rightClearance});
+    }
+}
+
+@keyframes bounce-out-left {
+    0%,
+    40% {
+        transform: none;
+    }
+    70% {
+        transform: translateX(#{$bounceOut});
+    }
+    100% {
+        transform: translateX(-#{$leftClearance});
+    }
+}
