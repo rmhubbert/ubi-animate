@@ -97,6 +97,12 @@
                                     <option value="slide-in-vertically"
                                         >Slide in vertically</option
                                     >
+                                    <option value="bounce-in-horizontally"
+                                        >Bounce in horizontally</option
+                                    >
+                                    <option value="bounce-in-vertically"
+                                        >Bounce in vertically</option
+                                    >
                                 </select>
                             </div>
                             <div class="select">
@@ -107,6 +113,12 @@
                                     >
                                     <option value="slide-out-vertically"
                                         >Slide out vertically</option
+                                    >
+                                    <option value="bounce-out-horizontally"
+                                        >Bounce out horizontally</option
+                                    >
+                                    <option value="bounce-out-vertically"
+                                        >Bounce out vertically</option
                                     >
                                 </select>
                             </div>
@@ -196,7 +208,9 @@
 
                     notify.className = "animate " + enter;
 
-                    var templateElement = document.getElementById("notificationTemplate");
+                    var templateElement = document.getElementById(
+                        "notificationTemplate"
+                    );
                     var content = templateElement.content.querySelector("div");
                     var template = document.importNode(content, true);
                     notify.appendChild(template);

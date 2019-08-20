@@ -1,0 +1,25 @@
+.animate.bounce-out-vertically.up {
+    animation: bounce-out-up $bounceOutTime $bounceOutEasing forwards;
+}
+
+.animate.bounce-out-vertically.down {
+    animation: bounce-out-down $bounceOutTime $bounceOutEasing forwards;
+}
+
+@keyframes bounce-out-up {
+    from {
+        transform: none;
+    }
+    to {
+        transform: translateY(-#{$topClearance}#{$heightUnit});
+    }
+}
+
+@keyframes bounce-out-down {
+    from {
+        transform: none;
+    }
+    to {
+        transform: translateY(#{$bottomClearance}#{$heightUnit});
+    }
+}

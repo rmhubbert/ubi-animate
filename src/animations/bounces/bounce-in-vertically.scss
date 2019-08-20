@@ -1,0 +1,31 @@
+.animate.bounce-in-vertically.up {
+    animation: bounce-in-up $bounceInTime $bounceInEasing forwards;
+}
+
+.animate.bounce-in-vertically.down {
+    animation: bounce-in-down $bounceInTime $bounceInEasing forwards;
+}
+
+@keyframes bounce-in-up {
+    0% {
+        transform: translateY(#{$bottomClearance}#{$heightUnit});
+    }
+    60% {
+        transform: translateY(-6px);
+    }
+    80% {
+        transform: translateY(6px);
+    }
+    100% {
+        transform: none;
+    }
+}
+
+@keyframes bounce-in-down {
+    0% {
+        transform: translateY(-#{$topClearance}#{$heightUnit});
+    }
+    100% {
+        transform: none;
+    }
+}

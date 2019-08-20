@@ -124,5 +124,62 @@
     transform: translateY(25vh);
   }
 }
+/**
+ * Bounces
+ */
+.animate.bounce-in-vertically.up {
+  animation: bounce-in-up 0.7s cubic-bezier(1, 0.55, 0.9, 1) forwards;
+}
+
+.animate.bounce-in-vertically.down {
+  animation: bounce-in-down 0.7s cubic-bezier(1, 0.55, 0.9, 1) forwards;
+}
+
+@keyframes bounce-in-up {
+  0% {
+    transform: translateY(25vh);
+  }
+  60% {
+    transform: translateY(-6px);
+  }
+  80% {
+    transform: translateY(6px);
+  }
+  100% {
+    transform: none;
+  }
+}
+@keyframes bounce-in-down {
+  0% {
+    transform: translateY(-25vh);
+  }
+  100% {
+    transform: none;
+  }
+}
+.animate.bounce-out-vertically.up {
+  animation: bounce-out-up 0.7s cubic-bezier(1, 0.55, 0.9, 1) forwards;
+}
+
+.animate.bounce-out-vertically.down {
+  animation: bounce-out-down 0.7s cubic-bezier(1, 0.55, 0.9, 1) forwards;
+}
+
+@keyframes bounce-out-up {
+  from {
+    transform: none;
+  }
+  to {
+    transform: translateY(-25vh);
+  }
+}
+@keyframes bounce-out-down {
+  from {
+    transform: none;
+  }
+  to {
+    transform: translateY(25vh);
+  }
+}
 
 /*# sourceMappingURL=ubianimate.css.map */
