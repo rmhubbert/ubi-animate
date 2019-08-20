@@ -10,7 +10,7 @@ $fadeInTime: 1s;
 $fadeOutEasing: $fadeInEasing;
 $fadeOutTime: $fadeInTime;
 
-$slideInEasing: ease;
-$slideInTime: 0.6s;
+$slideInEasing: cubic-bezier(1, 0.55, 0.9, 1);
+$slideInTime: 0.7s;
 $slideOutEasing: $slideInEasing;
 $slideOutTime: $slideInTime;
