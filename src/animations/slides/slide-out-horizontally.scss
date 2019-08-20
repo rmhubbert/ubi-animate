@@ -11,7 +11,7 @@
         transform: none;
     }
     to {
-        transform: translateX(#{$rightClearance}#{$widthUnit});
+        transform: translateX(#{$rightClearance});
     }
 }
 
@@ -20,6 +20,6 @@
         transform: none;
     }
     to {
-        transform: translateX(-#{$leftClearance}#{$widthUnit});
+        transform: translateX(-#{$leftClearance});
     }
 }

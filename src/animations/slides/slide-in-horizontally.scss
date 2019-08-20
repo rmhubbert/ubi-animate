@@ -8,7 +8,7 @@
 
 @keyframes slide-in-right {
     from {
-        transform: translateX(-#{$rightClearance}#{$widthUnit});
+        transform: translateX(-#{$rightClearance});
     }
     to {
         transform: none;
@@ -17,7 +17,7 @@
 
 @keyframes slide-in-left {
     from {
-        transform: translateX(#{$leftClearance}#{$widthUnit});
+        transform: translateX(#{$leftClearance});
     }
     to {
         transform: none;

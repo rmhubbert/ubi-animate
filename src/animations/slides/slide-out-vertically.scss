@@ -11,7 +11,7 @@
         transform: none;
     }
     to {
-        transform: translateY(-#{$topClearance}#{$heightUnit});
+        transform: translateY(-#{$topClearance});
     }
 }
 
@@ -20,6 +20,6 @@
         transform: none;
     }
     to {
-        transform: translateY(#{$bottomClearance}#{$heightUnit});
+        transform: translateY(#{$bottomClearance});
     }
 }

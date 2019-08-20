@@ -8,7 +8,7 @@
 
 @keyframes slide-in-up {
     from {
-        transform: translateY(#{$bottomClearance}#{$heightUnit});
+        transform: translateY(#{$bottomClearance});
     }
     to {
         transform: none;
@@ -17,7 +17,7 @@
 
 @keyframes slide-in-down {
     from {
-        transform: translateY(-#{$topClearance}#{$heightUnit});
+        transform: translateY(-#{$topClearance});
     }
     to {
         transform: none;

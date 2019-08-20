@@ -8,7 +8,7 @@
 
 @keyframes bounce-in-up {
     0% {
-        transform: translateY(#{$bottomClearance}#{$heightUnit});
+        transform: translateY(#{$bottomClearance});
     }
     60% {
         transform: translateY(-6px);
@@ -23,7 +23,7 @@
 
 @keyframes bounce-in-down {
     0% {
-        transform: translateY(-#{$topClearance}#{$heightUnit});
+        transform: translateY(-#{$topClearance});
     }
     100% {
         transform: none;
