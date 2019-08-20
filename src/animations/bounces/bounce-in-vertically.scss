@@ -8,13 +8,13 @@
 
 @keyframes bounce-in-up {
     0% {
-        transform: translateY(#{$bottomClearance});
+        transform: translate3d(0, #{$bottomClearance}, 0);
     }
     60% {
-        transform: translateY(-#{$bounceIn});
+        transform: translate3d(0, -#{$bounceIn}, 0);
     }
     80% {
-        transform: translateY(#{$bounceIn});
+        transform: translate3d(0, #{$bounceIn}, 0);
     }
     100% {
         transform: none;
@@ -23,13 +23,13 @@
 
 @keyframes bounce-in-down {
     0% {
-        transform: translateY(-#{$topClearance});
+        transform: translate3d(0, -#{$topClearance}, 0);
     }
     60% {
-        transform: translateY(#{$bounceIn});
+        transform: translate3d(0, #{$bounceIn}, 0);
     }
     80% {
-        transform: translateY(-#{$bounceIn});
+        transform: translate3d(0, -#{$bounceIn}, 0);
     }
     100% {
         transform: none;

@@ -38,7 +38,7 @@
 
 @keyframes slide-in-right {
   from {
-    transform: translateX(-25vw);
+    transform: translate3d(-25vw, 0, 0);
   }
   to {
     transform: none;
@@ -46,7 +46,7 @@
 }
 @keyframes slide-in-left {
   from {
-    transform: translateX(25vw);
+    transform: translate3d(25vw, 0, 0);
   }
   to {
     transform: none;
@@ -65,7 +65,7 @@
     transform: none;
   }
   to {
-    transform: translateX(25vw);
+    transform: translate3d(25vw, 0, 0);
   }
 }
 @keyframes slide-out-left {
@@ -73,7 +73,7 @@
     transform: none;
   }
   to {
-    transform: translateX(-25vw);
+    transform: translate3d(-25vw, 0, 0);
   }
 }
 .animate.slide-in-vertically.up {
@@ -86,7 +86,7 @@
 
 @keyframes slide-in-up {
   from {
-    transform: translateY(25vh);
+    transform: translate3d(0, 25vh, 0);
   }
   to {
     transform: none;
@@ -94,7 +94,7 @@
 }
 @keyframes slide-in-down {
   from {
-    transform: translateY(-25vh);
+    transform: translate3d(0, -25vh, 0);
   }
   to {
     transform: none;
@@ -113,7 +113,7 @@
     transform: none;
   }
   to {
-    transform: translateY(-25vh);
+    transform: translate3d(0, -25vh, 0);
   }
 }
 @keyframes slide-out-down {
@@ -121,7 +121,7 @@
     transform: none;
   }
   to {
-    transform: translateY(25vh);
+    transform: translate3d(0, 25vh, 0);
   }
 }
 /**
@@ -137,13 +137,13 @@
 
 @keyframes bounce-in-up {
   0% {
-    transform: translateY(25vh);
+    transform: translate3d(0, 25vh, 0);
   }
   60% {
-    transform: translateY(-6px);
+    transform: translate3d(0, -6px, 0);
   }
   80% {
-    transform: translateY(6px);
+    transform: translate3d(0, 6px, 0);
   }
   100% {
     transform: none;
@@ -151,13 +151,13 @@
 }
 @keyframes bounce-in-down {
   0% {
-    transform: translateY(-25vh);
+    transform: translate3d(0, -25vh, 0);
   }
   60% {
-    transform: translateY(6px);
+    transform: translate3d(0, 6px, 0);
   }
   80% {
-    transform: translateY(-6px);
+    transform: translate3d(0, -6px, 0);
   }
   100% {
     transform: none;
@@ -176,10 +176,10 @@
     transform: none;
   }
   70% {
-    transform: translateY(12px);
+    transform: translate3d(0, 12px, 0);
   }
   100% {
-    transform: translateY(-25vh);
+    transform: translate3d(0, -25vh, 0);
   }
 }
 @keyframes bounce-out-down {
@@ -187,10 +187,10 @@
     transform: none;
   }
   70% {
-    transform: translateY(-12px);
+    transform: translate3d(0, -12px, 0);
   }
   100% {
-    transform: translateY(25vh);
+    transform: translate3d(0, 25vh, 0);
   }
 }
 .animate.bounce-in-horizontally.right {
@@ -203,13 +203,13 @@
 
 @keyframes bounce-in-right {
   0% {
-    transform: translateX(-25vw);
+    transform: translate3d(-25vw, 0, 0);
   }
   60% {
-    transform: translateX(6px);
+    transform: translate3d(6px, 0, 0);
   }
   80% {
-    transform: translateX(-6px);
+    transform: translate3d(-6px, 0, 0);
   }
   100% {
     transform: none;
@@ -217,13 +217,13 @@
 }
 @keyframes bounce-in-left {
   0% {
-    transform: translateX(25vw);
+    transform: translate3d(25vw, 0, 0);
   }
   60% {
-    transform: translateX(-6px);
+    transform: translate3d(-6px, 0, 0);
   }
   80% {
-    transform: translateX(6px);
+    transform: translate3d(6px, 0, 0);
   }
   100% {
     transform: none;
@@ -242,10 +242,10 @@
     transform: none;
   }
   70% {
-    transform: translateX(-12px);
+    transform: translate3d(-12px, 0, 0);
   }
   100% {
-    transform: translateX(25vw);
+    transform: translate3d(25vw, 0, 0);
   }
 }
 @keyframes bounce-out-left {
@@ -253,10 +253,10 @@
     transform: none;
   }
   70% {
-    transform: translateX(12px);
+    transform: translate3d(12px, 0, 0);
   }
   100% {
-    transform: translateX(-25vw);
+    transform: translate3d(-25vw, 0, 0);
   }
 }
 

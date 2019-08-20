@@ -11,7 +11,7 @@
         transform: none;
     }
     to {
-        transform: translateY(-#{$topClearance});
+        transform: translate3d(0, -#{$topClearance}, 0);
     }
 }
 
@@ -20,6 +20,6 @@
         transform: none;
     }
     to {
-        transform: translateY(#{$bottomClearance});
+        transform: translate3d(0, #{$bottomClearance}, 0);
     }
 }

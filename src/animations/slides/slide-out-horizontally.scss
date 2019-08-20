@@ -11,7 +11,7 @@
         transform: none;
     }
     to {
-        transform: translateX(#{$rightClearance});
+        transform: translate3d(#{$rightClearance}, 0, 0);
     }
 }
 
@@ -20,6 +20,6 @@
         transform: none;
     }
     to {
-        transform: translateX(-#{$leftClearance});
+        transform: translate3d(-#{$leftClearance}, 0, 0);
     }
 }

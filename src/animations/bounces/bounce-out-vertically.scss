@@ -12,10 +12,10 @@
         transform: none;
     }
     70% {
-        transform: translateY(#{$bounceOut});
+        transform: translate3d(0, #{$bounceOut}, 0);
     }
     100% {
-        transform: translateY(-#{$topClearance});
+        transform: translate3d(0, -#{$topClearance}, 0);
     }
 }
 
@@ -25,9 +25,9 @@
         transform: none;
     }
     70% {
-        transform: translateY(-#{$bounceOut});
+        transform: translate3d(0, -#{$bounceOut}, 0);
     }
     100% {
-        transform: translateY(#{$bottomClearance});
+        transform: translate3d(0, #{$bottomClearance}, 0);
     }
 }
