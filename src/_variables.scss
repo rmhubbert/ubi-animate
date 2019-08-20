@@ -1,13 +1,22 @@
+/**
+ * Globals
+ */
 $topClearance: 25vh;
 $bottomClearance: $topClearance;
 $leftClearance: 25vw;
 $rightClearance: $leftClearance;
 
+/**
+ * Fades
+ */
 $fadeInEasing: ease;
 $fadeInTime: 1s;
 $fadeOutEasing: $fadeInEasing;
 $fadeOutTime: $fadeInTime;
 
+/**
+ * Zooms
+ */
 $zoomInEasing: ease;
 $zoomInTime: 0.5s;
 $zoomOutEasing: $zoomInEasing;
@@ -21,6 +30,9 @@ $zoomBounceIn: 1.05;
 $zoomBounceDuring: 0.95;
 $zoomBounceOut: 1.1;
 
+/**
+ * Slides
+ */
 $slideInEasing: cubic-bezier(0.9, 0.55, 0.9, 1);
 $slideInTime: 0.7s;
 $slideOutEasing: $slideInEasing;
