@@ -24,7 +24,6 @@
             }
 
             #notify {
-                visibility: hidden;
                 position: fixed;
                 top: 0;
                 left: 0;
@@ -32,10 +31,6 @@
                 z-index: 1000;
                 font-size: 0.9em;
                 width: 20vw;
-            }
-
-            #notify.animate {
-                visibility: visible;
             }
 
             #notify .notification {
@@ -126,7 +121,8 @@
                 </div>
             </section>
 
-            <div id="notify">
+            <div id="notify"></div>
+            <template id="notificationTemplate">
                 <div class="notification is-primary">
                     <p><strong>UbiAnimate</strong></p>
                     <p>
@@ -134,7 +130,7 @@
                         snackbar type notifications
                     </p>
                 </div>
-            </div>
+            </template>
         </main>
 
         <script type="text/javascript">
@@ -142,7 +138,7 @@
 
             var defaultEnterDuration = 1000;
             var defaultShowDuration = 2000;
-            var defaultLeaveDuration = 550;
+            var defaultLeaveDuration = 1000;
             var isActive = false;
 
             function UbiAnimate(event) {
@@ -200,12 +196,20 @@
 
                     notify.className = "animate " + enter;
 
+                    var templateElement = document.getElementById("notificationTemplate");
+                    console.log(templateElement);
+                    var content = templateElement.content.querySelector("div");
+                    var template = document.importNode(content, true);
+                    console.log(template);
+                    notify.appendChild(template);
+
                     setTimeout(function() {
                         notify.className = notify.className.replace(
                             enter,
                             leave
                         );
                         setTimeout(function() {
+                            notify.removeChild(template);
                             notify.className = "";
                             isActive = false;
                         }, defaultLeaveDuration);
