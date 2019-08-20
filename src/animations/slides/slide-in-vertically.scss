@@ -1,13 +1,9 @@
 .animate.slide-in-vertically.up {
-    animation-name: slide-in-up;
-    animation-timing-function: $slideInEasing;
-    animation-duration: $slideInTime;
+    animation: slide-in-up $slideInEasing $slideInTime;
 }
 
 .animate.slide-in-vertically.down {
-    animation-name: slide-in-down;
-    animation-timing-function: $slideInEasing;
-    animation-duration: $slideInTime;
+    animation: slide-in-down $slideInEasing $slideInTime;
 }
 
 @keyframes slide-in-up {

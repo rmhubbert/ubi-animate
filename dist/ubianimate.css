@@ -1,3 +1,6 @@
+/**
+ * Fades
+ */
 .animate.fade-in {
   animation: fade-in ease 0.9s;
 }
@@ -22,6 +25,9 @@
     opacity: 0;
   }
 }
+/**
+ * Slides
+ */
 .animate.slide-in-horizontally.right {
   animation: slide-in-right ease-out 0.9s;
 }

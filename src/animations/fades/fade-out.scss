@@ -1,7 +1,5 @@
 .animate.fade-out {
-    animation-name: fade-out;
-    animation-timing-function: $fadeOutEasing;
-    animation-duration: $fadeOutTime;
+    animation: fade-out $fadeOutEasing $fadeOutTime;
 }
 
 @keyframes fade-out {

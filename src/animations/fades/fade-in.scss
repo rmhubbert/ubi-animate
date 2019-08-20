@@ -1,7 +1,5 @@
 .animate.fade-in {
-    animation-name: fade-in;
-    animation-timing-function: $fadeInEasing;
-    animation-duration: $fadeInTime;
+    animation: fade-in $fadeInEasing $fadeInTime;
 }
 
 @keyframes fade-in {
