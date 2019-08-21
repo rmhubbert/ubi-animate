@@ -6,25 +6,25 @@
 /**
  * Fades
  */
-@import "./animations/fades/fade-in";
-@import "./animations/fades/fade-out";
+@import "./animations/fade/fade-in";
+@import "./animations/fade/fade-out";
 
 /**
  * Zooms
  */
-@import "./animations/zooms/zoom-in";
-@import "./animations/zooms/zoom-out";
-@import "./animations/zooms/zoom-bounce-in";
-@import "./animations/zooms/zoom-bounce-out";
+@import "./animations/grow/grow-in";
+@import "./animations/grow/grow-out";
+@import "./animations/grow/grow-bounce-in";
+@import "./animations/grow/grow-bounce-out";
 
 /**
  * Slides
  */
-@import "./animations/slides/slide-in-horizontally";
-@import "./animations/slides/slide-out-horizontally";
-@import "./animations/slides/slide-in-vertically";
-@import "./animations/slides/slide-out-vertically";
-@import "./animations/slides/slide-bounce-in-vertically";
-@import "./animations/slides/slide-bounce-out-vertically";
-@import "./animations/slides/slide-bounce-in-horizontally";
-@import "./animations/slides/slide-bounce-out-horizontally";
+@import "./animations/slide/slide-in-horizontally";
+@import "./animations/slide/slide-out-horizontally";
+@import "./animations/slide/slide-in-vertically";
+@import "./animations/slide/slide-out-vertically";
+@import "./animations/slide/slide-bounce-in-vertically";
+@import "./animations/slide/slide-bounce-out-vertically";
+@import "./animations/slide/slide-bounce-in-horizontally";
+@import "./animations/slide/slide-bounce-out-horizontally";

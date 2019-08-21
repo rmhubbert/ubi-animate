@@ -1,0 +1,47 @@
+.animate.grow-bounce-out {
+    animation: grow-bounce-out $growBounceOutTime $growBounceOutEasing forwards;
+    transform-origin: center;
+}
+
+.animate.grow-bounce-out.up {
+    animation: grow-bounce-out $growBounceOutTime $growBounceOutEasing forwards;
+    transform-origin: top center;
+}
+
+.animate.grow-bounce-out.down {
+    animation: grow-bounce-out $growBounceOutTime $growBounceOutEasing forwards;
+    transform-origin: bottom center;
+}
+
+.animate.grow-bounce-out.up.right {
+    animation: grow-bounce-out $growBounceOutTime $growBounceOutEasing forwards;
+    transform-origin: top right;
+}
+
+.animate.grow-bounce-out.up.left {
+    animation: grow-bounce-out $growBounceOutTime $growBounceOutEasing forwards;
+    transform-origin: top left;
+}
+
+.animate.grow-bounce-out.down.right {
+    animation: grow-bounce-out $growBounceOutTime $growBounceOutEasing forwards;
+    transform-origin: bottom right;
+}
+
+.animate.grow-bounce-out.down.left {
+    animation: grow-bounce-out $growBounceOutTime $growBounceOutEasing forwards;
+    transform-origin: bottom left;
+}
+
+@keyframes grow-bounce-out {
+    0%,
+    40% {
+        transform: none;
+    }
+    70% {
+        transform: scale(#{$growBounceOut}, #{$growBounceOut});
+    }
+    100% {
+        transform: scale(0, 0);
+    }
+}

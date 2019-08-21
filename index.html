@@ -52,6 +52,10 @@
                 font-size: 2.5rem;
                 letter-spacing: 0.15rem;
             }
+
+            fieldset {
+                margin-bottom: 1rem;
+            }
         </style>
     </head>
     <body>
@@ -65,78 +69,92 @@
                             / snackbar type notifications
                         </h2>
                         <form>
-                            <div class="select">
-                                <select id="position">
-                                    <option value="down right"
-                                        >Notify top left</option
-                                    >
-                                    <option value="down center"
-                                        >Notify top center</option
-                                    >
-                                    <option value="down left" selected
-                                        >Notify top right</option
-                                    >
-                                    <option value="up right"
-                                        >Notify bottom left</option
-                                    >
-                                    <option value="up center"
-                                        >Notify bottom center</option
-                                    >
-                                    <option value="up left"
-                                        >Notify bottom right</option
-                                    >
-                                </select>
-                            </div>
-
-                            <div class="select">
-                                <select id="enter">
-                                    <option value="fade-in">Fade in</option>
-                                    <option value="zoom-in">Zoom in</option>
-                                    <option value="zoom-bounce-in"
-                                        >Zoom & bounce in</option
-                                    >
-                                    <option value="slide-in-horizontally"
-                                        >Slide in horizontally</option
-                                    >
-                                    <option value="slide-in-vertically"
-                                        >Slide in vertically</option
-                                    >
-                                    <option value="slide-bounce-in-horizontally"
-                                        >Slide & bounce in horizontally</option
-                                    >
-                                    <option value="slide-bounce-in-vertically"
-                                        >Slide & bounce in vertically</option
-                                    >
-                                </select>
-                            </div>
-                            <div class="select">
-                                <select class="select" id="leave">
-                                    <option value="fade-out">Fade out</option>
-                                    <option value="zoom-out">Zoom out</option>
-                                    <option value="zoom-bounce-out"
-                                        >Zoom & bounce out</option
-                                    >
-                                    <option value="slide-out-horizontally"
-                                        >Slide out horizontally</option
-                                    >
-                                    <option value="slide-out-vertically"
-                                        >Slide out vertically</option
-                                    >
-                                    <option
-                                        value="slide-bounce-out-horizontally"
-                                        >Slide & bounce out horizontally</option
-                                    >
-                                    <option value="slide-bounce-out-vertically"
-                                        >Slide & bounce out vertically</option
-                                    >
-                                </select>
-                            </div>
-                            <button
-                                class="button is-primary"
-                                onclick="UbiAnimate(event)"
-                            >
-                                UbiAnimate!
-                            </button>
+                            <fieldset>
+                                <div class="select">
+                                    <select id="enter">
+                                        <option value="fade-in">Fade in</option>
+                                        <option value="grow-in">Grow in</option>
+                                        <option value="grow-bounce-in"
+                                            >Grow & bounce in</option
+                                        >
+                                        <option value="slide-in-horizontally"
+                                            >Slide in horizontally</option
+                                        >
+                                        <option value="slide-in-vertically"
+                                            >Slide in vertically</option
+                                        >
+                                        <option
+                                            value="slide-bounce-in-horizontally"
+                                            >Slide & bounce in
+                                            horizontally</option
+                                        >
+                                        <option
+                                            value="slide-bounce-in-vertically"
+                                            >Slide & bounce in
+                                            vertically</option
+                                        >
+                                    </select>
+                                </div>
+                                <div class="select">
+                                    <select class="select" id="leave">
+                                        <option value="fade-out"
+                                            >Fade out</option
+                                        >
+                                        <option value="grow-out"
+                                            >Grow out</option
+                                        >
+                                        <option value="grow-bounce-out"
+                                            >Grow & bounce out</option
+                                        >
+                                        <option value="slide-out-horizontally"
+                                            >Slide out horizontally</option
+                                        >
+                                        <option value="slide-out-vertically"
+                                            >Slide out vertically</option
+                                        >
+                                        <option
+                                            value="slide-bounce-out-horizontally"
+                                            >Slide & bounce out
+                                            horizontally</option
+                                        >
+                                        <option
+                                            value="slide-bounce-out-vertically"
+                                            >Slide & bounce out
+                                            vertically</option
+                                        >
+                                    </select>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <div class="select">
+                                    <select id="position">
+                                        <option value="down right"
+                                            >Notify top left</option
+                                        >
+                                        <option value="down center"
+                                            >Notify top center</option
+                                        >
+                                        <option value="down left" selected
+                                            >Notify top right</option
+                                        >
+                                        <option value="up right"
+                                            >Notify bottom left</option
+                                        >
+                                        <option value="up center"
+                                            >Notify bottom center</option
+                                        >
+                                        <option value="up left"
+                                            >Notify bottom right</option
+                                        >
+                                    </select>
+                                </div>
+                                <button
+                                    class="button is-primary"
+                                    onclick="UbiAnimate(event)"
+                                >
+                                    UbiAnimate!
+                                </button>
+                            </fieldset>
                         </form>
                     </div>
                 </div>
@@ -179,40 +197,37 @@
                         leaveSelect.options[leaveSelect.selectedIndex].value;
                     var notify = document.getElementById("notify");
 
-                    var enterVert = enter.includes("vertically");
-                    var leaveVert = leave.includes("vertically");
-
                     var pos = position.split(" ");
 
                     if (pos[0] === "down") {
                         notify.style.bottom = "initial";
                         notify.style.top = 0;
-                        if (enterVert) enter += " down";
-                        if (leaveVert) leave += " up";
+                        enter += " down";
+                        leave += " up";
                     } else {
                         notify.style.top = "initial";
                         notify.style.bottom = 0;
-                        if (enterVert) enter += " up";
-                        if (leaveVert) leave += " down";
+                        enter += " up";
+                        leave += " down";
                     }
                     if (pos[1] === "center") {
                         notify.style.right = "initial";
                         notify.style.left = "50%";
                         notify.style.marginLeft = "-10vw";
-                        if (!enterVert) enter += " right";
-                        if (!leaveVert) leave += " right";
+                        enter += " center";
+                        leave += " center";
                     } else if (pos[1] === "left") {
                         notify.style.marginLeft = "1rem";
                         notify.style.left = "initial";
                         notify.style.right = 0;
-                        if (!enterVert) enter += " left";
-                        if (!leaveVert) leave += " right";
+                        enter += " left";
+                        leave += " right";
                     } else {
                         notify.style.marginLeft = "1rem";
                         notify.style.right = "initial";
                         notify.style.left = 0;
-                        if (!enterVert) enter += " right";
-                        if (!leaveVert) leave += " left";
+                        enter += " right";
+                        leave += " left";
                     }
 
                     notify.className = "animate " + enter;

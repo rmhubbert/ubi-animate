@@ -1,5 +1,5 @@
 /**
- * Globals
+ * Global
  */
 $topClearance: 25vh;
 $bottomClearance: $topClearance;
@@ -7,7 +7,7 @@ $leftClearance: 25vw;
 $rightClearance: $leftClearance;
 
 /**
- * Fades
+ * Fade
  */
 $fadeInEasing: ease;
 $fadeInTime: 1s;
@@ -15,23 +15,23 @@ $fadeOutEasing: $fadeInEasing;
 $fadeOutTime: $fadeInTime;
 
 /**
- * Zooms
+ * Grow
  */
-$zoomInEasing: ease;
-$zoomInTime: 0.5s;
-$zoomOutEasing: $zoomInEasing;
-$zoomOutTime: $zoomInTime;
+$growInEasing: ease;
+$growInTime: 0.5s;
+$growOutEasing: $growInEasing;
+$growOutTime: $growInTime;
 
-$zoomBounceInEasing: cubic-bezier(0.88, 0.54, 0.91, 1);
-$zoomBounceInTime: 0.6s;
-$zoomBounceOutEasing: $zoomBounceInEasing;
-$zoomBounceOutTime: $zoomBounceInTime;
-$zoomBounceIn: 1.05;
-$zoomBounceDuring: 0.95;
-$zoomBounceOut: 1.1;
+$growBounceInEasing: cubic-bezier(0.88, 0.54, 0.91, 1);
+$growBounceInTime: 0.6s;
+$growBounceOutEasing: $growBounceInEasing;
+$growBounceOutTime: $growBounceInTime;
+$growBounceIn: 1.05;
+$growBounceDuring: 0.95;
+$growBounceOut: 1.1;
 
 /**
- * Slides
+ * Slide
  */
 $slideInEasing: cubic-bezier(0.9, 0.55, 0.9, 1);
 $slideInTime: 0.7s;
