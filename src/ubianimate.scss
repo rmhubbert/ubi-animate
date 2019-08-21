@@ -4,13 +4,13 @@
 @import "variables";
 
 /**
- * Fades
+ * Fade
  */
 @import "./animations/fade/fade-in";
 @import "./animations/fade/fade-out";
 
 /**
- * Zooms
+ * Grow
  */
 @import "./animations/grow/grow-in";
 @import "./animations/grow/grow-out";
@@ -18,7 +18,19 @@
 @import "./animations/grow/grow-bounce-out";
 
 /**
- * Slides
+ * Fold
+ */
+@import "./animations/fold/fold-in-horizontally";
+@import "./animations/fold/fold-out-horizontally";
+@import "./animations/fold/fold-in-vertically";
+@import "./animations/fold/fold-out-vertically";
+@import "./animations/fold/fold-bounce-in-horizontally";
+@import "./animations/fold/fold-bounce-out-horizontally";
+@import "./animations/fold/fold-bounce-in-vertically";
+@import "./animations/fold/fold-bounce-out-vertically";
+
+/**
+ * Slide
  */
 @import "./animations/slide/slide-in-horizontally";
 @import "./animations/slide/slide-out-horizontally";

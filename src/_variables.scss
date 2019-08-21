@@ -31,6 +31,22 @@ $growBounceDuring: 0.95;
 $growBounceOut: 1.1;
 
 /**
+ * Fold
+ */
+$foldInEasing: ease;
+$foldInTime: 0.7s;
+$foldOutEasing: $foldInEasing;
+$foldOutTime: $foldInTime;
+
+$foldBounceInEasing: cubic-bezier(0.88, 0.54, 0.91, 1);
+$foldBounceInTime: 0.8s;
+$foldBounceOutEasing: $foldBounceInEasing;
+$foldBounceOutTime: $foldBounceInTime;
+$foldBounceIn: 1.05;
+$foldBounceDuring: 0.95;
+$foldBounceOut: 1.1;
+
+/**
  * Slide
  */
 $slideInEasing: cubic-bezier(0.9, 0.55, 0.9, 1);

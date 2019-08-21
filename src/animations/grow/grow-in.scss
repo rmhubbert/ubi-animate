@@ -4,32 +4,32 @@
 }
 
 .animate.grow-in.up {
-    animation: grow-in $growBounceInTime $growBounceInEasing forwards;
+    animation: grow-in $growInTime $growInEasing forwards;
     transform-origin: bottom center;
 }
 
 .animate.grow-in.down {
-    animation: grow-in $growBounceInTime $growBounceInEasing forwards;
+    animation: grow-in $growInTime $growInEasing forwards;
     transform-origin: top center;
 }
 
 .animate.grow-in.up.right {
-    animation: grow-in $growBounceInTime $growBounceInEasing forwards;
+    animation: grow-in $growInTime $growInEasing forwards;
     transform-origin: bottom left;
 }
 
 .animate.grow-in.up.left {
-    animation: grow-in $growBounceInTime $growBounceInEasing forwards;
+    animation: grow-in $growInTime $growInEasing forwards;
     transform-origin: bottom right;
 }
 
 .animate.grow-in.down.right {
-    animation: grow-in $growBounceInTime $growBounceInEasing forwards;
+    animation: grow-in $growInTime $growInEasing forwards;
     transform-origin: top left;
 }
 
 .animate.grow-in.down.left {
-    animation: grow-in $growBounceInTime $growBounceInEasing forwards;
+    animation: grow-in $growInTime $growInEasing forwards;
     transform-origin: top right;
 }
 

@@ -11,10 +11,13 @@
  * Grow
  */
 /**
+ * Fold
+ */
+/**
  * Slide
  */
 /**
- * Fades
+ * Fade
  */
 .animate.fade-in {
   animation: fade-in 1s ease forwards;
@@ -41,7 +44,7 @@
   }
 }
 /**
- * Zooms
+ * Grow
  */
 .animate.grow-in {
   animation: grow-in 0.5s ease forwards;
@@ -49,32 +52,32 @@
 }
 
 .animate.grow-in.up {
-  animation: grow-in 0.6s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+  animation: grow-in 0.5s ease forwards;
   transform-origin: bottom center;
 }
 
 .animate.grow-in.down {
-  animation: grow-in 0.6s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+  animation: grow-in 0.5s ease forwards;
   transform-origin: top center;
 }
 
 .animate.grow-in.up.right {
-  animation: grow-in 0.6s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+  animation: grow-in 0.5s ease forwards;
   transform-origin: bottom left;
 }
 
 .animate.grow-in.up.left {
-  animation: grow-in 0.6s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+  animation: grow-in 0.5s ease forwards;
   transform-origin: bottom right;
 }
 
 .animate.grow-in.down.right {
-  animation: grow-in 0.6s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+  animation: grow-in 0.5s ease forwards;
   transform-origin: top left;
 }
 
 .animate.grow-in.down.left {
-  animation: grow-in 0.6s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+  animation: grow-in 0.5s ease forwards;
   transform-origin: top right;
 }
 
@@ -94,32 +97,32 @@
 }
 
 .animate.grow-out.up {
-  animation: grow-out 0.6s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+  animation: grow-out 0.5s ease forwards;
   transform-origin: top center;
 }
 
 .animate.grow-out.down {
-  animation: grow-out 0.6s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+  animation: grow-out 0.5s ease forwards;
   transform-origin: bottom center;
 }
 
 .animate.grow-out.up.right {
-  animation: grow-out 0.6s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+  animation: grow-out 0.5s ease forwards;
   transform-origin: top right;
 }
 
 .animate.grow-out.up.left {
-  animation: grow-out 0.6s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+  animation: grow-out 0.5s ease forwards;
   transform-origin: top left;
 }
 
 .animate.grow-out.down.right {
-  animation: grow-out 0.6s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+  animation: grow-out 0.5s ease forwards;
   transform-origin: bottom right;
 }
 
 .animate.grow-out.down.left {
-  animation: grow-out 0.6s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+  animation: grow-out 0.5s ease forwards;
   transform-origin: bottom left;
 }
 
@@ -229,7 +232,251 @@
   }
 }
 /**
- * Slides
+ * Fold
+ */
+.animate.fold-in-horizontally {
+  animation: fold-in-horizontally 0.7s ease forwards;
+  transform-origin: center;
+}
+
+.animate.fold-in-horizontally.right {
+  animation: fold-in-horizontally 0.7s ease forwards;
+  transform-origin: top left;
+}
+
+.animate.fold-in-horizontally.left {
+  animation: fold-in-horizontally 0.7s ease forwards;
+  transform-origin: top right;
+}
+
+@keyframes fold-in-horizontally {
+  0% {
+    transform: scale(0, 0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(0, 1);
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+.animate.fold-out-horizontally {
+  animation: fold-out-horizontally 0.7s ease forwards;
+  transform-origin: center;
+}
+
+.animate.fold-out-horizontally.right {
+  animation: fold-out-horizontally 0.7s ease forwards;
+  transform-origin: top right;
+}
+
+.animate.fold-out-horizontally.left {
+  animation: fold-out-horizontally 0.7s ease forwards;
+  transform-origin: top left;
+}
+
+@keyframes fold-out-horizontally {
+  0% {
+    transform: none;
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0, 1);
+  }
+  100% {
+    transform: scale(0, 0);
+    opacity: 0;
+  }
+}
+.animate.fold-in-vertically {
+  animation: fold-in-vertically 0.7s ease forwards;
+  transform-origin: center;
+}
+
+.animate.fold-in-vertically.up {
+  animation: fold-in-vertically 0.7s ease forwards;
+  transform-origin: bottom center;
+}
+
+.animate.fold-in-vertically.down {
+  animation: fold-in-vertically 0.7s ease forwards;
+  transform-origin: top center;
+}
+
+@keyframes fold-in-vertically {
+  0% {
+    transform: scale(0, 0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1, 0);
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+.animate.fold-out-vertically {
+  animation: fold-out-vertically 0.7s ease forwards;
+  transform-origin: center;
+}
+
+.animate.fold-out-vertically.up {
+  animation: fold-out-vertically 0.7s ease forwards;
+  transform-origin: top center;
+}
+
+.animate.fold-out-vertically.down {
+  animation: fold-out-vertically 0.7s ease forwards;
+  transform-origin: bottom center;
+}
+
+@keyframes fold-out-vertically {
+  0% {
+    transform: none;
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1, 0);
+  }
+  100% {
+    transform: scale(0, 0);
+    opacity: 0;
+  }
+}
+.animate.fold-bounce-in-horizontally {
+  animation: fold-bounce-in-horizontally 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+  transform-origin: center;
+}
+
+.animate.fold-bounce-in-horizontally.right {
+  animation: fold-bounce-in-horizontally 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+  transform-origin: top left;
+}
+
+.animate.fold-bounce-in-horizontally.left {
+  animation: fold-bounce-in-horizontally 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+  transform-origin: top right;
+}
+
+@keyframes fold-bounce-in-horizontally {
+  0% {
+    transform: scale(0, 0);
+    opacity: 0;
+  }
+  40% {
+    transform: scale(0, 1);
+  }
+  60% {
+    transform: scale(1.05, 1);
+    opacity: 1;
+  }
+  80% {
+    transform: scale(0.95, 1);
+  }
+  100% {
+    transform: none;
+  }
+}
+.animate.fold-bounce-out-horizontally {
+  animation: fold-bounce-out-horizontally 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+  transform-origin: center;
+}
+
+.animate.fold-bounce-out-horizontally.right {
+  animation: fold-bounce-out-horizontally 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+  transform-origin: top right;
+}
+
+.animate.fold-bounce-out-horizontally.left {
+  animation: fold-bounce-out-horizontally 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+  transform-origin: top left;
+}
+
+@keyframes fold-bounce-out-horizontally {
+  0%, 30% {
+    transform: none;
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1, 1);
+  }
+  70% {
+    transform: scale(0, 1);
+  }
+  100% {
+    transform: scale(0, 0);
+    opacity: 0;
+  }
+}
+.animate.fold-bounce-in-vertically {
+  animation: fold-bounce-in-vertically 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+  transform-origin: center;
+}
+
+.animate.fold-bounce-in-vertically.up {
+  animation: fold-bounce-in-vertically 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+  transform-origin: bottom center;
+}
+
+.animate.fold-bounce-in-vertically.down {
+  animation: fold-bounce-in-vertically 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+  transform-origin: top center;
+}
+
+@keyframes fold-bounce-in-vertically {
+  0% {
+    transform: scale(0, 0);
+    opacity: 0;
+  }
+  40% {
+    transform: scale(1, 0);
+  }
+  60% {
+    transform: scale(1, 1.05);
+    opacity: 1;
+  }
+  80% {
+    transform: scale(1, 0.95);
+  }
+  100% {
+    transform: none;
+  }
+}
+.animate.fold-bounce-out-vertically {
+  animation: fold-bounce-out-vertically 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+  transform-origin: center;
+}
+
+.animate.fold-bounce-out-vertically.up {
+  animation: fold-bounce-out-vertically 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+  transform-origin: top center;
+}
+
+.animate.fold-bounce-out-vertically.down {
+  animation: fold-bounce-out-vertically 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+  transform-origin: bottom center;
+}
+
+@keyframes fold-bounce-out-vertically {
+  0%, 30% {
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1, 1.1);
+  }
+  70% {
+    transform: scale(1, 0);
+  }
+  100% {
+    transform: scale(0, 0);
+    opacity: 0;
+  }
+}
+/**
+ * Slide
  */
 .animate.slide-in-horizontally,
 .animate.slide-in-horizontally.right {

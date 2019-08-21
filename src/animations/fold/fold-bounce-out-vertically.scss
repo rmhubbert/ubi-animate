@@ -1,0 +1,34 @@
+.animate.fold-bounce-out-vertically {
+    animation: fold-bounce-out-vertically $foldBounceOutTime
+        $foldBounceOutEasing forwards;
+    transform-origin: center;
+}
+
+.animate.fold-bounce-out-vertically.up {
+    animation: fold-bounce-out-vertically $foldBounceOutTime
+        $foldBounceOutEasing forwards;
+    transform-origin: top center;
+}
+
+.animate.fold-bounce-out-vertically.down {
+    animation: fold-bounce-out-vertically $foldBounceOutTime
+        $foldBounceOutEasing forwards;
+    transform-origin: bottom center;
+}
+
+@keyframes fold-bounce-out-vertically {
+    0%,
+    30% {
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1, #{$foldBounceOut});
+    }
+    70% {
+        transform: scale(1, 0);
+    }
+    100% {
+        transform: scale(0, 0);
+        opacity: 0;
+    }
+}

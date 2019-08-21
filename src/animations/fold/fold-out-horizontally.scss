@@ -1,0 +1,28 @@
+.animate.fold-out-horizontally {
+    animation: fold-out-horizontally $foldOutTime $foldOutEasing forwards;
+    transform-origin: center;
+}
+
+.animate.fold-out-horizontally.right {
+    animation: fold-out-horizontally $foldOutTime $foldOutEasing forwards;
+    transform-origin: top right;
+}
+
+.animate.fold-out-horizontally.left {
+    animation: fold-out-horizontally $foldOutTime $foldOutEasing forwards;
+    transform-origin: top left;
+}
+
+@keyframes fold-out-horizontally {
+    0% {
+        transform: none;
+        opacity: 1;
+    }
+    50% {
+        transform: scale(0, 1);
+    }
+    100% {
+        transform: scale(0, 0);
+        opacity: 0;
+    }
+}
