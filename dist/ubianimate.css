@@ -17,7 +17,17 @@
  * Fades
  */
 .animate.fade-in {
-  animation: fade-in 1s ease forwards;
+  -webkit-animation: fade-in 1s ease forwards;
+          animation: fade-in 1s ease forwards;
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fade-in {
@@ -29,7 +39,17 @@
   }
 }
 .animate.fade-out {
-  animation: fade-out 1s ease forwards;
+  -webkit-animation: fade-out 1s ease forwards;
+          animation: fade-out 1s ease forwards;
+}
+
+@-webkit-keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 @keyframes fade-out {
@@ -44,7 +64,19 @@
  * Zooms
  */
 .animate.zoom-in {
-  animation: zoom-in 0.5s ease forwards;
+  -webkit-animation: zoom-in 0.5s ease forwards;
+          animation: zoom-in 0.5s ease forwards;
+}
+
+@-webkit-keyframes zoom-in {
+  from {
+    transform: scale(0, 0);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
 }
 
 @keyframes zoom-in {
@@ -58,7 +90,19 @@
   }
 }
 .animate.zoom-out {
-  animation: zoom-out 0.5s ease forwards;
+  -webkit-animation: zoom-out 0.5s ease forwards;
+          animation: zoom-out 0.5s ease forwards;
+}
+
+@-webkit-keyframes zoom-out {
+  from {
+    transform: none;
+    opacity: 1;
+  }
+  to {
+    transform: scale(0, 0);
+    opacity: 0;
+  }
 }
 
 @keyframes zoom-out {
@@ -72,7 +116,23 @@
   }
 }
 .animate.zoom-bounce-in {
-  animation: zoom-bounce-in 0.6s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+  -webkit-animation: zoom-bounce-in 0.6s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+          animation: zoom-bounce-in 0.6s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+}
+
+@-webkit-keyframes zoom-bounce-in {
+  0% {
+    transform: scale(0, 0);
+  }
+  60% {
+    transform: scale(1.05, 1.05);
+  }
+  80% {
+    transform: scale(0.95, 0.95);
+  }
+  100% {
+    transform: none;
+  }
 }
 
 @keyframes zoom-bounce-in {
@@ -90,7 +150,20 @@
   }
 }
 .animate.zoom-bounce-out {
-  animation: zoom-bounce-out 0.6s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+  -webkit-animation: zoom-bounce-out 0.6s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+          animation: zoom-bounce-out 0.6s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+}
+
+@-webkit-keyframes zoom-bounce-out {
+  0%, 40% {
+    transform: none;
+  }
+  70% {
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    transform: scale(0, 0);
+  }
 }
 
 @keyframes zoom-bounce-out {
@@ -108,16 +181,35 @@
  * Slides
  */
 .animate.slide-in-horizontally.right {
-  animation: slide-in-right 0.7s cubic-bezier(0.9, 0.55, 0.9, 1) forwards;
+  -webkit-animation: slide-in-right 0.7s cubic-bezier(0.9, 0.55, 0.9, 1) forwards;
+          animation: slide-in-right 0.7s cubic-bezier(0.9, 0.55, 0.9, 1) forwards;
 }
 
 .animate.slide-in-horizontally.left {
-  animation: slide-in-left 0.7s cubic-bezier(0.9, 0.55, 0.9, 1) forwards;
+  -webkit-animation: slide-in-left 0.7s cubic-bezier(0.9, 0.55, 0.9, 1) forwards;
+          animation: slide-in-left 0.7s cubic-bezier(0.9, 0.55, 0.9, 1) forwards;
+}
+
+@-webkit-keyframes slide-in-right {
+  from {
+    transform: translate3d(-25vw, 0, 0);
+  }
+  to {
+    transform: none;
+  }
 }
 
 @keyframes slide-in-right {
   from {
     transform: translate3d(-25vw, 0, 0);
+  }
+  to {
+    transform: none;
+  }
+}
+@-webkit-keyframes slide-in-left {
+  from {
+    transform: translate3d(25vw, 0, 0);
   }
   to {
     transform: none;
@@ -132,11 +224,22 @@
   }
 }
 .animate.slide-out-horizontally.right {
-  animation: slide-out-right 0.7s cubic-bezier(0.9, 0.55, 0.9, 1) forwards;
+  -webkit-animation: slide-out-right 0.7s cubic-bezier(0.9, 0.55, 0.9, 1) forwards;
+          animation: slide-out-right 0.7s cubic-bezier(0.9, 0.55, 0.9, 1) forwards;
 }
 
 .animate.slide-out-horizontally.left {
-  animation: slide-out-left 0.7s cubic-bezier(0.9, 0.55, 0.9, 1) forwards;
+  -webkit-animation: slide-out-left 0.7s cubic-bezier(0.9, 0.55, 0.9, 1) forwards;
+          animation: slide-out-left 0.7s cubic-bezier(0.9, 0.55, 0.9, 1) forwards;
+}
+
+@-webkit-keyframes slide-out-right {
+  from {
+    transform: none;
+  }
+  to {
+    transform: translate3d(25vw, 0, 0);
+  }
 }
 
 @keyframes slide-out-right {
@@ -145,6 +248,14 @@
   }
   to {
     transform: translate3d(25vw, 0, 0);
+  }
+}
+@-webkit-keyframes slide-out-left {
+  from {
+    transform: none;
+  }
+  to {
+    transform: translate3d(-25vw, 0, 0);
   }
 }
 @keyframes slide-out-left {
@@ -156,16 +267,35 @@
   }
 }
 .animate.slide-in-vertically.up {
-  animation: slide-in-up 0.7s cubic-bezier(0.9, 0.55, 0.9, 1) forwards;
+  -webkit-animation: slide-in-up 0.7s cubic-bezier(0.9, 0.55, 0.9, 1) forwards;
+          animation: slide-in-up 0.7s cubic-bezier(0.9, 0.55, 0.9, 1) forwards;
 }
 
 .animate.slide-in-vertically.down {
-  animation: slide-in-down 0.7s cubic-bezier(0.9, 0.55, 0.9, 1) forwards;
+  -webkit-animation: slide-in-down 0.7s cubic-bezier(0.9, 0.55, 0.9, 1) forwards;
+          animation: slide-in-down 0.7s cubic-bezier(0.9, 0.55, 0.9, 1) forwards;
+}
+
+@-webkit-keyframes slide-in-up {
+  from {
+    transform: translate3d(0, 25vh, 0);
+  }
+  to {
+    transform: none;
+  }
 }
 
 @keyframes slide-in-up {
   from {
     transform: translate3d(0, 25vh, 0);
+  }
+  to {
+    transform: none;
+  }
+}
+@-webkit-keyframes slide-in-down {
+  from {
+    transform: translate3d(0, -25vh, 0);
   }
   to {
     transform: none;
@@ -180,11 +310,22 @@
   }
 }
 .animate.slide-out-vertically.up {
-  animation: slide-out-up 0.7s cubic-bezier(0.9, 0.55, 0.9, 1) forwards;
+  -webkit-animation: slide-out-up 0.7s cubic-bezier(0.9, 0.55, 0.9, 1) forwards;
+          animation: slide-out-up 0.7s cubic-bezier(0.9, 0.55, 0.9, 1) forwards;
 }
 
 .animate.slide-out-vertically.down {
-  animation: slide-out-down 0.7s cubic-bezier(0.9, 0.55, 0.9, 1) forwards;
+  -webkit-animation: slide-out-down 0.7s cubic-bezier(0.9, 0.55, 0.9, 1) forwards;
+          animation: slide-out-down 0.7s cubic-bezier(0.9, 0.55, 0.9, 1) forwards;
+}
+
+@-webkit-keyframes slide-out-up {
+  from {
+    transform: none;
+  }
+  to {
+    transform: translate3d(0, -25vh, 0);
+  }
 }
 
 @keyframes slide-out-up {
@@ -193,6 +334,14 @@
   }
   to {
     transform: translate3d(0, -25vh, 0);
+  }
+}
+@-webkit-keyframes slide-out-down {
+  from {
+    transform: none;
+  }
+  to {
+    transform: translate3d(0, 25vh, 0);
   }
 }
 @keyframes slide-out-down {
@@ -204,11 +353,28 @@
   }
 }
 .animate.slide-bounce-in-vertically.up {
-  animation: slide-bounce-in-up 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+  -webkit-animation: slide-bounce-in-up 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+          animation: slide-bounce-in-up 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
 }
 
 .animate.slide-bounce-in-vertically.down {
-  animation: slide-bounce-in-down 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+  -webkit-animation: slide-bounce-in-down 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+          animation: slide-bounce-in-down 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+}
+
+@-webkit-keyframes slide-bounce-in-up {
+  0% {
+    transform: translate3d(0, 25vh, 0);
+  }
+  60% {
+    transform: translate3d(0, -6px, 0);
+  }
+  80% {
+    transform: translate3d(0, 4px, 0);
+  }
+  100% {
+    transform: none;
+  }
 }
 
 @keyframes slide-bounce-in-up {
@@ -220,6 +386,20 @@
   }
   80% {
     transform: translate3d(0, 4px, 0);
+  }
+  100% {
+    transform: none;
+  }
+}
+@-webkit-keyframes slide-bounce-in-down {
+  0% {
+    transform: translate3d(0, -25vh, 0);
+  }
+  60% {
+    transform: translate3d(0, 6px, 0);
+  }
+  80% {
+    transform: translate3d(0, -4px, 0);
   }
   100% {
     transform: none;
@@ -240,11 +420,25 @@
   }
 }
 .animate.slide-bounce-out-vertically.up {
-  animation: slide-bounce-out-up 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+  -webkit-animation: slide-bounce-out-up 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+          animation: slide-bounce-out-up 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
 }
 
 .animate.slide-bounce-out-vertically.down {
-  animation: slide-bounce-out-down 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+  -webkit-animation: slide-bounce-out-down 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+          animation: slide-bounce-out-down 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+}
+
+@-webkit-keyframes slide-bounce-out-up {
+  0%, 40% {
+    transform: none;
+  }
+  70% {
+    transform: translate3d(0, 12px, 0);
+  }
+  100% {
+    transform: translate3d(0, -25vh, 0);
+  }
 }
 
 @keyframes slide-bounce-out-up {
@@ -256,6 +450,17 @@
   }
   100% {
     transform: translate3d(0, -25vh, 0);
+  }
+}
+@-webkit-keyframes slide-bounce-out-down {
+  0%, 40% {
+    transform: none;
+  }
+  70% {
+    transform: translate3d(0, -12px, 0);
+  }
+  100% {
+    transform: translate3d(0, 25vh, 0);
   }
 }
 @keyframes slide-bounce-out-down {
@@ -270,11 +475,28 @@
   }
 }
 .animate.slide-bounce-in-horizontally.right {
-  animation: slide-bounce-in-right 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+  -webkit-animation: slide-bounce-in-right 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+          animation: slide-bounce-in-right 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
 }
 
 .animate.slide-bounce-in-horizontally.left {
-  animation: slide-bounce-in-left 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+  -webkit-animation: slide-bounce-in-left 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+          animation: slide-bounce-in-left 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+}
+
+@-webkit-keyframes slide-bounce-in-right {
+  0% {
+    transform: translate3d(-25vw, 0, 0);
+  }
+  60% {
+    transform: translate3d(6px, 0, 0);
+  }
+  80% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  100% {
+    transform: none;
+  }
 }
 
 @keyframes slide-bounce-in-right {
@@ -286,6 +508,20 @@
   }
   80% {
     transform: translate3d(-4px, 0, 0);
+  }
+  100% {
+    transform: none;
+  }
+}
+@-webkit-keyframes slide-bounce-in-left {
+  0% {
+    transform: translate3d(25vw, 0, 0);
+  }
+  60% {
+    transform: translate3d(-6px, 0, 0);
+  }
+  80% {
+    transform: translate3d(4px, 0, 0);
   }
   100% {
     transform: none;
@@ -306,11 +542,25 @@
   }
 }
 .animate.slide-bounce-out-horizontally.right {
-  animation: slide-bounce-out-right 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+  -webkit-animation: slide-bounce-out-right 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+          animation: slide-bounce-out-right 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
 }
 
 .animate.slide-bounce-out-horizontally.left {
-  animation: slide-bounce-out-left 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+  -webkit-animation: slide-bounce-out-left 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+          animation: slide-bounce-out-left 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+}
+
+@-webkit-keyframes slide-bounce-out-right {
+  0%, 40% {
+    transform: none;
+  }
+  70% {
+    transform: translate3d(-12px, 0, 0);
+  }
+  100% {
+    transform: translate3d(25vw, 0, 0);
+  }
 }
 
 @keyframes slide-bounce-out-right {
@@ -322,6 +572,17 @@
   }
   100% {
     transform: translate3d(25vw, 0, 0);
+  }
+}
+@-webkit-keyframes slide-bounce-out-left {
+  0%, 40% {
+    transform: none;
+  }
+  70% {
+    transform: translate3d(12px, 0, 0);
+  }
+  100% {
+    transform: translate3d(-25vw, 0, 0);
   }
 }
 @keyframes slide-bounce-out-left {
@@ -336,4 +597,4 @@
   }
 }
 
-/*# sourceMappingURL=ubianimate.css.map */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3NyYy91YmlhbmltYXRlLnNjc3MiLCIuLi9zcmMvX3ZhcmlhYmxlcy5zY3NzIiwiLi4vc3JjL2FuaW1hdGlvbnMvZmFkZXMvZmFkZS1pbi5zY3NzIiwidWJpYW5pbWF0ZS5jc3MiLCIuLi9zcmMvYW5pbWF0aW9ucy9mYWRlcy9mYWRlLW91dC5zY3NzIiwiLi4vc3JjL2FuaW1hdGlvbnMvem9vbXMvem9vbS1pbi5zY3NzIiwiLi4vc3JjL2FuaW1hdGlvbnMvem9vbXMvem9vbS1vdXQuc2NzcyIsIi4uL3NyYy9hbmltYXRpb25zL3pvb21zL3pvb20tYm91bmNlLWluLnNjc3MiLCIuLi9zcmMvYW5pbWF0aW9ucy96b29tcy96b29tLWJvdW5jZS1vdXQuc2NzcyIsIi4uL3NyYy9hbmltYXRpb25zL3NsaWRlcy9zbGlkZS1pbi1ob3Jpem9udGFsbHkuc2NzcyIsIi4uL3NyYy9hbmltYXRpb25zL3NsaWRlcy9zbGlkZS1vdXQtaG9yaXpvbnRhbGx5LnNjc3MiLCIuLi9zcmMvYW5pbWF0aW9ucy9zbGlkZXMvc2xpZGUtaW4tdmVydGljYWxseS5zY3NzIiwiLi4vc3JjL2FuaW1hdGlvbnMvc2xpZGVzL3NsaWRlLW91dC12ZXJ0aWNhbGx5LnNjc3MiLCIuLi9zcmMvYW5pbWF0aW9ucy9zbGlkZXMvc2xpZGUtYm91bmNlLWluLXZlcnRpY2FsbHkuc2NzcyIsIi4uL3NyYy9hbmltYXRpb25zL3NsaWRlcy9zbGlkZS1ib3VuY2Utb3V0LXZlcnRpY2FsbHkuc2NzcyIsIi4uL3NyYy9hbmltYXRpb25zL3NsaWRlcy9zbGlkZS1ib3VuY2UtaW4taG9yaXpvbnRhbGx5LnNjc3MiLCIuLi9zcmMvYW5pbWF0aW9ucy9zbGlkZXMvc2xpZGUtYm91bmNlLW91dC1ob3Jpem9udGFsbHkuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7RUFBQTtBQ0FBOztFQUFBO0FBUUE7O0VBQUE7QUFRQTs7RUFBQTtBQWdCQTs7RUFBQTtBRDNCQTs7RUFBQTtBRUxBO0VBQ0ks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 */
