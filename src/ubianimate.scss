@@ -10,6 +10,18 @@
 @import "./animations/fade/fade-out";
 
 /**
+ * Slide
+ */
+@import "./animations/slide/slide-in-horizontally";
+@import "./animations/slide/slide-out-horizontally";
+@import "./animations/slide/slide-in-vertically";
+@import "./animations/slide/slide-out-vertically";
+@import "./animations/slide/slide-bounce-in-vertically";
+@import "./animations/slide/slide-bounce-out-vertically";
+@import "./animations/slide/slide-bounce-in-horizontally";
+@import "./animations/slide/slide-bounce-out-horizontally";
+
+/**
  * Grow
  */
 @import "./animations/grow/grow-in-horizontally-vertically";
@@ -26,13 +38,7 @@
 @import "./animations/grow/grow-bounce-out-vertically";
 
 /**
- * Slide
+ * Swing
  */
-@import "./animations/slide/slide-in-horizontally";
-@import "./animations/slide/slide-out-horizontally";
-@import "./animations/slide/slide-in-vertically";
-@import "./animations/slide/slide-out-vertically";
-@import "./animations/slide/slide-bounce-in-vertically";
-@import "./animations/slide/slide-bounce-out-vertically";
-@import "./animations/slide/slide-bounce-in-horizontally";
-@import "./animations/slide/slide-bounce-out-horizontally";
+@import "./animations/swing/swing-in-horizontally";
+@import "./animations/swing/swing-out-horizontally";

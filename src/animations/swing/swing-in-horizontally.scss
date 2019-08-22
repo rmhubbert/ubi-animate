@@ -1,0 +1,25 @@
+.animate.swing-in-horizontally {
+    animation: swing-in-horizontally $swingInTime $swingInEasing forwards;
+    transform-origin: center;
+}
+
+.animate.swing-in-horizontally.right {
+    animation: swing-in-horizontally $swingInTime $swingInEasing forwards;
+    transform-origin: center left;
+}
+
+.animate.swing-in-horizontally.left {
+    animation: swing-in-horizontally $swingInTime $swingInEasing forwards;
+    transform-origin: center right;
+}
+
+@keyframes swing-in-horizontally {
+    0% {
+        transform: rotateY(-90deg);
+        opacity: 0;
+    }
+    100% {
+        transform: none;
+        opacity: 1;
+    }
+}
