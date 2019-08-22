@@ -1,0 +1,23 @@
+.animate.swing-out-vertically {
+    animation: swing-out-vertically $swingOutTime $swingOutEasing forwards;
+    transform-origin: center;
+}
+
+.animate.swing-out-vertically.up {
+    animation: swing-out-vertically $swingOutTime $swingOutEasing forwards;
+    transform-origin: top center;
+}
+
+.animate.swing-out-vertically.down {
+    animation: swing-out-vertically $swingOutTime $swingOutEasing forwards;
+    transform-origin: bottom center;
+}
+
+@keyframes swing-out-vertically {
+    0% {
+        transform: none;
+    }
+    100% {
+        transform: rotateX(90deg);
+    }
+}

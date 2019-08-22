@@ -17,7 +17,7 @@ $fadeOutTime: $fadeInTime;
 /**
  * Grow
  */
-$growInEasing: ease;
+$growInEasing: cubic-bezier(0.9, 0.55, 0.9, 1);
 $growInTime: 0.7s;
 $growOutEasing: $growInEasing;
 $growOutTime: $growInTime;
@@ -33,18 +33,10 @@ $growBounceOut: 1.1;
 /**
  * Swing
  */
-$swingInEasing: ease;
-$swingInTime: 0.7s;
+$swingInEasing: cubic-bezier(0.9, 0.55, 0.9, 1);
+$swingInTime: 0.5s;
 $swingOutEasing: $swingInEasing;
 $swingOutTime: $swingInTime;
-
-$swingBounceInEasing: cubic-bezier(0.88, 0.54, 0.91, 1);
-$swingBounceInTime: 0.7s;
-$swingBounceOutEasing: $swingBounceInEasing;
-$swingBounceOutTime: $swingBounceInTime;
-$swingBounceIn: 1.05;
-$swingBounceDuring: 0.95;
-$swingBounceOut: 1.1;
 
 /**
  * Slide
