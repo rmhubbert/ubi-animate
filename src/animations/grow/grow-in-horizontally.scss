@@ -16,13 +16,11 @@
 @keyframes grow-in-horizontally {
     0% {
         transform: scale(0, 0);
-        opacity: 0;
     }
     50% {
         transform: scale(0, 1);
     }
     100% {
         transform: none;
-        opacity: 1;
     }
 }

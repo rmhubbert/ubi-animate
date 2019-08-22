@@ -1,0 +1,26 @@
+.animate.fade-shake-in-vertically {
+    animation: fade-shake-in-vertically $fadeInTime $fadeInEasing forwards;
+}
+
+@keyframes fade-shake-in-vertically {
+    0% {
+        opacity: 0;
+        transform: none;
+    }
+    69% {
+        opacity: 1;
+        transform: none;
+    }
+    70% {
+        transform: translate3d(0, -#{$fadeShake}, 0);
+    }
+    80% {
+        transform: translate3d(0, #{$fadeShake}, 0);
+    }
+    90% {
+        transform: translate3d(0, -#{$fadeShake}, 0);
+    }
+    100% {
+        transform: none;
+    }
+}

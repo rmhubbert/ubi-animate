@@ -13,12 +13,13 @@ $fadeInEasing: ease;
 $fadeInTime: 1s;
 $fadeOutEasing: $fadeInEasing;
 $fadeOutTime: $fadeInTime;
+$fadeShake: 5px;
 
 /**
  * Grow
  */
 $growInEasing: cubic-bezier(0.9, 0.55, 0.9, 1);
-$growInTime: 0.7s;
+$growInTime: 0.5s;
 $growOutEasing: $growInEasing;
 $growOutTime: $growInTime;
 

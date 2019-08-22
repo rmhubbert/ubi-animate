@@ -7,19 +7,19 @@
 }
 
 @keyframes slide-in-up {
-    from {
+    0% {
         transform: translate3d(0, #{$bottomClearance}, 0);
     }
-    to {
+    100% {
         transform: none;
     }
 }
 
 @keyframes slide-in-down {
-    from {
+    0% {
         transform: translate3d(0, -#{$topClearance}, 0);
     }
-    to {
+    100% {
         transform: none;
     }
 }

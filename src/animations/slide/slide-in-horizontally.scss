@@ -8,19 +8,19 @@
 }
 
 @keyframes slide-in-right {
-    from {
+    0% {
         transform: translate3d(-#{$rightClearance}, 0, 0);
     }
-    to {
+    100% {
         transform: none;
     }
 }
 
 @keyframes slide-in-left {
-    from {
+    0% {
         transform: translate3d(#{$leftClearance}, 0, 0);
     }
-    to {
+    100% {
         transform: none;
     }
 }

@@ -8,19 +8,19 @@
 }
 
 @keyframes slide-out-right {
-    from {
+    0% {
         transform: none;
     }
-    to {
+    100% {
         transform: translate3d(#{$rightClearance}, 0, 0);
     }
 }
 
 @keyframes slide-out-left {
-    from {
+    0% {
         transform: none;
     }
-    to {
+    100% {
         transform: translate3d(-#{$leftClearance}, 0, 0);
     }
 }

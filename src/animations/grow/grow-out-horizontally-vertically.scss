@@ -41,12 +41,10 @@
 }
 
 @keyframes grow-out-horizontally-vertically {
-    from {
+    0% {
         transform: none;
-        opacity: 1;
     }
-    to {
+    100% {
         transform: scale(0, 0);
-        opacity: 0;
     }
 }

@@ -16,13 +16,11 @@
 @keyframes grow-out-vertically {
     0% {
         transform: none;
-        opacity: 1;
     }
     50% {
         transform: scale(1, 0);
     }
     100% {
         transform: scale(0, 0);
-        opacity: 0;
     }
 }

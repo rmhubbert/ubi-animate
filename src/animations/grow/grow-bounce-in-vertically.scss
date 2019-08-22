@@ -19,14 +19,12 @@
 @keyframes grow-bounce-in-vertically {
     0% {
         transform: scale(0, 0);
-        opacity: 0;
     }
     40% {
         transform: scale(1, 0);
     }
     60% {
         transform: scale(1, #{$growBounceIn});
-        opacity: 1;
     }
     80% {
         transform: scale(1, #{$growBounceDuring});

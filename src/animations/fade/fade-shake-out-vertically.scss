@@ -1,0 +1,22 @@
+.animate.fade-shake-out-vertically {
+    animation: fade-shake-out-vertically $fadeInTime $fadeInEasing forwards;
+}
+
+@keyframes fade-shake-out-vertically {
+    0% {
+        transform: translate3d(0, -#{$fadeShake}, 0);
+    }
+    10% {
+        transform: translate3d(0, #{$fadeShake}, 0);
+    }
+    20% {
+        transform: translate3d(0, -#{$fadeShake}, 0);
+    }
+    30% {
+        transform: none;
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

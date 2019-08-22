@@ -27,10 +27,10 @@
                 position: fixed;
                 top: 0;
                 left: 0;
-                margin: 1rem;
+                margin: 20px;
                 z-index: 1000;
                 font-size: 0.9em;
-                width: 20vw;
+                width: 300px;
             }
 
             #notify .notification {
@@ -39,6 +39,7 @@
 
             .select {
                 margin-right: 0.5rem;
+                margin-bottom: 1rem;
             }
 
             .button {
@@ -52,10 +53,6 @@
                 font-size: 2.5rem;
                 letter-spacing: 0.15rem;
             }
-
-            fieldset {
-                margin-bottom: 1rem;
-            }
         </style>
     </head>
     <body>
@@ -65,8 +62,8 @@
                     <div class="container">
                         <h1 class="title">UbiAnimate</h1>
                         <h2 class="subtitle">
-                            Lightweight & configurable CSS animations for toast
-                            / snackbar type notifications
+                            Fast & lightweight CSS animations for toast /
+                            snackbar type notifications
                         </h2>
                         <form>
                             <fieldset>
@@ -75,6 +72,16 @@
                                         <optgroup label="Fade entrances">
                                             <option value="fade-in"
                                                 >Fade in</option
+                                            >
+                                            <option
+                                                value="fade-shake-in-horizontally"
+                                                >Fade in with horizontal
+                                                shake</option
+                                            >
+                                            <option
+                                                value="fade-shake-in-vertically"
+                                                >Fade in with vertical
+                                                shake</option
                                             >
                                         </optgroup>
                                         <optgroup label="Slide entrances">
@@ -87,13 +94,13 @@
                                             >
                                             <option
                                                 value="slide-bounce-in-horizontally"
-                                                >Slide & bounce in
-                                                horizontally</option
+                                                >Slide in horizontally with
+                                                bounce</option
                                             >
                                             <option
                                                 value="slide-bounce-in-vertically"
-                                                >Slide & bounce in
-                                                vertically</option
+                                                >Slide in vertically with
+                                                bounce</option
                                             >
                                         </optgroup>
                                         <optgroup label="Growth entrances">
@@ -110,18 +117,18 @@
                                             >
                                             <option
                                                 value="grow-bounce-in-horizontally"
-                                                >Grow & bounce in
-                                                horizontally</option
+                                                >Grow in horizontally with
+                                                bounce</option
                                             >
                                             <option
                                                 value="grow-bounce-in-vertically"
-                                                >Grow & bounce in
-                                                vertically</option
+                                                >Grow in vertically with
+                                                bounce</option
                                             >
                                             <option
                                                 value="grow-bounce-in-horizontally-vertically"
-                                                >Grow & bounce in horizontally &
-                                                vertically</option
+                                                >Grow in horizontally &
+                                                vertically with bounce</option
                                             >
                                         </optgroup>
                                         <optgroup label="Swing entrances">
@@ -141,6 +148,16 @@
                                             <option value="fade-out"
                                                 >Fade out</option
                                             >
+                                            <option
+                                                value="fade-shake-out-horizontally"
+                                                >Fade out with horizontal
+                                                shake</option
+                                            >
+                                            <option
+                                                value="fade-shake-out-vertically"
+                                                >Fade out with vertical
+                                                shake</option
+                                            >
                                         </optgroup>
                                         <optgroup label="Slide exits">
                                             <option
@@ -152,13 +169,13 @@
                                             >
                                             <option
                                                 value="slide-bounce-out-horizontally"
-                                                >Slide & bounce out
-                                                horizontally</option
+                                                >Slide out horizontally with
+                                                bounce</option
                                             >
                                             <option
                                                 value="slide-bounce-out-vertically"
-                                                >Slide & bounce out
-                                                vertically</option
+                                                >Slide out vertically with
+                                                bounce</option
                                             >
                                         </optgroup>
                                         <optgroup label="Growth exits">
@@ -176,18 +193,18 @@
                                             >
                                             <option
                                                 value="grow-bounce-out-horizontally"
-                                                >Grow & bounce out
-                                                horizontally</option
+                                                >Grow out horizontally with
+                                                bounce</option
                                             >
                                             <option
                                                 value="grow-bounce-out-vertically"
-                                                >Grow & bounce out
-                                                vertically</option
+                                                >Grow out vertically with
+                                                bounce</option
                                             >
                                             <option
                                                 value="grow-bounce-out-horizontally-vertically"
-                                                >Grow & bounce out horizontally
-                                                & vertically</option
+                                                >Grow out horizontally &
+                                                vertically with bounce</option
                                             >
                                         </optgroup>
                                         <optgroup label="Swing exits">
@@ -242,8 +259,8 @@
                 <div class="notification is-primary">
                     <p><strong>UbiAnimate</strong></p>
                     <p>
-                        Lightweight & configurable CSS animations for toast /
-                        snackbar type notifications
+                        Fast & lightweight CSS animations for toast / snackbar
+                        type notifications
                     </p>
                 </div>
             </template>
@@ -290,7 +307,7 @@
                     if (pos[1] === "center") {
                         notify.style.right = "initial";
                         notify.style.left = "50%";
-                        notify.style.marginLeft = "-10vw";
+                        notify.style.marginLeft = "-150px";
                         enter += " center";
                         leave += " center";
                     } else if (pos[1] === "left") {

@@ -19,7 +19,7 @@
 @keyframes grow-bounce-out-vertically {
     0%,
     30% {
-        opacity: 1;
+        transform: none;
     }
     50% {
         transform: scale(1, #{$growBounceOut});
@@ -29,6 +29,5 @@
     }
     100% {
         transform: scale(0, 0);
-        opacity: 0;
     }
 }

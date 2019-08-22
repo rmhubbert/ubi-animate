@@ -1,0 +1,26 @@
+.animate.fade-shake-in-horizontally {
+    animation: fade-shake-in-horizontally $fadeInTime $fadeInEasing forwards;
+}
+
+@keyframes fade-shake-in-horizontally {
+    0% {
+        opacity: 0;
+        transform: none;
+    }
+    69% {
+        opacity: 1;
+        transform: none;
+    }
+    70% {
+        transform: translate3d(-#{$fadeShake}, 0, 0);
+    }
+    80% {
+        transform: translate3d(#{$fadeShake}, 0, 0);
+    }
+    90% {
+        transform: translate3d(-#{$fadeShake}, 0, 0);
+    }
+    100% {
+        transform: none;
+    }
+}
