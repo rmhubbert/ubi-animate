@@ -1,0 +1,52 @@
+.animate.grow-out-horizontally-vertically {
+    animation: grow-out-horizontally-vertically $growOutTime $growOutEasing
+        forwards;
+    transform-origin: center;
+}
+
+.animate.grow-out-horizontally-vertically.up {
+    animation: grow-out-horizontally-vertically $growOutTime $growOutEasing
+        forwards;
+    transform-origin: top center;
+}
+
+.animate.grow-out-horizontally-vertically.down {
+    animation: grow-out-horizontally-vertically $growOutTime $growOutEasing
+        forwards;
+    transform-origin: bottom center;
+}
+
+.animate.grow-out-horizontally-vertically.up.right {
+    animation: grow-out-horizontally-vertically $growOutTime $growOutEasing
+        forwards;
+    transform-origin: top right;
+}
+
+.animate.grow-out-horizontally-vertically.up.left {
+    animation: grow-out-horizontally-vertically $growOutTime $growOutEasing
+        forwards;
+    transform-origin: top left;
+}
+
+.animate.grow-out-horizontally-vertically.down.right {
+    animation: grow-out-horizontally-vertically $growOutTime $growOutEasing
+        forwards;
+    transform-origin: bottom right;
+}
+
+.animate.grow-out-horizontally-vertically.down.left {
+    animation: grow-out-horizontally-vertically $growOutTime $growOutEasing
+        forwards;
+    transform-origin: bottom left;
+}
+
+@keyframes grow-out-horizontally-vertically {
+    from {
+        transform: none;
+        opacity: 1;
+    }
+    to {
+        transform: scale(0, 0);
+        opacity: 0;
+    }
+}

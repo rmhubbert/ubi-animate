@@ -1,0 +1,28 @@
+.animate.grow-out-horizontally {
+    animation: grow-out-horizontally $growOutTime $growOutEasing forwards;
+    transform-origin: center;
+}
+
+.animate.grow-out-horizontally.right {
+    animation: grow-out-horizontally $growOutTime $growOutEasing forwards;
+    transform-origin: top right;
+}
+
+.animate.grow-out-horizontally.left {
+    animation: grow-out-horizontally $growOutTime $growOutEasing forwards;
+    transform-origin: top left;
+}
+
+@keyframes grow-out-horizontally {
+    0% {
+        transform: none;
+        opacity: 1;
+    }
+    50% {
+        transform: scale(0, 1);
+    }
+    100% {
+        transform: scale(0, 0);
+        opacity: 0;
+    }
+}

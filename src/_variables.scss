@@ -18,33 +18,17 @@ $fadeOutTime: $fadeInTime;
  * Grow
  */
 $growInEasing: ease;
-$growInTime: 0.5s;
+$growInTime: 0.7s;
 $growOutEasing: $growInEasing;
 $growOutTime: $growInTime;
 
 $growBounceInEasing: cubic-bezier(0.88, 0.54, 0.91, 1);
-$growBounceInTime: 0.6s;
+$growBounceInTime: 0.7s;
 $growBounceOutEasing: $growBounceInEasing;
 $growBounceOutTime: $growBounceInTime;
 $growBounceIn: 1.05;
 $growBounceDuring: 0.95;
 $growBounceOut: 1.1;
-
-/**
- * Fold
- */
-$foldInEasing: ease;
-$foldInTime: 0.7s;
-$foldOutEasing: $foldInEasing;
-$foldOutTime: $foldInTime;
-
-$foldBounceInEasing: cubic-bezier(0.88, 0.54, 0.91, 1);
-$foldBounceInTime: 0.8s;
-$foldBounceOutEasing: $foldBounceInEasing;
-$foldBounceOutTime: $foldBounceInTime;
-$foldBounceIn: 1.05;
-$foldBounceDuring: 0.95;
-$foldBounceOut: 1.05;
 
 /**
  * Slide

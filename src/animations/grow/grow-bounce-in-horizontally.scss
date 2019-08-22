@@ -1,0 +1,37 @@
+.animate.grow-bounce-in-horizontally {
+    animation: grow-bounce-in-horizontally $growBounceInTime $growBounceInEasing
+        forwards;
+    transform-origin: center;
+}
+
+.animate.grow-bounce-in-horizontally.right {
+    animation: grow-bounce-in-horizontally $growBounceInTime $growBounceInEasing
+        forwards;
+    transform-origin: top left;
+}
+
+.animate.grow-bounce-in-horizontally.left {
+    animation: grow-bounce-in-horizontally $growBounceInTime $growBounceInEasing
+        forwards;
+    transform-origin: top right;
+}
+
+@keyframes grow-bounce-in-horizontally {
+    0% {
+        transform: scale(0, 0);
+        opacity: 0;
+    }
+    40% {
+        transform: scale(0, 1);
+    }
+    60% {
+        transform: scale(#{$growBounceIn}, 1);
+        opacity: 1;
+    }
+    80% {
+        transform: scale(#{$growBounceDuring}, 1);
+    }
+    100% {
+        transform: none;
+    }
+}

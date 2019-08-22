@@ -1,0 +1,35 @@
+.animate.grow-bounce-out-horizontally {
+    animation: grow-bounce-out-horizontally $growBounceOutTime
+        $growBounceOutEasing forwards;
+    transform-origin: center;
+}
+
+.animate.grow-bounce-out-horizontally.right {
+    animation: grow-bounce-out-horizontally $growBounceOutTime
+        $growBounceOutEasing forwards;
+    transform-origin: top right;
+}
+
+.animate.grow-bounce-out-horizontally.left {
+    animation: grow-bounce-out-horizontally $growBounceOutTime
+        $growBounceOutEasing forwards;
+    transform-origin: top left;
+}
+
+@keyframes grow-bounce-out-horizontally {
+    0%,
+    30% {
+        transform: none;
+        opacity: 1;
+    }
+    50% {
+        transform: scale(#{$growBounceOut}, 1);
+    }
+    70% {
+        transform: scale(0, 1);
+    }
+    100% {
+        transform: scale(0, 0);
+        opacity: 0;
+    }
+}

@@ -1,0 +1,28 @@
+.animate.grow-in-vertically {
+    animation: grow-in-vertically $growInTime $growInEasing forwards;
+    transform-origin: center;
+}
+
+.animate.grow-in-vertically.up {
+    animation: grow-in-vertically $growInTime $growInEasing forwards;
+    transform-origin: bottom center;
+}
+
+.animate.grow-in-vertically.down {
+    animation: grow-in-vertically $growInTime $growInEasing forwards;
+    transform-origin: top center;
+}
+
+@keyframes grow-in-vertically {
+    0% {
+        transform: scale(0, 0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1, 0);
+    }
+    100% {
+        transform: none;
+        opacity: 1;
+    }
+}

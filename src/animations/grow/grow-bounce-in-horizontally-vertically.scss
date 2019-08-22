@@ -1,0 +1,56 @@
+.animate.grow-bounce-in-horizontally-vertically {
+    animation: grow-bounce-in-horizontally-vertically $growBounceInTime
+        $growBounceInEasing forwards;
+    transform-origin: center;
+}
+
+.animate.grow-bounce-in-horizontally-vertically.up {
+    animation: grow-bounce-in-horizontally-vertically $growBounceInTime
+        $growBounceInEasing forwards;
+    transform-origin: bottom center;
+}
+
+.animate.grow-bounce-in-horizontally-vertically.down {
+    animation: grow-bounce-in-horizontally-vertically $growBounceInTime
+        $growBounceInEasing forwards;
+    transform-origin: top center;
+}
+
+.animate.grow-bounce-in-horizontally-vertically.up.right {
+    animation: grow-bounce-in-horizontally-vertically $growBounceInTime
+        $growBounceInEasing forwards;
+    transform-origin: bottom left;
+}
+
+.animate.grow-bounce-in-horizontally-vertically.up.left {
+    animation: grow-bounce-in-horizontally-vertically $growBounceInTime
+        $growBounceInEasing forwards;
+    transform-origin: bottom right;
+}
+
+.animate.grow-bounce-in-horizontally-vertically.down.right {
+    animation: grow-bounce-in-horizontally-vertically $growBounceInTime
+        $growBounceInEasing forwards;
+    transform-origin: top left;
+}
+
+.animate.grow-bounce-in-horizontally-vertically.down.left {
+    animation: grow-bounce-in-horizontally-vertically $growBounceInTime
+        $growBounceInEasing forwards;
+    transform-origin: top right;
+}
+
+@keyframes grow-bounce-in-horizontally-vertically {
+    0% {
+        transform: scale(0, 0);
+    }
+    60% {
+        transform: scale(#{$growBounceIn}, #{$growBounceIn});
+    }
+    80% {
+        transform: scale(#{$growBounceDuring}, #{$growBounceDuring});
+    }
+    100% {
+        transform: none;
+    }
+}

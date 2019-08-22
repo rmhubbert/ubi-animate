@@ -11,9 +11,6 @@
  * Grow
  */
 /**
- * Fold
- */
-/**
  * Slide
  */
 /**
@@ -46,42 +43,42 @@
 /**
  * Grow
  */
-.animate.grow-in {
-  animation: grow-in 0.5s ease forwards;
+.animate.grow-in-horizontally-vertically {
+  animation: grow-in-horizontally-vertically 0.7s ease forwards;
   transform-origin: center;
 }
 
-.animate.grow-in.up {
-  animation: grow-in 0.5s ease forwards;
+.animate.grow-in-horizontally-vertically.up {
+  animation: grow-in-horizontally-vertically 0.7s ease forwards;
   transform-origin: bottom center;
 }
 
-.animate.grow-in.down {
-  animation: grow-in 0.5s ease forwards;
+.animate.grow-in-horizontally-vertically.down {
+  animation: grow-in-horizontally-vertically 0.7s ease forwards;
   transform-origin: top center;
 }
 
-.animate.grow-in.up.right {
-  animation: grow-in 0.5s ease forwards;
+.animate.grow-in-horizontally-vertically.up.right {
+  animation: grow-in-horizontally-vertically 0.7s ease forwards;
   transform-origin: bottom left;
 }
 
-.animate.grow-in.up.left {
-  animation: grow-in 0.5s ease forwards;
+.animate.grow-in-horizontally-vertically.up.left {
+  animation: grow-in-horizontally-vertically 0.7s ease forwards;
   transform-origin: bottom right;
 }
 
-.animate.grow-in.down.right {
-  animation: grow-in 0.5s ease forwards;
+.animate.grow-in-horizontally-vertically.down.right {
+  animation: grow-in-horizontally-vertically 0.7s ease forwards;
   transform-origin: top left;
 }
 
-.animate.grow-in.down.left {
-  animation: grow-in 0.5s ease forwards;
+.animate.grow-in-horizontally-vertically.down.left {
+  animation: grow-in-horizontally-vertically 0.7s ease forwards;
   transform-origin: top right;
 }
 
-@keyframes grow-in {
+@keyframes grow-in-horizontally-vertically {
   from {
     transform: scale(0, 0);
     opacity: 0;
@@ -91,42 +88,42 @@
     opacity: 1;
   }
 }
-.animate.grow-out {
-  animation: grow-out 0.5s ease forwards;
+.animate.grow-out-horizontally-vertically {
+  animation: grow-out-horizontally-vertically 0.7s ease forwards;
   transform-origin: center;
 }
 
-.animate.grow-out.up {
-  animation: grow-out 0.5s ease forwards;
+.animate.grow-out-horizontally-vertically.up {
+  animation: grow-out-horizontally-vertically 0.7s ease forwards;
   transform-origin: top center;
 }
 
-.animate.grow-out.down {
-  animation: grow-out 0.5s ease forwards;
+.animate.grow-out-horizontally-vertically.down {
+  animation: grow-out-horizontally-vertically 0.7s ease forwards;
   transform-origin: bottom center;
 }
 
-.animate.grow-out.up.right {
-  animation: grow-out 0.5s ease forwards;
+.animate.grow-out-horizontally-vertically.up.right {
+  animation: grow-out-horizontally-vertically 0.7s ease forwards;
   transform-origin: top right;
 }
 
-.animate.grow-out.up.left {
-  animation: grow-out 0.5s ease forwards;
+.animate.grow-out-horizontally-vertically.up.left {
+  animation: grow-out-horizontally-vertically 0.7s ease forwards;
   transform-origin: top left;
 }
 
-.animate.grow-out.down.right {
-  animation: grow-out 0.5s ease forwards;
+.animate.grow-out-horizontally-vertically.down.right {
+  animation: grow-out-horizontally-vertically 0.7s ease forwards;
   transform-origin: bottom right;
 }
 
-.animate.grow-out.down.left {
-  animation: grow-out 0.5s ease forwards;
+.animate.grow-out-horizontally-vertically.down.left {
+  animation: grow-out-horizontally-vertically 0.7s ease forwards;
   transform-origin: bottom left;
 }
 
-@keyframes grow-out {
+@keyframes grow-out-horizontally-vertically {
   from {
     transform: none;
     opacity: 1;
@@ -136,42 +133,42 @@
     opacity: 0;
   }
 }
-.animate.grow-bounce-in {
-  animation: grow-bounce-in 0.6s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+.animate.grow-bounce-in-horizontally-vertically {
+  animation: grow-bounce-in-horizontally-vertically 0.7s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
   transform-origin: center;
 }
 
-.animate.grow-bounce-in.up {
-  animation: grow-bounce-in 0.6s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+.animate.grow-bounce-in-horizontally-vertically.up {
+  animation: grow-bounce-in-horizontally-vertically 0.7s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
   transform-origin: bottom center;
 }
 
-.animate.grow-bounce-in.down {
-  animation: grow-bounce-in 0.6s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+.animate.grow-bounce-in-horizontally-vertically.down {
+  animation: grow-bounce-in-horizontally-vertically 0.7s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
   transform-origin: top center;
 }
 
-.animate.grow-bounce-in.up.right {
-  animation: grow-bounce-in 0.6s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+.animate.grow-bounce-in-horizontally-vertically.up.right {
+  animation: grow-bounce-in-horizontally-vertically 0.7s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
   transform-origin: bottom left;
 }
 
-.animate.grow-bounce-in.up.left {
-  animation: grow-bounce-in 0.6s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+.animate.grow-bounce-in-horizontally-vertically.up.left {
+  animation: grow-bounce-in-horizontally-vertically 0.7s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
   transform-origin: bottom right;
 }
 
-.animate.grow-bounce-in.down.right {
-  animation: grow-bounce-in 0.6s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+.animate.grow-bounce-in-horizontally-vertically.down.right {
+  animation: grow-bounce-in-horizontally-vertically 0.7s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
   transform-origin: top left;
 }
 
-.animate.grow-bounce-in.down.left {
-  animation: grow-bounce-in 0.6s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+.animate.grow-bounce-in-horizontally-vertically.down.left {
+  animation: grow-bounce-in-horizontally-vertically 0.7s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
   transform-origin: top right;
 }
 
-@keyframes grow-bounce-in {
+@keyframes grow-bounce-in-horizontally-vertically {
   0% {
     transform: scale(0, 0);
   }
@@ -185,42 +182,42 @@
     transform: none;
   }
 }
-.animate.grow-bounce-out {
-  animation: grow-bounce-out 0.6s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+.animate.grow-bounce-out-horizontally-vertically {
+  animation: grow-bounce-out-horizontally-vertically 0.7s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
   transform-origin: center;
 }
 
-.animate.grow-bounce-out.up {
-  animation: grow-bounce-out 0.6s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+.animate.grow-bounce-out-horizontally-vertically.up {
+  animation: grow-bounce-out-horizontally-vertically 0.7s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
   transform-origin: top center;
 }
 
-.animate.grow-bounce-out.down {
-  animation: grow-bounce-out 0.6s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+.animate.grow-bounce-out-horizontally-vertically.down {
+  animation: grow-bounce-out-horizontally-vertically 0.7s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
   transform-origin: bottom center;
 }
 
-.animate.grow-bounce-out.up.right {
-  animation: grow-bounce-out 0.6s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+.animate.grow-bounce-out-horizontally-vertically.up.right {
+  animation: grow-bounce-out-horizontally-vertically 0.7s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
   transform-origin: top right;
 }
 
-.animate.grow-bounce-out.up.left {
-  animation: grow-bounce-out 0.6s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+.animate.grow-bounce-out-horizontally-vertically.up.left {
+  animation: grow-bounce-out-horizontally-vertically 0.7s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
   transform-origin: top left;
 }
 
-.animate.grow-bounce-out.down.right {
-  animation: grow-bounce-out 0.6s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+.animate.grow-bounce-out-horizontally-vertically.down.right {
+  animation: grow-bounce-out-horizontally-vertically 0.7s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
   transform-origin: bottom right;
 }
 
-.animate.grow-bounce-out.down.left {
-  animation: grow-bounce-out 0.6s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+.animate.grow-bounce-out-horizontally-vertically.down.left {
+  animation: grow-bounce-out-horizontally-vertically 0.7s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
   transform-origin: bottom left;
 }
 
-@keyframes grow-bounce-out {
+@keyframes grow-bounce-out-horizontally-vertically {
   0%, 40% {
     transform: none;
   }
@@ -231,25 +228,22 @@
     transform: scale(0, 0);
   }
 }
-/**
- * Fold
- */
-.animate.fold-in-horizontally {
-  animation: fold-in-horizontally 0.7s ease forwards;
+.animate.grow-in-horizontally {
+  animation: grow-in-horizontally 0.7s ease forwards;
   transform-origin: center;
 }
 
-.animate.fold-in-horizontally.right {
-  animation: fold-in-horizontally 0.7s ease forwards;
+.animate.grow-in-horizontally.right {
+  animation: grow-in-horizontally 0.7s ease forwards;
   transform-origin: top left;
 }
 
-.animate.fold-in-horizontally.left {
-  animation: fold-in-horizontally 0.7s ease forwards;
+.animate.grow-in-horizontally.left {
+  animation: grow-in-horizontally 0.7s ease forwards;
   transform-origin: top right;
 }
 
-@keyframes fold-in-horizontally {
+@keyframes grow-in-horizontally {
   0% {
     transform: scale(0, 0);
     opacity: 0;
@@ -262,22 +256,22 @@
     opacity: 1;
   }
 }
-.animate.fold-out-horizontally {
-  animation: fold-out-horizontally 0.7s ease forwards;
+.animate.grow-out-horizontally {
+  animation: grow-out-horizontally 0.7s ease forwards;
   transform-origin: center;
 }
 
-.animate.fold-out-horizontally.right {
-  animation: fold-out-horizontally 0.7s ease forwards;
+.animate.grow-out-horizontally.right {
+  animation: grow-out-horizontally 0.7s ease forwards;
   transform-origin: top right;
 }
 
-.animate.fold-out-horizontally.left {
-  animation: fold-out-horizontally 0.7s ease forwards;
+.animate.grow-out-horizontally.left {
+  animation: grow-out-horizontally 0.7s ease forwards;
   transform-origin: top left;
 }
 
-@keyframes fold-out-horizontally {
+@keyframes grow-out-horizontally {
   0% {
     transform: none;
     opacity: 1;
@@ -290,22 +284,22 @@
     opacity: 0;
   }
 }
-.animate.fold-in-vertically {
-  animation: fold-in-vertically 0.7s ease forwards;
+.animate.grow-in-vertically {
+  animation: grow-in-vertically 0.7s ease forwards;
   transform-origin: center;
 }
 
-.animate.fold-in-vertically.up {
-  animation: fold-in-vertically 0.7s ease forwards;
+.animate.grow-in-vertically.up {
+  animation: grow-in-vertically 0.7s ease forwards;
   transform-origin: bottom center;
 }
 
-.animate.fold-in-vertically.down {
-  animation: fold-in-vertically 0.7s ease forwards;
+.animate.grow-in-vertically.down {
+  animation: grow-in-vertically 0.7s ease forwards;
   transform-origin: top center;
 }
 
-@keyframes fold-in-vertically {
+@keyframes grow-in-vertically {
   0% {
     transform: scale(0, 0);
     opacity: 0;
@@ -318,22 +312,22 @@
     opacity: 1;
   }
 }
-.animate.fold-out-vertically {
-  animation: fold-out-vertically 0.7s ease forwards;
+.animate.grow-out-vertically {
+  animation: grow-out-vertically 0.7s ease forwards;
   transform-origin: center;
 }
 
-.animate.fold-out-vertically.up {
-  animation: fold-out-vertically 0.7s ease forwards;
+.animate.grow-out-vertically.up {
+  animation: grow-out-vertically 0.7s ease forwards;
   transform-origin: top center;
 }
 
-.animate.fold-out-vertically.down {
-  animation: fold-out-vertically 0.7s ease forwards;
+.animate.grow-out-vertically.down {
+  animation: grow-out-vertically 0.7s ease forwards;
   transform-origin: bottom center;
 }
 
-@keyframes fold-out-vertically {
+@keyframes grow-out-vertically {
   0% {
     transform: none;
     opacity: 1;
@@ -346,22 +340,22 @@
     opacity: 0;
   }
 }
-.animate.fold-bounce-in-horizontally {
-  animation: fold-bounce-in-horizontally 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+.animate.grow-bounce-in-horizontally {
+  animation: grow-bounce-in-horizontally 0.7s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
   transform-origin: center;
 }
 
-.animate.fold-bounce-in-horizontally.right {
-  animation: fold-bounce-in-horizontally 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+.animate.grow-bounce-in-horizontally.right {
+  animation: grow-bounce-in-horizontally 0.7s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
   transform-origin: top left;
 }
 
-.animate.fold-bounce-in-horizontally.left {
-  animation: fold-bounce-in-horizontally 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+.animate.grow-bounce-in-horizontally.left {
+  animation: grow-bounce-in-horizontally 0.7s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
   transform-origin: top right;
 }
 
-@keyframes fold-bounce-in-horizontally {
+@keyframes grow-bounce-in-horizontally {
   0% {
     transform: scale(0, 0);
     opacity: 0;
@@ -380,28 +374,28 @@
     transform: none;
   }
 }
-.animate.fold-bounce-out-horizontally {
-  animation: fold-bounce-out-horizontally 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+.animate.grow-bounce-out-horizontally {
+  animation: grow-bounce-out-horizontally 0.7s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
   transform-origin: center;
 }
 
-.animate.fold-bounce-out-horizontally.right {
-  animation: fold-bounce-out-horizontally 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+.animate.grow-bounce-out-horizontally.right {
+  animation: grow-bounce-out-horizontally 0.7s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
   transform-origin: top right;
 }
 
-.animate.fold-bounce-out-horizontally.left {
-  animation: fold-bounce-out-horizontally 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+.animate.grow-bounce-out-horizontally.left {
+  animation: grow-bounce-out-horizontally 0.7s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
   transform-origin: top left;
 }
 
-@keyframes fold-bounce-out-horizontally {
+@keyframes grow-bounce-out-horizontally {
   0%, 30% {
     transform: none;
     opacity: 1;
   }
   50% {
-    transform: scale(1.05, 1);
+    transform: scale(1.1, 1);
   }
   70% {
     transform: scale(0, 1);
@@ -411,22 +405,22 @@
     opacity: 0;
   }
 }
-.animate.fold-bounce-in-vertically {
-  animation: fold-bounce-in-vertically 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+.animate.grow-bounce-in-vertically {
+  animation: grow-bounce-in-vertically 0.7s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
   transform-origin: center;
 }
 
-.animate.fold-bounce-in-vertically.up {
-  animation: fold-bounce-in-vertically 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+.animate.grow-bounce-in-vertically.up {
+  animation: grow-bounce-in-vertically 0.7s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
   transform-origin: bottom center;
 }
 
-.animate.fold-bounce-in-vertically.down {
-  animation: fold-bounce-in-vertically 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+.animate.grow-bounce-in-vertically.down {
+  animation: grow-bounce-in-vertically 0.7s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
   transform-origin: top center;
 }
 
-@keyframes fold-bounce-in-vertically {
+@keyframes grow-bounce-in-vertically {
   0% {
     transform: scale(0, 0);
     opacity: 0;
@@ -445,27 +439,27 @@
     transform: none;
   }
 }
-.animate.fold-bounce-out-vertically {
-  animation: fold-bounce-out-vertically 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+.animate.grow-bounce-out-vertically {
+  animation: grow-bounce-out-vertically 0.7s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
   transform-origin: center;
 }
 
-.animate.fold-bounce-out-vertically.up {
-  animation: fold-bounce-out-vertically 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+.animate.grow-bounce-out-vertically.up {
+  animation: grow-bounce-out-vertically 0.7s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
   transform-origin: top center;
 }
 
-.animate.fold-bounce-out-vertically.down {
-  animation: fold-bounce-out-vertically 0.8s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
+.animate.grow-bounce-out-vertically.down {
+  animation: grow-bounce-out-vertically 0.7s cubic-bezier(0.88, 0.54, 0.91, 1) forwards;
   transform-origin: bottom center;
 }
 
-@keyframes fold-bounce-out-vertically {
+@keyframes grow-bounce-out-vertically {
   0%, 30% {
     opacity: 1;
   }
   50% {
-    transform: scale(1, 1.05);
+    transform: scale(1, 1.1);
   }
   70% {
     transform: scale(1, 0);
