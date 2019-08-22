@@ -1,0 +1,81 @@
+.animate.slide-bounce-out-horizontally-vertically.up.center {
+    animation: slide-bounce-out-up $slideBounceOutTime $slideBounceOutEasing
+        forwards;
+}
+
+.animate.slide-bounce-out-horizontally-vertically.down.center {
+    animation: slide-bounce-out-down $slideBounceOutTime $slideBounceOutEasing
+        forwards;
+}
+
+.animate.slide-bounce-out-horizontally-vertically.up.right {
+    animation: slide-bounce-out-up-right $slideBounceOutTime
+        $slideBounceOutEasing forwards;
+}
+
+.animate.slide-bounce-out-horizontally-vertically.down.right {
+    animation: slide-bounce-out-down-right $slideBounceOutTime
+        $slideBounceOutEasing forwards;
+}
+
+.animate.slide-bounce-out-horizontally-vertically.up.left {
+    animation: slide-bounce-out-up-left $slideBounceOutTime
+        $slideBounceOutEasing forwards;
+}
+
+.animate.slide-bounce-out-horizontally-vertically.down.left {
+    animation: slide-bounce-out-down-left $slideBounceOutTime
+        $slideBounceOutEasing forwards;
+}
+
+@keyframes slide-bounce-out-down-right {
+    0%,
+    40% {
+        transform: none;
+    }
+    70% {
+        transform: translate3d(-#{$slideBounceOut}, -#{$slideBounceOut}, 0);
+    }
+    100% {
+        transform: translate3d(#{$rightClearance}, #{$topClearance}, 0);
+    }
+}
+
+@keyframes slide-bounce-out-up-right {
+    0%,
+    40% {
+        transform: none;
+    }
+    70% {
+        transform: translate3d(-#{$slideBounceOut}, #{$slideBounceOut}, 0);
+    }
+    100% {
+        transform: translate3d(#{$rightClearance}, -#{$topClearance}, 0);
+    }
+}
+
+@keyframes slide-bounce-out-down-left {
+    0%,
+    40% {
+        transform: none;
+    }
+    70% {
+        transform: translate3d(#{$slideBounceOut}, -#{$slideBounceOut}, 0);
+    }
+    100% {
+        transform: translate3d(-#{$leftClearance}, #{$bottomClearance}, 0);
+    }
+}
+
+@keyframes slide-bounce-out-up-left {
+    0%,
+    40% {
+        transform: none;
+    }
+    70% {
+        transform: translate3d(#{$slideBounceOut}, #{$slideBounceOut}, 0);
+    }
+    100% {
+        transform: translate3d(-#{$leftClearance}, -#{$topClearance}, 0);
+    }
+}

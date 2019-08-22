@@ -1,0 +1,101 @@
+.animate.slide-bounce-in-horizontally-vertically.up.center {
+    animation: slide-bounce-in-up $slideBounceInTime $slideBounceInEasing
+        forwards;
+}
+
+.animate.slide-bounce-in-horizontally-vertically.down.center {
+    animation: slide-bounce-in-down $slideBounceInTime $slideBounceInEasing
+        forwards;
+}
+
+.animate.slide-bounce-in-horizontally-vertically.up.right {
+    animation: slide-bounce-in-up-right $slideBounceInTime $slideBounceInEasing
+        forwards;
+}
+
+.animate.slide-bounce-in-horizontally-vertically.down.right {
+    animation: slide-bounce-in-down-right $slideBounceInTime
+        $slideBounceInEasing forwards;
+}
+
+.animate.slide-bounce-in-horizontally-vertically.up.left {
+    animation: slide-bounce-in-up-left $slideBounceInTime $slideBounceInEasing
+        forwards;
+}
+
+.animate.slide-bounce-in-horizontally-vertically.down.left {
+    animation: slide-bounce-in-down-left $slideBounceInTime $slideBounceInEasing
+        forwards;
+}
+
+@keyframes slide-bounce-in-down-right {
+    0% {
+        transform: translate3d(-#{$rightClearance}, -#{$topClearance}, 0);
+    }
+    60% {
+        transform: translate3d(#{$slideBounceIn}, #{$slideBounceIn}, 0);
+    }
+    80% {
+        transform: translate3d(
+            -#{$slideBounceDuring},
+            -#{$slideBounceDuring},
+            0
+        );
+    }
+    100% {
+        transform: none;
+    }
+}
+
+@keyframes slide-bounce-in-up-right {
+    0% {
+        transform: translate3d(-#{$rightClearance}, #{$bottomClearance}, 0);
+    }
+    60% {
+        transform: translate3d(#{$slideBounceIn}, -#{$slideBounceIn}, 0);
+    }
+    80% {
+        transform: translate3d(
+            -#{$slideBounceDuring},
+            #{$slideBounceDuring},
+            0
+        );
+    }
+    100% {
+        transform: none;
+    }
+}
+
+@keyframes slide-bounce-in-down-left {
+    0% {
+        transform: translate3d(#{$leftClearance}, -#{$topClearance}, 0);
+    }
+    60% {
+        transform: translate3d(-#{$slideBounceIn}, #{$slideBounceIn}, 0);
+    }
+    80% {
+        transform: translate3d(
+            #{$slideBounceDuring},
+            -#{$slideBounceDuring},
+            0
+        );
+    }
+    100% {
+        transform: none;
+    }
+}
+
+@keyframes slide-bounce-in-up-left {
+    0% {
+        transform: translate3d(#{$leftClearance}, #{$bottomClearance}, 0);
+    }
+    60% {
+        transform: translate3d(-#{$slideBounceIn}, -#{$slideBounceIn}, 0);
+    }
+    80% {
+        transform: translate3d(#{$slideBounceDuring}, #{$slideBounceDuring}, 0);
+    }
+    100% {
+        transform: none;
+    }
+}
