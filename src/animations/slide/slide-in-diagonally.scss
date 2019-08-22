@@ -1,24 +1,24 @@
-.animate.slide-in-horizontally-vertically.up.center {
+.animate.slide-in-diagonally.up.center {
     animation: slide-in-up $slideInTime $slideInEasing forwards;
 }
 
-.animate.slide-in-horizontally-vertically.down.center {
+.animate.slide-in-diagonally.down.center {
     animation: slide-in-down $slideInTime $slideInEasing forwards;
 }
 
-.animate.slide-in-horizontally-vertically.up.right {
+.animate.slide-in-diagonally.up.right {
     animation: slide-in-up-right $slideInTime $slideInEasing forwards;
 }
 
-.animate.slide-in-horizontally-vertically.down.right {
+.animate.slide-in-diagonally.down.right {
     animation: slide-in-down-right $slideInTime $slideInEasing forwards;
 }
 
-.animate.slide-in-horizontally-vertically.up.left {
+.animate.slide-in-diagonally.up.left {
     animation: slide-in-up-left $slideInTime $slideInEasing forwards;
 }
 
-.animate.slide-in-horizontally-vertically.down.left {
+.animate.slide-in-diagonally.down.left {
     animation: slide-in-down-left $slideInTime $slideInEasing forwards;
 }
 

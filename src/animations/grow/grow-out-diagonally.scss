@@ -1,0 +1,43 @@
+.animate.grow-out-diagonally {
+    animation: grow-out-diagonally $growOutTime $growOutEasing forwards;
+    transform-origin: center;
+}
+
+.animate.grow-out-diagonally.up {
+    animation: grow-out-diagonally $growOutTime $growOutEasing forwards;
+    transform-origin: top center;
+}
+
+.animate.grow-out-diagonally.down {
+    animation: grow-out-diagonally $growOutTime $growOutEasing forwards;
+    transform-origin: bottom center;
+}
+
+.animate.grow-out-diagonally.up.right {
+    animation: grow-out-diagonally $growOutTime $growOutEasing forwards;
+    transform-origin: top right;
+}
+
+.animate.grow-out-diagonally.up.left {
+    animation: grow-out-diagonally $growOutTime $growOutEasing forwards;
+    transform-origin: top left;
+}
+
+.animate.grow-out-diagonally.down.right {
+    animation: grow-out-diagonally $growOutTime $growOutEasing forwards;
+    transform-origin: bottom right;
+}
+
+.animate.grow-out-diagonally.down.left {
+    animation: grow-out-diagonally $growOutTime $growOutEasing forwards;
+    transform-origin: bottom left;
+}
+
+@keyframes grow-out-diagonally {
+    0% {
+        transform: none;
+    }
+    100% {
+        transform: scale(0, 0);
+    }
+}

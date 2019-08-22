@@ -20,22 +20,22 @@
 @import "./animations/slide/slide-out-horizontally";
 @import "./animations/slide/slide-in-vertically";
 @import "./animations/slide/slide-out-vertically";
-@import "./animations/slide/slide-in-horizontally-vertically";
-@import "./animations/slide/slide-out-horizontally-vertically";
+@import "./animations/slide/slide-in-diagonally";
+@import "./animations/slide/slide-out-diagonally";
 @import "./animations/slide/slide-bounce-in-vertically";
 @import "./animations/slide/slide-bounce-out-vertically";
 @import "./animations/slide/slide-bounce-in-horizontally";
 @import "./animations/slide/slide-bounce-out-horizontally";
-@import "./animations/slide/slide-bounce-in-horizontally-vertically";
-@import "./animations/slide/slide-bounce-out-horizontally-vertically";
+@import "./animations/slide/slide-bounce-in-diagonally";
+@import "./animations/slide/slide-bounce-out-diagonally";
 
 /**
  * Grow
  */
-@import "./animations/grow/grow-in-horizontally-vertically";
-@import "./animations/grow/grow-out-horizontally-vertically";
-@import "./animations/grow/grow-bounce-in-horizontally-vertically";
-@import "./animations/grow/grow-bounce-out-horizontally-vertically";
+@import "./animations/grow/grow-in-diagonally";
+@import "./animations/grow/grow-out-diagonally";
+@import "./animations/grow/grow-bounce-in-diagonally";
+@import "./animations/grow/grow-bounce-out-diagonally";
 @import "./animations/grow/grow-in-horizontally";
 @import "./animations/grow/grow-out-horizontally";
 @import "./animations/grow/grow-in-vertically";

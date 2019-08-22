@@ -1,29 +1,29 @@
-.animate.slide-bounce-out-horizontally-vertically.up.center {
+.animate.slide-bounce-out-diagonally.up.center {
     animation: slide-bounce-out-up $slideBounceOutTime $slideBounceOutEasing
         forwards;
 }
 
-.animate.slide-bounce-out-horizontally-vertically.down.center {
+.animate.slide-bounce-out-diagonally.down.center {
     animation: slide-bounce-out-down $slideBounceOutTime $slideBounceOutEasing
         forwards;
 }
 
-.animate.slide-bounce-out-horizontally-vertically.up.right {
+.animate.slide-bounce-out-diagonally.up.right {
     animation: slide-bounce-out-up-right $slideBounceOutTime
         $slideBounceOutEasing forwards;
 }
 
-.animate.slide-bounce-out-horizontally-vertically.down.right {
+.animate.slide-bounce-out-diagonally.down.right {
     animation: slide-bounce-out-down-right $slideBounceOutTime
         $slideBounceOutEasing forwards;
 }
 
-.animate.slide-bounce-out-horizontally-vertically.up.left {
+.animate.slide-bounce-out-diagonally.up.left {
     animation: slide-bounce-out-up-left $slideBounceOutTime
         $slideBounceOutEasing forwards;
 }
 
-.animate.slide-bounce-out-horizontally-vertically.down.left {
+.animate.slide-bounce-out-diagonally.down.left {
     animation: slide-bounce-out-down-left $slideBounceOutTime
         $slideBounceOutEasing forwards;
 }
