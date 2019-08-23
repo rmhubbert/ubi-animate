@@ -5,14 +5,10 @@
 }
 
 .animate.grow-bounce-in-vertically.up {
-    animation: grow-bounce-in-vertically $growBounceInTime $growBounceInEasing
-        forwards;
     transform-origin: bottom center;
 }
 
 .animate.grow-bounce-in-vertically.down {
-    animation: grow-bounce-in-vertically $growBounceInTime $growBounceInEasing
-        forwards;
     transform-origin: top center;
 }
 

@@ -4,32 +4,26 @@
 }
 
 .animate.grow-in-diagonally.up {
-    animation: grow-in-diagonally $growInTime $growInEasing forwards;
     transform-origin: bottom center;
 }
 
 .animate.grow-in-diagonally.down {
-    animation: grow-in-diagonally $growInTime $growInEasing forwards;
     transform-origin: top center;
 }
 
 .animate.grow-in-diagonally.up.right {
-    animation: grow-in-diagonally $growInTime $growInEasing forwards;
     transform-origin: bottom left;
 }
 
 .animate.grow-in-diagonally.up.left {
-    animation: grow-in-diagonally $growInTime $growInEasing forwards;
     transform-origin: bottom right;
 }
 
 .animate.grow-in-diagonally.down.right {
-    animation: grow-in-diagonally $growInTime $growInEasing forwards;
     transform-origin: top left;
 }
 
 .animate.grow-in-diagonally.down.left {
-    animation: grow-in-diagonally $growInTime $growInEasing forwards;
     transform-origin: top right;
 }
 

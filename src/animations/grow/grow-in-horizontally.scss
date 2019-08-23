@@ -4,12 +4,10 @@
 }
 
 .animate.grow-in-horizontally.right {
-    animation: grow-in-horizontally $growInTime $growInEasing forwards;
     transform-origin: top left;
 }
 
 .animate.grow-in-horizontally.left {
-    animation: grow-in-horizontally $growInTime $growInEasing forwards;
     transform-origin: top right;
 }
 

@@ -4,12 +4,10 @@
 }
 
 .animate.grow-out-horizontally.right {
-    animation: grow-out-horizontally $growOutTime $growOutEasing forwards;
     transform-origin: top right;
 }
 
 .animate.grow-out-horizontally.left {
-    animation: grow-out-horizontally $growOutTime $growOutEasing forwards;
     transform-origin: top left;
 }
 

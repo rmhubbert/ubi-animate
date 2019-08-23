@@ -5,14 +5,10 @@
 }
 
 .animate.grow-bounce-out-horizontally.right {
-    animation: grow-bounce-out-horizontally $growBounceOutTime
-        $growBounceOutEasing forwards;
     transform-origin: top right;
 }
 
 .animate.grow-bounce-out-horizontally.left {
-    animation: grow-bounce-out-horizontally $growBounceOutTime
-        $growBounceOutEasing forwards;
     transform-origin: top left;
 }
 

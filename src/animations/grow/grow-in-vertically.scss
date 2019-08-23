@@ -4,12 +4,10 @@
 }
 
 .animate.grow-in-vertically.up {
-    animation: grow-in-vertically $growInTime $growInEasing forwards;
     transform-origin: bottom center;
 }
 
 .animate.grow-in-vertically.down {
-    animation: grow-in-vertically $growInTime $growInEasing forwards;
     transform-origin: top center;
 }
 

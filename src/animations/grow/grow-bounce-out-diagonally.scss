@@ -5,38 +5,26 @@
 }
 
 .animate.grow-bounce-out-diagonally.up {
-    animation: grow-bounce-out-diagonally $growBounceOutTime
-        $growBounceOutEasing forwards;
     transform-origin: top center;
 }
 
 .animate.grow-bounce-out-diagonally.down {
-    animation: grow-bounce-out-diagonally $growBounceOutTime
-        $growBounceOutEasing forwards;
     transform-origin: bottom center;
 }
 
 .animate.grow-bounce-out-diagonally.up.right {
-    animation: grow-bounce-out-diagonally $growBounceOutTime
-        $growBounceOutEasing forwards;
     transform-origin: top right;
 }
 
 .animate.grow-bounce-out-diagonally.up.left {
-    animation: grow-bounce-out-diagonally $growBounceOutTime
-        $growBounceOutEasing forwards;
     transform-origin: top left;
 }
 
 .animate.grow-bounce-out-diagonally.down.right {
-    animation: grow-bounce-out-diagonally $growBounceOutTime
-        $growBounceOutEasing forwards;
     transform-origin: bottom right;
 }
 
 .animate.grow-bounce-out-diagonally.down.left {
-    animation: grow-bounce-out-diagonally $growBounceOutTime
-        $growBounceOutEasing forwards;
     transform-origin: bottom left;
 }
 
