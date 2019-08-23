@@ -1013,12 +1013,10 @@
 }
 
 .animate.swing-in-horizontally.right {
-  animation: swing-in-horizontally 0.5s cubic-bezier(0.9, 0.55, 0.9, 1) forwards;
   transform-origin: center left;
 }
 
 .animate.swing-in-horizontally.left {
-  animation: swing-in-horizontally 0.5s cubic-bezier(0.9, 0.55, 0.9, 1) forwards;
   transform-origin: center right;
 }
 
@@ -1036,12 +1034,10 @@
 }
 
 .animate.swing-out-horizontally.right {
-  animation: swing-out-horizontally 0.5s cubic-bezier(0.9, 0.55, 0.9, 1) forwards;
   transform-origin: center right;
 }
 
 .animate.swing-out-horizontally.left {
-  animation: swing-out-horizontally 0.5s cubic-bezier(0.9, 0.55, 0.9, 1) forwards;
   transform-origin: center left;
 }
 
@@ -1059,12 +1055,10 @@
 }
 
 .animate.swing-in-vertically.up {
-  animation: swing-in-vertically 0.5s cubic-bezier(0.9, 0.55, 0.9, 1) forwards;
   transform-origin: bottom center;
 }
 
 .animate.swing-in-vertically.down {
-  animation: swing-in-vertically 0.5s cubic-bezier(0.9, 0.55, 0.9, 1) forwards;
   transform-origin: top center;
 }
 
@@ -1082,12 +1076,10 @@
 }
 
 .animate.swing-out-vertically.up {
-  animation: swing-out-vertically 0.5s cubic-bezier(0.9, 0.55, 0.9, 1) forwards;
   transform-origin: top center;
 }
 
 .animate.swing-out-vertically.down {
-  animation: swing-out-vertically 0.5s cubic-bezier(0.9, 0.55, 0.9, 1) forwards;
   transform-origin: bottom center;
 }
 

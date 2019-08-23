@@ -4,12 +4,10 @@
 }
 
 .animate.swing-out-vertically.up {
-    animation: swing-out-vertically $swingOutTime $swingOutEasing forwards;
     transform-origin: top center;
 }
 
 .animate.swing-out-vertically.down {
-    animation: swing-out-vertically $swingOutTime $swingOutEasing forwards;
     transform-origin: bottom center;
 }
 

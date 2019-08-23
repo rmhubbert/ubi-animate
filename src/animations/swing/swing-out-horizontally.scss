@@ -4,12 +4,10 @@
 }
 
 .animate.swing-out-horizontally.right {
-    animation: swing-out-horizontally $swingOutTime $swingOutEasing forwards;
     transform-origin: center right;
 }
 
 .animate.swing-out-horizontally.left {
-    animation: swing-out-horizontally $swingOutTime $swingOutEasing forwards;
     transform-origin: center left;
 }
 
