@@ -53,10 +53,14 @@
                 font-size: 2.5rem;
                 letter-spacing: 0.15rem;
             }
+            pre {
+                display: block;
+                margin: 0.5rem 1rem 1rem 0;
+            }
         </style>
     </head>
     <body>
-        <main>
+        <header>
             <section class="hero is-light">
                 <div class="hero-body">
                     <div class="container">
@@ -67,7 +71,7 @@
                         </h2>
                         <form>
                             <fieldset>
-                                <div class="select">
+                                <div class="select" onchange="updatePre()">
                                     <select id="enter">
                                         <optgroup label="Fade entrances">
                                             <option value="fade-in"
@@ -149,7 +153,11 @@
                                     </select>
                                 </div>
                                 <div class="select">
-                                    <select class="select" id="leave">
+                                    <select
+                                        class="select"
+                                        id="leave"
+                                        onchange="updatePre()"
+                                    >
                                         <optgroup label="Fade exits">
                                             <option value="fade-out"
                                                 >Fade out</option
@@ -233,30 +241,37 @@
                             </fieldset>
                             <fieldset>
                                 <div class="select">
-                                    <select id="position">
+                                    <select
+                                        id="position"
+                                        onchange="updatePre()"
+                                    >
                                         <option value="down right"
-                                            >Notify top left</option
+                                            >Notify in the top left
+                                            corner</option
                                         >
                                         <option value="down center"
-                                            >Notify top center</option
+                                            >Notify in the top center</option
                                         >
                                         <option value="down left" selected
-                                            >Notify top right</option
+                                            >Notify in the top right
+                                            corner</option
                                         >
                                         <option value="up right"
-                                            >Notify bottom left</option
+                                            >Notify in the bottom left
+                                            corner</option
                                         >
                                         <option value="up center"
-                                            >Notify bottom center</option
+                                            >Notify in the bottom center</option
                                         >
                                         <option value="up left"
-                                            >Notify bottom right</option
+                                            >Notify in the bottom right
+                                            corner</option
                                         >
                                     </select>
                                 </div>
                                 <button
                                     class="button is-primary"
-                                    onclick="UbiAnimate(event)"
+                                    onclick="ubiAnimate(event)"
                                 >
                                     UbiAnimate!
                                 </button>
@@ -265,18 +280,35 @@
                     </div>
                 </div>
             </section>
+        </header>
 
-            <div id="notify"></div>
-            <template id="notificationTemplate">
-                <div class="notification is-primary">
-                    <p><strong>UbiAnimate</strong></p>
-                    <p>
-                        Fast & lightweight CSS animations for toast / snackbar
-                        type notifications
-                    </p>
+        <main>
+            <section class="section">
+                <div class="container">
+                    <div class="tile is-parent is-12">
+                        <div class="tile is-child is-6">
+                            <h2 class="is-size-4">Entrance classes</h2>
+                            <pre id="enter-code">animate fade-in</pre>
+                        </div>
+                        <div class="tile is-child is-6">
+                            <h2 class="is-size-4">Exit classes</h2>
+                            <pre id="leave-code">animate fade-out</pre>
+                        </div>
+                    </div>
                 </div>
-            </template>
+            </section>
         </main>
+
+        <div id="notify"></div>
+        <template id="notificationTemplate">
+            <div class="notification is-primary">
+                <p><strong>UbiAnimate</strong></p>
+                <p>
+                    Fast & lightweight CSS animations for toast / snackbar type
+                    notifications
+                </p>
+            </div>
+        </template>
 
         <script type="text/javascript">
             /* eslint-disable no-unused-vars */
@@ -285,56 +317,93 @@
             var defaultShowDuration = 2000;
             var defaultLeaveDuration = 1000;
             var isActive = false;
+            var positionSelect = document.getElementById("position");
+            var enterSelect = document.getElementById("enter");
+            var leaveSelect = document.getElementById("leave");
 
-            function UbiAnimate(event) {
+            function getCurrentSelects() {
+                return [
+                    positionSelect.options[positionSelect.selectedIndex].value,
+                    enterSelect.options[enterSelect.selectedIndex].value,
+                    leaveSelect.options[leaveSelect.selectedIndex].value
+                ];
+            }
+
+            function updatePre() {
+                var selects = getCurrentSelects();
+                var position = selects[0];
+                var enter = selects[1];
+                var leave = selects[2];
+                var pos = position.split(" ");
+                var notify = document.getElementById("notify");
+                var newEnterLeave = handlePosition(pos, notify, enter, leave);
+                enter = newEnterLeave[0];
+                leave = newEnterLeave[1];
+
+                var enterPre = document.getElementById("enter-code");
+                var leavePre = document.getElementById("leave-code");
+
+                enterPre.innerHTML = "animate " + enter;
+                leavePre.innerHTML = "animate " + leave;
+            }
+
+            function handlePosition(pos, notify, enter, leave) {
+                if (pos[0] === "down") {
+                    notify.style.bottom = "initial";
+                    notify.style.top = 0;
+                    if(!enter.includes('fade') && !enter.includes('horizontally')) enter += " down";
+                    if(!leave.includes('fade') && !leave.includes('horizontally')) leave += " up";
+                } else {
+                    notify.style.top = "initial";
+                    notify.style.bottom = 0;
+                    if(!enter.includes('fade') && !enter.includes('horizontally')) enter += " up";
+                    if(!leave.includes('fade') && !leave.includes('horizontally')) leave += " down";
+                }
+                if (pos[1] === "center") {
+                    notify.style.right = "initial";
+                    notify.style.left = "50%";
+                    notify.style.marginLeft = "-150px";
+                    if(!enter.includes('fade') && !enter.includes('vertically')) enter += " center";
+                    if(!leave.includes('fade') && !leave.includes('vertically')) leave += " center";
+                } else if (pos[1] === "left") {
+                    notify.style.marginLeft = "1rem";
+                    notify.style.left = "initial";
+                    notify.style.right = 0;
+                    if(!enter.includes('fade') && !enter.includes('vertically')) enter += " left";
+                    if(!leave.includes('fade') && !leave.includes('vertically')) leave += " right";
+                } else {
+                    notify.style.marginLeft = "1rem";
+                    notify.style.right = "initial";
+                    notify.style.left = 0;
+                    if(!enter.includes('fade') && !enter.includes('vertically')) enter += " right";
+                    if(!leave.includes('fade') && !leave.includes('vertically')) leave += " left";
+                }
+
+                return [enter, leave];
+            }
+
+            function ubiAnimate(event) {
                 event.preventDefault();
                 if (!isActive) {
                     isActive = true;
 
-                    var positionSelect = document.getElementById("position");
-                    var position =
-                        positionSelect.options[positionSelect.selectedIndex]
-                            .value;
-                    var enterSelect = document.getElementById("enter");
-                    var enter =
-                        enterSelect.options[enterSelect.selectedIndex].value;
-                    var leaveSelect = document.getElementById("leave");
-                    var leave =
-                        leaveSelect.options[leaveSelect.selectedIndex].value;
+                    var selects = getCurrentSelects();
+                    var position = selects[0];
+                    var enter = selects[1];
+                    var leave = selects[2];
+
                     var notify = document.getElementById("notify");
 
                     var pos = position.split(" ");
 
-                    if (pos[0] === "down") {
-                        notify.style.bottom = "initial";
-                        notify.style.top = 0;
-                        enter += " down";
-                        leave += " up";
-                    } else {
-                        notify.style.top = "initial";
-                        notify.style.bottom = 0;
-                        enter += " up";
-                        leave += " down";
-                    }
-                    if (pos[1] === "center") {
-                        notify.style.right = "initial";
-                        notify.style.left = "50%";
-                        notify.style.marginLeft = "-150px";
-                        enter += " center";
-                        leave += " center";
-                    } else if (pos[1] === "left") {
-                        notify.style.marginLeft = "1rem";
-                        notify.style.left = "initial";
-                        notify.style.right = 0;
-                        enter += " left";
-                        leave += " right";
-                    } else {
-                        notify.style.marginLeft = "1rem";
-                        notify.style.right = "initial";
-                        notify.style.left = 0;
-                        enter += " right";
-                        leave += " left";
-                    }
+                    var newEnterLeave = handlePosition(
+                        pos,
+                        notify,
+                        enter,
+                        leave
+                    );
+                    enter = newEnterLeave[0];
+                    leave = newEnterLeave[1];
 
                     notify.className = "animate " + enter;
 
