@@ -7,7 +7,7 @@
     "watch": "sass --watch src/ubianimate.scss:dist/ubianimate.css",
     "prefix": "postcss --use autoprefixer -o dist/ubianimate.css dist/ubianimate.css",
     "minify": "postcss --use cssnano -o dist/ubianimate.min.css dist/ubianimate.css",
-    "build": "npm run dev && npm run prefix && npm run minify"
+    "build": "npm run dev && npm run prefix && npm run minify && cp dist/ubianimate.css docs/css/ubianimate.css"
   },
   "author": "RM Hubbert",
   "license": "MIT",
