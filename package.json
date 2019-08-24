@@ -1,7 +1,8 @@
 {
   "name": "ubi-animate",
   "version": "0.1.0",
-  "description": "Lightweight & fast CSS animations for toasts / snackbars / notifications",
+  "description": "Lightweight & fast CSS animations for toast / snackbar type notifications",
+  "keywords": ["CSS", "animation", "toast", "snackbar", "notification"],
   "scripts": {
     "dev": "sass src/ubianimate.scss:dist/ubianimate.css",
     "watch": "sass --watch src/ubianimate.scss:dist/ubianimate.css",
@@ -17,5 +18,11 @@
     "postcss-cli": "^6.1.3",
     "sass": "^1.22.10"
   },
-  "browserslist": "defaults"
+  "browserslist": "defaults",
+  "bugs": "https://github.com/rmhubbert/ubi-animate/issues",
+  "homepage": "https://rmhubbert.github.io/ubi-animate/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rmhubbert/ubi-animate.git"
+  }
 }
