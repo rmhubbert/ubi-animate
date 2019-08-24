@@ -56,6 +56,11 @@ p {
     padding-bottom: 1rem;
 }
 
+#notify p {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
 a {
     color: #000;
 }
