@@ -1,7 +1,7 @@
 {
-  "name": "UbiAnimate",
+  "name": "ubi-animate",
   "version": "0.1.0",
-  "description": "CSS animations for toast / snackbar / notifications",
+  "description": "Lightweight & fast CSS animations for toasts / snackbars / notifications",
   "scripts": {
     "dev": "sass src/ubianimate.scss:dist/ubianimate.css",
     "watch": "sass --watch src/ubianimate.scss:dist/ubianimate.css",

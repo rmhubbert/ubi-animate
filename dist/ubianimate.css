@@ -153,7 +153,7 @@
 
 @keyframes slide-in-right {
   0% {
-    transform: translate3d(-25vw, 0, 0);
+    transform: translate3d(-400px, 0, 0);
   }
   100% {
     transform: none;
@@ -161,7 +161,7 @@
 }
 @keyframes slide-in-left {
   0% {
-    transform: translate3d(25vw, 0, 0);
+    transform: translate3d(400px, 0, 0);
   }
   100% {
     transform: none;
@@ -181,7 +181,7 @@
     transform: none;
   }
   100% {
-    transform: translate3d(25vw, 0, 0);
+    transform: translate3d(400px, 0, 0);
   }
 }
 @keyframes slide-out-left {
@@ -189,7 +189,7 @@
     transform: none;
   }
   100% {
-    transform: translate3d(-25vw, 0, 0);
+    transform: translate3d(-400px, 0, 0);
   }
 }
 .animate.slide-in-vertically.up {
@@ -202,7 +202,7 @@
 
 @keyframes slide-in-up {
   0% {
-    transform: translate3d(0, 25vh, 0);
+    transform: translate3d(0, 400px, 0);
   }
   100% {
     transform: none;
@@ -210,7 +210,7 @@
 }
 @keyframes slide-in-down {
   0% {
-    transform: translate3d(0, -25vh, 0);
+    transform: translate3d(0, -400px, 0);
   }
   100% {
     transform: none;
@@ -229,7 +229,7 @@
     transform: none;
   }
   100% {
-    transform: translate3d(0, -25vh, 0);
+    transform: translate3d(0, -400px, 0);
   }
 }
 @keyframes slide-out-down {
@@ -237,7 +237,7 @@
     transform: none;
   }
   100% {
-    transform: translate3d(0, 25vh, 0);
+    transform: translate3d(0, 400px, 0);
   }
 }
 .animate.slide-in-diagonally.up.center {
@@ -266,7 +266,7 @@
 
 @keyframes slide-in-down-right {
   0% {
-    transform: translate3d(-25vw, -25vh, 0);
+    transform: translate3d(-400px, -400px, 0);
   }
   100% {
     transform: none;
@@ -274,7 +274,7 @@
 }
 @keyframes slide-in-up-right {
   0% {
-    transform: translate3d(-25vw, 25vh, 0);
+    transform: translate3d(-400px, 400px, 0);
   }
   100% {
     transform: none;
@@ -282,7 +282,7 @@
 }
 @keyframes slide-in-down-left {
   0% {
-    transform: translate3d(25vw, -25vh, 0);
+    transform: translate3d(400px, -400px, 0);
   }
   100% {
     transform: none;
@@ -290,7 +290,7 @@
 }
 @keyframes slide-in-up-left {
   0% {
-    transform: translate3d(25vw, 25vh, 0);
+    transform: translate3d(400px, 400px, 0);
   }
   100% {
     transform: none;
@@ -325,7 +325,7 @@
     transform: none;
   }
   100% {
-    transform: translate3d(25vw, 25vh, 0);
+    transform: translate3d(400px, 400px, 0);
   }
 }
 @keyframes slide-out-up-right {
@@ -333,7 +333,7 @@
     transform: none;
   }
   100% {
-    transform: translate3d(25vw, -25vh, 0);
+    transform: translate3d(400px, -400px, 0);
   }
 }
 @keyframes slide-out-down-left {
@@ -341,7 +341,7 @@
     transform: none;
   }
   100% {
-    transform: translate3d(-25vw, 25vh, 0);
+    transform: translate3d(-400px, 400px, 0);
   }
 }
 @keyframes slide-out-up-left {
@@ -349,7 +349,7 @@
     transform: none;
   }
   100% {
-    transform: translate3d(-25vw, -25vh, 0);
+    transform: translate3d(-400px, -400px, 0);
   }
 }
 .animate.slide-bounce-in-vertically.up {
@@ -362,7 +362,7 @@
 
 @keyframes slide-bounce-in-up {
   0% {
-    transform: translate3d(0, 25vh, 0);
+    transform: translate3d(0, 400px, 0);
   }
   60% {
     transform: translate3d(0, -6px, 0);
@@ -376,7 +376,7 @@
 }
 @keyframes slide-bounce-in-down {
   0% {
-    transform: translate3d(0, -25vh, 0);
+    transform: translate3d(0, -400px, 0);
   }
   60% {
     transform: translate3d(0, 6px, 0);
@@ -404,7 +404,7 @@
     transform: translate3d(0, 12px, 0);
   }
   100% {
-    transform: translate3d(0, -25vh, 0);
+    transform: translate3d(0, -400px, 0);
   }
 }
 @keyframes slide-bounce-out-down {
@@ -415,7 +415,7 @@
     transform: translate3d(0, -12px, 0);
   }
   100% {
-    transform: translate3d(0, 25vh, 0);
+    transform: translate3d(0, 400px, 0);
   }
 }
 .animate.slide-bounce-in-horizontally,
@@ -429,7 +429,7 @@
 
 @keyframes slide-bounce-in-right {
   0% {
-    transform: translate3d(-25vw, 0, 0);
+    transform: translate3d(-400px, 0, 0);
   }
   60% {
     transform: translate3d(6px, 0, 0);
@@ -443,7 +443,7 @@
 }
 @keyframes slide-bounce-in-left {
   0% {
-    transform: translate3d(25vw, 0, 0);
+    transform: translate3d(400px, 0, 0);
   }
   60% {
     transform: translate3d(-6px, 0, 0);
@@ -472,7 +472,7 @@
     transform: translate3d(-12px, 0, 0);
   }
   100% {
-    transform: translate3d(25vw, 0, 0);
+    transform: translate3d(400px, 0, 0);
   }
 }
 @keyframes slide-bounce-out-left {
@@ -483,7 +483,7 @@
     transform: translate3d(12px, 0, 0);
   }
   100% {
-    transform: translate3d(-25vw, 0, 0);
+    transform: translate3d(-400px, 0, 0);
   }
 }
 .animate.slide-bounce-in-diagonally.up.center {
@@ -512,7 +512,7 @@
 
 @keyframes slide-bounce-in-down-right {
   0% {
-    transform: translate3d(-25vw, -25vh, 0);
+    transform: translate3d(-400px, -400px, 0);
   }
   60% {
     transform: translate3d(6px, 6px, 0);
@@ -526,7 +526,7 @@
 }
 @keyframes slide-bounce-in-up-right {
   0% {
-    transform: translate3d(-25vw, 25vh, 0);
+    transform: translate3d(-400px, 400px, 0);
   }
   60% {
     transform: translate3d(6px, -6px, 0);
@@ -540,7 +540,7 @@
 }
 @keyframes slide-bounce-in-down-left {
   0% {
-    transform: translate3d(25vw, -25vh, 0);
+    transform: translate3d(400px, -400px, 0);
   }
   60% {
     transform: translate3d(-6px, 6px, 0);
@@ -554,7 +554,7 @@
 }
 @keyframes slide-bounce-in-up-left {
   0% {
-    transform: translate3d(25vw, 25vh, 0);
+    transform: translate3d(400px, 400px, 0);
   }
   60% {
     transform: translate3d(-6px, -6px, 0);
@@ -598,7 +598,7 @@
     transform: translate3d(-12px, -12px, 0);
   }
   100% {
-    transform: translate3d(25vw, 25vh, 0);
+    transform: translate3d(400px, 400px, 0);
   }
 }
 @keyframes slide-bounce-out-up-right {
@@ -609,7 +609,7 @@
     transform: translate3d(-12px, 12px, 0);
   }
   100% {
-    transform: translate3d(25vw, -25vh, 0);
+    transform: translate3d(400px, -400px, 0);
   }
 }
 @keyframes slide-bounce-out-down-left {
@@ -620,7 +620,7 @@
     transform: translate3d(12px, -12px, 0);
   }
   100% {
-    transform: translate3d(-25vw, 25vh, 0);
+    transform: translate3d(-400px, 400px, 0);
   }
 }
 @keyframes slide-bounce-out-up-left {
@@ -631,7 +631,7 @@
     transform: translate3d(12px, 12px, 0);
   }
   100% {
-    transform: translate3d(-25vw, -25vh, 0);
+    transform: translate3d(-400px, -400px, 0);
   }
 }
 /**
