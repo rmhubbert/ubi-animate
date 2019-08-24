@@ -243,16 +243,85 @@
         <main>
             <section class="section">
                 <div class="container">
-                    <div class="tile is-parent is-12">
-                        <div class="tile is-child is-6">
-                            <h2 class="is-size-4">Entrance classes</h2>
+                    <h2 class="is-size-3">Usage</h2>
+                    <ol>
+                        <li>Install UbiAnimate (see below).</li>
+                        <li>
+                            Pick an entrance &amp; exit animation above in your
+                            desired position.
+                        </li>
+                        <li>
+                            Add the entrance &amp; exit classes below according
+                            to your notification software's installation guide
+                        </li>
+                    </ol>
+                    <div class="columns">
+                        <div class="column">
+                            <h3 class="is-size-4">Selected entrance classes</h3>
                             <pre id="enter-code">animate fade-in</pre>
                         </div>
-                        <div class="tile is-child is-6">
-                            <h2 class="is-size-4">Exit classes</h2>
+                        <div class="column">
+                            <h3 class="is-size-4">Selected exit classes</h3>
                             <pre id="leave-code">animate fade-out</pre>
                         </div>
                     </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <h2 class="is-size-3">Installation</h2>
+                    <p>
+                        There are a few ways to get started with UbiAnimate. You
+                        can either:
+                    </p>
+                    <ol>
+                        <li>
+                            Use NPM or Yarn to install directly into your
+                            project.
+                        </li>
+                        <li>Download the compiled source from GitHub</li>
+                        <li>Link directly to the CDN version on jsDelivr</li>
+                    </ol>
+                    <div class="columns">
+                        <div class="column">
+                            <h3 class="is-size-4">NPM</h3>
+                            <pre id="enter-code">npm install ubi-animate</pre>
+                        </div>
+                        <div class="column">
+                            <h3 class="is-size-4">Yarn</h3>
+                            <pre id="leave-code">yarn add ubi-animate</pre>
+                        </div>
+                    </div>
+                    <div class="columns">
+                        <div class="column">
+                            <h3 class="is-size-4">GitHub</h3>
+                            <a
+                                href="https://github.com/rmhubbert/ubi-animate/tree/master/dist"
+                                >https://github.com/rmhubbert/ubi-animate/tree/master/dist</a
+                            >
+                        </div>
+                        <div class="column">
+                            <h3 class="is-size-4">jsDelivr</h3>
+                            <a
+                                href="https://github.com/rmhubbert/ubi-animate/tree/master/dist"
+                                >https://github.com/rmhubbert/ubi-animate/tree/master/dist</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <h2 class="is-size-3">Customisation</h2>
+                    <p>
+                        UbiAnimate can be easily customised via Sass variables.
+                    </p>
+                    <p>
+                        Simply override any variables (a full listing can be
+                        found in /node_modules/ubi-animate/src/_variables.scss)
+                        in your main Sass file before importing the library from
+                        /node_modules/ubi-animate/src/ubianimate.scss
+                    </p>
                 </div>
             </section>
         </main>
