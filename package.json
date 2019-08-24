@@ -7,7 +7,8 @@
     "animation",
     "toast",
     "snackbar",
-    "notification"
+    "notification",
+    "sass"
   ],
   "scripts": {
     "dev": "sass src/ubianimate.scss:dist/ubianimate.css",
