@@ -1,6 +1,6 @@
 {
   "name": "ubi-animate",
-  "version": "1.0.1",
+  "version": "0.1.1",
   "description": "Lightweight & fast CSS animations for toast / snackbar type notifications",
   "keywords": [
     "CSS",
