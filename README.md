@@ -16,7 +16,7 @@ Yarn
 yarn add ubi-animate
 ```
 
-[jsDelivr](http://jsdelivr.com)
+You can also link via CDN at [jsDelivr](http://jsdelivr.com).
 
 ## Usage
 
