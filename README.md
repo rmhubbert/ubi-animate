@@ -1,6 +1,6 @@
 # UbiAnimate
 
-![GitHub](https://img.shields.io/github/license/rmhubbert/ubi-animate)
+![GitHub](https://img.shields.io/github/license/rmhubbert/ubi-animate?logo=MIT)
 
 Fast & lightweight CSS Animations for toast / snackbar type notifications.
 
