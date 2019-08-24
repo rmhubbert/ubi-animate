@@ -24,10 +24,10 @@ You can also link directly via CDN at [jsDelivr](https://www.jsdelivr.com/packag
 
 The easiest way to get your desired animation classes is via [the demo app](https://rmhubbert.github.io/ubi-animate).
 
-Alternatively, start with the 'animate' class, followed by the animation effect class then the animation direction class (up|down|left|right|center).
+Alternatively, start with the 'animate' class, followed by the animation effect class then the animation direction class (up|down|left|right|center). A full listing of animation effect class names can be found in src/ubianimate.scss.
 
 ```html
-<div class="animate grow-in right">Your Animated Content</div>
+<div class="animate slide-in-horizontally left">Your Animated Content</div>
 ```
 
 ## Customisation
