@@ -1,10 +1,10 @@
 # UbiAnimate
 
-UbiAnimate is a lightweight & customisable CSS Animation library for toast / snackbar type notifications.
+UbiAnimate is a fast & lightweight CSS Animation library for toast / snackbar type notifications.
 
 ## Installation
 
-Use the package manager [npm](https://www.npmjs.com/get-npm) to install foobar.
+You can use [npm](https://www.npmjs.com/get-npm) to install.
 
 ```bash
 npm install ubi-animate
@@ -12,7 +12,7 @@ npm install ubi-animate
 
 ## Usage
 
-Always start with the 'animate' class, followed by the animation effect class then the animation direction class (up|down|left|right|center).
+Start with the 'animate' class, followed by the animation effect class then the animation direction class (up|down|left|right|center).
 
 ```html
 <div class="animate grow-in right">Your Animated Content</div>
