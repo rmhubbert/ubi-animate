@@ -31,6 +31,13 @@
         animation-delay: 0s, $fadeInDuration;
         animation-timing-function: $fadeInTimingFunction, $flashTimingFunction;
     }
+
+    &.wave {
+        animation-name: fade-in, wave-in;
+        animation-duration: $fadeInDuration, $waveDuration;
+        animation-delay: 0s, $fadeInDuration;
+        animation-timing-function: $fadeInTimingFunction, $waveTimingFunction;
+    }
 }
 
 @keyframes fade-in {

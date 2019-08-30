@@ -32,6 +32,13 @@
         animation-delay: 0s, $flashDuration;
         animation-timing-function: $flashTimingFunction, $fadeOutTimingFunction;
     }
+
+    &.wave {
+        animation-name: wave-out, fade-out;
+        animation-duration: $waveDuration, $fadeOutDuration;
+        animation-delay: 0s, $waveDuration;
+        animation-timing-function: $waveTimingFunction, $fadeOutTimingFunction;
+    }
 }
 
 @keyframes fade-out {
