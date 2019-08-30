@@ -22,7 +22,7 @@
 /**
  * Global
  */
-.notification-animation {
+.animate {
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -285,7 +285,7 @@
 /**
  * Fade
  */
-.notification-animation.fade.in {
+.animate.fade.in {
   -webkit-animation-name: fade-in;
           animation-name: fade-in;
   -webkit-animation-duration: 1s;
@@ -293,7 +293,7 @@
   -webkit-animation-timing-function: ease;
           animation-timing-function: ease;
 }
-.notification-animation.fade.in.shake {
+.animate.fade.in.shake {
   -webkit-animation-name: fade-in, shake-in;
           animation-name: fade-in, shake-in;
   -webkit-animation-duration: 1s, 0.3s;
@@ -303,15 +303,15 @@
   -webkit-animation-timing-function: ease, ease;
           animation-timing-function: ease, ease;
 }
-.notification-animation.fade.in.shake.horizontally {
+.animate.fade.in.shake.horizontally {
   -webkit-animation-name: fade-in, shake-horizontally-in;
           animation-name: fade-in, shake-horizontally-in;
 }
-.notification-animation.fade.in.shake.vertically {
+.animate.fade.in.shake.vertically {
   -webkit-animation-name: fade-in, shake-vertically-in;
           animation-name: fade-in, shake-vertically-in;
 }
-.notification-animation.fade.in.pulsate {
+.animate.fade.in.pulsate {
   -webkit-animation-name: fade-in, pulsate-in;
           animation-name: fade-in, pulsate-in;
   -webkit-animation-duration: 1s, 0.4s;
@@ -321,7 +321,7 @@
   -webkit-animation-timing-function: ease, ease-in-out;
           animation-timing-function: ease, ease-in-out;
 }
-.notification-animation.fade.in.flash {
+.animate.fade.in.flash {
   -webkit-animation-name: fade-in, flash-in;
           animation-name: fade-in, flash-in;
   -webkit-animation-duration: 1s, 0.65s;
@@ -349,7 +349,7 @@
     opacity: 1;
   }
 }
-.notification-animation.fade.out {
+.animate.fade.out {
   -webkit-animation-name: fade-out;
           animation-name: fade-out;
   -webkit-animation-duration: 1s;
@@ -357,7 +357,7 @@
   -webkit-animation-timing-function: ease;
           animation-timing-function: ease;
 }
-.notification-animation.fade.out.shake {
+.animate.fade.out.shake {
   -webkit-animation-name: shake-out, fade-out;
           animation-name: shake-out, fade-out;
   -webkit-animation-duration: 0.3s, 1s;
@@ -367,15 +367,15 @@
   -webkit-animation-timing-function: ease, ease;
           animation-timing-function: ease, ease;
 }
-.notification-animation.fade.out.shake.horizontally {
+.animate.fade.out.shake.horizontally {
   -webkit-animation-name: shake-horizontally-out, fade-out;
           animation-name: shake-horizontally-out, fade-out;
 }
-.notification-animation.fade.out.shake.vertically {
+.animate.fade.out.shake.vertically {
   -webkit-animation-name: shake-vertically-out, fade-out;
           animation-name: shake-vertically-out, fade-out;
 }
-.notification-animation.fade.out.pulsate {
+.animate.fade.out.pulsate {
   -webkit-animation-name: pulsate-out, fade-out;
           animation-name: pulsate-out, fade-out;
   -webkit-animation-duration: 0.4s, 1s;
@@ -385,7 +385,7 @@
   -webkit-animation-timing-function: ease-in-out, ease;
           animation-timing-function: ease-in-out, ease;
 }
-.notification-animation.fade.out.flash {
+.animate.fade.out.flash {
   -webkit-animation-name: flash-out, fade-out;
           animation-name: flash-out, fade-out;
   -webkit-animation-duration: 0.65s, 1s;
@@ -416,205 +416,205 @@
 /**
  * Slide
  */
-.notification-animation.slide.in {
+.animate.slide.in {
   -webkit-animation-duration: 0.7s;
           animation-duration: 0.7s;
   -webkit-animation-timing-function: ease-in;
           animation-timing-function: ease-in;
 }
-.notification-animation.slide.in.left {
+.animate.slide.in.left {
   -webkit-animation-name: slide-in-left;
           animation-name: slide-in-left;
 }
-.notification-animation.slide.in.left.shake {
+.animate.slide.in.left.shake {
   -webkit-animation-name: slide-in-left, shake-in;
           animation-name: slide-in-left, shake-in;
 }
-.notification-animation.slide.in.left.shake.horizontally {
+.animate.slide.in.left.shake.horizontally {
   -webkit-animation-name: slide-in-left, shake-horizontally-in;
           animation-name: slide-in-left, shake-horizontally-in;
 }
-.notification-animation.slide.in.left.shake.vertically {
+.animate.slide.in.left.shake.vertically {
   -webkit-animation-name: slide-in-left, shake-vertically-in;
           animation-name: slide-in-left, shake-vertically-in;
 }
-.notification-animation.slide.in.left.pulsate {
+.animate.slide.in.left.pulsate {
   -webkit-animation-name: slide-in-left, pulsate-in;
           animation-name: slide-in-left, pulsate-in;
 }
-.notification-animation.slide.in.left.flash {
+.animate.slide.in.left.flash {
   -webkit-animation-name: slide-in-left, flash-in;
           animation-name: slide-in-left, flash-in;
 }
-.notification-animation.slide.in.right {
+.animate.slide.in.right {
   -webkit-animation-name: slide-in-right;
           animation-name: slide-in-right;
 }
-.notification-animation.slide.in.right.shake {
+.animate.slide.in.right.shake {
   -webkit-animation-name: slide-in-right, shake-in;
           animation-name: slide-in-right, shake-in;
 }
-.notification-animation.slide.in.right.shake.horizontally {
+.animate.slide.in.right.shake.horizontally {
   -webkit-animation-name: slide-in-right, shake-horizontally-in;
           animation-name: slide-in-right, shake-horizontally-in;
 }
-.notification-animation.slide.in.right.shake.vertically {
+.animate.slide.in.right.shake.vertically {
   -webkit-animation-name: slide-in-right, shake-vertically-in;
           animation-name: slide-in-right, shake-vertically-in;
 }
-.notification-animation.slide.in.right.pulsate {
+.animate.slide.in.right.pulsate {
   -webkit-animation-name: slide-in-right, pulsate-in;
           animation-name: slide-in-right, pulsate-in;
 }
-.notification-animation.slide.in.right.flash {
+.animate.slide.in.right.flash {
   -webkit-animation-name: slide-in-right, flash-in;
           animation-name: slide-in-right, flash-in;
 }
-.notification-animation.slide.in.up {
+.animate.slide.in.up {
   -webkit-animation-name: slide-in-up;
           animation-name: slide-in-up;
 }
-.notification-animation.slide.in.up.shake {
+.animate.slide.in.up.shake {
   -webkit-animation-name: slide-in-up, shake-in;
           animation-name: slide-in-up, shake-in;
 }
-.notification-animation.slide.in.up.shake.horizontally {
+.animate.slide.in.up.shake.horizontally {
   -webkit-animation-name: slide-in-up, shake-horizontally-in;
           animation-name: slide-in-up, shake-horizontally-in;
 }
-.notification-animation.slide.in.up.shake.vertically {
+.animate.slide.in.up.shake.vertically {
   -webkit-animation-name: slide-in-up, shake-vertically-in;
           animation-name: slide-in-up, shake-vertically-in;
 }
-.notification-animation.slide.in.up.pulsate {
+.animate.slide.in.up.pulsate {
   -webkit-animation-name: slide-in-up, pulsate-in;
           animation-name: slide-in-up, pulsate-in;
 }
-.notification-animation.slide.in.up.flash {
+.animate.slide.in.up.flash {
   -webkit-animation-name: slide-in-up, flash-in;
           animation-name: slide-in-up, flash-in;
 }
-.notification-animation.slide.in.down {
+.animate.slide.in.down {
   -webkit-animation-name: slide-in-down;
           animation-name: slide-in-down;
 }
-.notification-animation.slide.in.down.shake {
+.animate.slide.in.down.shake {
   -webkit-animation-name: slide-in-down, shake-in;
           animation-name: slide-in-down, shake-in;
 }
-.notification-animation.slide.in.down.shake.horizontally {
+.animate.slide.in.down.shake.horizontally {
   -webkit-animation-name: slide-in-down, shake-horizontally-in;
           animation-name: slide-in-down, shake-horizontally-in;
 }
-.notification-animation.slide.in.down.shake.vertically {
+.animate.slide.in.down.shake.vertically {
   -webkit-animation-name: slide-in-down, shake-vertically-in;
           animation-name: slide-in-down, shake-vertically-in;
 }
-.notification-animation.slide.in.down.pulsate {
+.animate.slide.in.down.pulsate {
   -webkit-animation-name: slide-in-down, pulsate-in;
           animation-name: slide-in-down, pulsate-in;
 }
-.notification-animation.slide.in.down.flash {
+.animate.slide.in.down.flash {
   -webkit-animation-name: slide-in-down, flash-in;
           animation-name: slide-in-down, flash-in;
 }
-.notification-animation.slide.in.up.left {
+.animate.slide.in.up.left {
   -webkit-animation-name: slide-in-up-left;
           animation-name: slide-in-up-left;
 }
-.notification-animation.slide.in.up.left.shake {
+.animate.slide.in.up.left.shake {
   -webkit-animation-name: slide-in-up-left, shake-in;
           animation-name: slide-in-up-left, shake-in;
 }
-.notification-animation.slide.in.up.left.shake.horizontally {
+.animate.slide.in.up.left.shake.horizontally {
   -webkit-animation-name: slide-in-up-left, shake-horizontally-in;
           animation-name: slide-in-up-left, shake-horizontally-in;
 }
-.notification-animation.slide.in.up.left.shake.vertically {
+.animate.slide.in.up.left.shake.vertically {
   -webkit-animation-name: slide-in-up-left, shake-vertically-in;
           animation-name: slide-in-up-left, shake-vertically-in;
 }
-.notification-animation.slide.in.up.left.pulsate {
+.animate.slide.in.up.left.pulsate {
   -webkit-animation-name: slide-in-up-left, pulsate-in;
           animation-name: slide-in-up-left, pulsate-in;
 }
-.notification-animation.slide.in.up.left.flash {
+.animate.slide.in.up.left.flash {
   -webkit-animation-name: slide-in-up-left, flash-in;
           animation-name: slide-in-up-left, flash-in;
 }
-.notification-animation.slide.in.down.left {
+.animate.slide.in.down.left {
   -webkit-animation-name: slide-in-down-left;
           animation-name: slide-in-down-left;
 }
-.notification-animation.slide.in.down.left.shake {
+.animate.slide.in.down.left.shake {
   -webkit-animation-name: slide-in-down-left, shake-in;
           animation-name: slide-in-down-left, shake-in;
 }
-.notification-animation.slide.in.down.left.shake.horizontally {
+.animate.slide.in.down.left.shake.horizontally {
   -webkit-animation-name: slide-in-down-left, shake-horizontally-in;
           animation-name: slide-in-down-left, shake-horizontally-in;
 }
-.notification-animation.slide.in.down.left.shake.vertically {
+.animate.slide.in.down.left.shake.vertically {
   -webkit-animation-name: slide-in-down-left, shake-vertically-in;
           animation-name: slide-in-down-left, shake-vertically-in;
 }
-.notification-animation.slide.in.down.left.pulsate {
+.animate.slide.in.down.left.pulsate {
   -webkit-animation-name: slide-in-down-left, pulsate-in;
           animation-name: slide-in-down-left, pulsate-in;
 }
-.notification-animation.slide.in.down.left.flash {
+.animate.slide.in.down.left.flash {
   -webkit-animation-name: slide-in-down-left, flash-in;
           animation-name: slide-in-down-left, flash-in;
 }
-.notification-animation.slide.in.up.right {
+.animate.slide.in.up.right {
   -webkit-animation-name: slide-in-up-right;
           animation-name: slide-in-up-right;
 }
-.notification-animation.slide.in.up.right.shake {
+.animate.slide.in.up.right.shake {
   -webkit-animation-name: slide-in-up-right, shake-in;
           animation-name: slide-in-up-right, shake-in;
 }
-.notification-animation.slide.in.up.right.shake.horizontally {
+.animate.slide.in.up.right.shake.horizontally {
   -webkit-animation-name: slide-in-up-right, shake-horizontally-in;
           animation-name: slide-in-up-right, shake-horizontally-in;
 }
-.notification-animation.slide.in.up.right.shake.vertically {
+.animate.slide.in.up.right.shake.vertically {
   -webkit-animation-name: slide-in-up-right, shake-vertically-in;
           animation-name: slide-in-up-right, shake-vertically-in;
 }
-.notification-animation.slide.in.up.right.pulsate {
+.animate.slide.in.up.right.pulsate {
   -webkit-animation-name: slide-in-up-right, pulsate-in;
           animation-name: slide-in-up-right, pulsate-in;
 }
-.notification-animation.slide.in.up.right.flash {
+.animate.slide.in.up.right.flash {
   -webkit-animation-name: slide-in-up-right, flash-in;
           animation-name: slide-in-up-right, flash-in;
 }
-.notification-animation.slide.in.down.right {
+.animate.slide.in.down.right {
   -webkit-animation-name: slide-in-down-right;
           animation-name: slide-in-down-right;
 }
-.notification-animation.slide.in.down.right.shake {
+.animate.slide.in.down.right.shake {
   -webkit-animation-name: slide-in-down-right, shake-in;
           animation-name: slide-in-down-right, shake-in;
 }
-.notification-animation.slide.in.down.right.shake.horizontally {
+.animate.slide.in.down.right.shake.horizontally {
   -webkit-animation-name: slide-in-down-right, shake-horizontally-in;
           animation-name: slide-in-down-right, shake-horizontally-in;
 }
-.notification-animation.slide.in.down.right.shake.vertically {
+.animate.slide.in.down.right.shake.vertically {
   -webkit-animation-name: slide-in-down-right, shake-vertically-in;
           animation-name: slide-in-down-right, shake-vertically-in;
 }
-.notification-animation.slide.in.down.right.pulsate {
+.animate.slide.in.down.right.pulsate {
   -webkit-animation-name: slide-in-down-right, pulsate-in;
           animation-name: slide-in-down-right, pulsate-in;
 }
-.notification-animation.slide.in.down.right.flash {
+.animate.slide.in.down.right.flash {
   -webkit-animation-name: slide-in-down-right, flash-in;
           animation-name: slide-in-down-right, flash-in;
 }
-.notification-animation.slide.in.shake {
+.animate.slide.in.shake {
   -webkit-animation-duration: 0.7s, 0.3s;
           animation-duration: 0.7s, 0.3s;
   -webkit-animation-delay: 0s, 0.7s;
@@ -622,15 +622,15 @@
   -webkit-animation-timing-function: ease-in, ease;
           animation-timing-function: ease-in, ease;
 }
-.notification-animation.slide.in.shake.horizontally {
+.animate.slide.in.shake.horizontally {
   -webkit-animation-name: slide-in-right, shake-horizontally-in;
           animation-name: slide-in-right, shake-horizontally-in;
 }
-.notification-animation.slide.in.shake.vertically {
+.animate.slide.in.shake.vertically {
   -webkit-animation-name: slide-in-right, shake-vertically-in;
           animation-name: slide-in-right, shake-vertically-in;
 }
-.notification-animation.slide.in.pulsate {
+.animate.slide.in.pulsate {
   -webkit-animation-duration: 0.7s, 0.4s;
           animation-duration: 0.7s, 0.4s;
   -webkit-animation-delay: 0s, 0.7s;
@@ -638,7 +638,7 @@
   -webkit-animation-timing-function: ease-in, ease-in-out;
           animation-timing-function: ease-in, ease-in-out;
 }
-.notification-animation.slide.in.flash {
+.animate.slide.in.flash {
   -webkit-animation-duration: 0.7s, 0.65s;
           animation-duration: 0.7s, 0.65s;
   -webkit-animation-delay: 0s, 0.7s;
@@ -776,205 +776,205 @@
     transform: none;
   }
 }
-.notification-animation.slide.out {
+.animate.slide.out {
   -webkit-animation-duration: 0.7s;
           animation-duration: 0.7s;
   -webkit-animation-timing-function: ease-in;
           animation-timing-function: ease-in;
 }
-.notification-animation.slide.out.left {
+.animate.slide.out.left {
   -webkit-animation-name: slide-out-left;
           animation-name: slide-out-left;
 }
-.notification-animation.slide.out.left.shake {
+.animate.slide.out.left.shake {
   -webkit-animation-name: shake-out, slide-out-left;
           animation-name: shake-out, slide-out-left;
 }
-.notification-animation.slide.out.left.shake.horizontally {
+.animate.slide.out.left.shake.horizontally {
   -webkit-animation-name: shake-horizontally-out, slide-out-left;
           animation-name: shake-horizontally-out, slide-out-left;
 }
-.notification-animation.slide.out.left.shake.vertically {
+.animate.slide.out.left.shake.vertically {
   -webkit-animation-name: shake-vertically-out, slide-out-left;
           animation-name: shake-vertically-out, slide-out-left;
 }
-.notification-animation.slide.out.left.pulsate {
+.animate.slide.out.left.pulsate {
   -webkit-animation-name: pulsate-out, slide-out-left;
           animation-name: pulsate-out, slide-out-left;
 }
-.notification-animation.slide.out.left.flash {
+.animate.slide.out.left.flash {
   -webkit-animation-name: flash-out, slide-out-left;
           animation-name: flash-out, slide-out-left;
 }
-.notification-animation.slide.out.right {
+.animate.slide.out.right {
   -webkit-animation-name: slide-out-right;
           animation-name: slide-out-right;
 }
-.notification-animation.slide.out.right.shake {
+.animate.slide.out.right.shake {
   -webkit-animation-name: shake-out, slide-out-right;
           animation-name: shake-out, slide-out-right;
 }
-.notification-animation.slide.out.right.shake.horizontally {
+.animate.slide.out.right.shake.horizontally {
   -webkit-animation-name: shake-horizontally-out, slide-out-right;
           animation-name: shake-horizontally-out, slide-out-right;
 }
-.notification-animation.slide.out.right.shake.vertically {
+.animate.slide.out.right.shake.vertically {
   -webkit-animation-name: shake-vertically-out, slide-out-right;
           animation-name: shake-vertically-out, slide-out-right;
 }
-.notification-animation.slide.out.right.pulsate {
+.animate.slide.out.right.pulsate {
   -webkit-animation-name: pulsate-out, slide-out-right;
           animation-name: pulsate-out, slide-out-right;
 }
-.notification-animation.slide.out.right.flash {
+.animate.slide.out.right.flash {
   -webkit-animation-name: flash-out, slide-out-right;
           animation-name: flash-out, slide-out-right;
 }
-.notification-animation.slide.out.up {
+.animate.slide.out.up {
   -webkit-animation-name: slide-out-up;
           animation-name: slide-out-up;
 }
-.notification-animation.slide.out.up.shake {
+.animate.slide.out.up.shake {
   -webkit-animation-name: shake-out, slide-out-up;
           animation-name: shake-out, slide-out-up;
 }
-.notification-animation.slide.out.up.shake.horizontally {
+.animate.slide.out.up.shake.horizontally {
   -webkit-animation-name: shake-horizontally-out, slide-out-up;
           animation-name: shake-horizontally-out, slide-out-up;
 }
-.notification-animation.slide.out.up.shake.vertically {
+.animate.slide.out.up.shake.vertically {
   -webkit-animation-name: shake-vertically-out, slide-out-up;
           animation-name: shake-vertically-out, slide-out-up;
 }
-.notification-animation.slide.out.up.pulsate {
+.animate.slide.out.up.pulsate {
   -webkit-animation-name: pulsate-out, slide-out-up;
           animation-name: pulsate-out, slide-out-up;
 }
-.notification-animation.slide.out.up.flash {
+.animate.slide.out.up.flash {
   -webkit-animation-name: flash-out, slide-out-up;
           animation-name: flash-out, slide-out-up;
 }
-.notification-animation.slide.out.down {
+.animate.slide.out.down {
   -webkit-animation-name: slide-out-down;
           animation-name: slide-out-down;
 }
-.notification-animation.slide.out.down.shake {
+.animate.slide.out.down.shake {
   -webkit-animation-name: shake-out, slide-out-down;
           animation-name: shake-out, slide-out-down;
 }
-.notification-animation.slide.out.down.shake.horizontally {
+.animate.slide.out.down.shake.horizontally {
   -webkit-animation-name: shake-horizontally-out, slide-out-down;
           animation-name: shake-horizontally-out, slide-out-down;
 }
-.notification-animation.slide.out.down.shake.vertically {
+.animate.slide.out.down.shake.vertically {
   -webkit-animation-name: shake-vertically-out, slide-out-down;
           animation-name: shake-vertically-out, slide-out-down;
 }
-.notification-animation.slide.out.down.pulsate {
+.animate.slide.out.down.pulsate {
   -webkit-animation-name: pulsate-out, slide-out-down;
           animation-name: pulsate-out, slide-out-down;
 }
-.notification-animation.slide.out.down.flash {
+.animate.slide.out.down.flash {
   -webkit-animation-name: flash-out, slide-out-down;
           animation-name: flash-out, slide-out-down;
 }
-.notification-animation.slide.out.up.left {
+.animate.slide.out.up.left {
   -webkit-animation-name: slide-out-up-left;
           animation-name: slide-out-up-left;
 }
-.notification-animation.slide.out.up.left.shake {
+.animate.slide.out.up.left.shake {
   -webkit-animation-name: shake-out, slide-out-up-left;
           animation-name: shake-out, slide-out-up-left;
 }
-.notification-animation.slide.out.up.left.shake.horizontally {
+.animate.slide.out.up.left.shake.horizontally {
   -webkit-animation-name: shake-horizontally-out, slide-out-up-left;
           animation-name: shake-horizontally-out, slide-out-up-left;
 }
-.notification-animation.slide.out.up.left.shake.vertically {
+.animate.slide.out.up.left.shake.vertically {
   -webkit-animation-name: shake-vertically-out, slide-out-up-left;
           animation-name: shake-vertically-out, slide-out-up-left;
 }
-.notification-animation.slide.out.up.left.pulsate {
+.animate.slide.out.up.left.pulsate {
   -webkit-animation-name: pulsate-out, slide-out-up-left;
           animation-name: pulsate-out, slide-out-up-left;
 }
-.notification-animation.slide.out.up.left.flash {
+.animate.slide.out.up.left.flash {
   -webkit-animation-name: flash-out, slide-out-up-left;
           animation-name: flash-out, slide-out-up-left;
 }
-.notification-animation.slide.out.down.left {
+.animate.slide.out.down.left {
   -webkit-animation-name: slide-out-down-left;
           animation-name: slide-out-down-left;
 }
-.notification-animation.slide.out.down.left.shake {
+.animate.slide.out.down.left.shake {
   -webkit-animation-name: shake-out, slide-out-down-left;
           animation-name: shake-out, slide-out-down-left;
 }
-.notification-animation.slide.out.down.left.shake.horizontally {
+.animate.slide.out.down.left.shake.horizontally {
   -webkit-animation-name: shake-horizontally-out, slide-out-down-left;
           animation-name: shake-horizontally-out, slide-out-down-left;
 }
-.notification-animation.slide.out.down.left.shake.vertically {
+.animate.slide.out.down.left.shake.vertically {
   -webkit-animation-name: shake-vertically-out, slide-out-down-left;
           animation-name: shake-vertically-out, slide-out-down-left;
 }
-.notification-animation.slide.out.down.left.pulsate {
+.animate.slide.out.down.left.pulsate {
   -webkit-animation-name: pulsate-out, slide-out-down-left;
           animation-name: pulsate-out, slide-out-down-left;
 }
-.notification-animation.slide.out.down.left.flash {
+.animate.slide.out.down.left.flash {
   -webkit-animation-name: flash-out, slide-out-down-left;
           animation-name: flash-out, slide-out-down-left;
 }
-.notification-animation.slide.out.up.right {
+.animate.slide.out.up.right {
   -webkit-animation-name: slide-out-up-right;
           animation-name: slide-out-up-right;
 }
-.notification-animation.slide.out.up.right.shake {
+.animate.slide.out.up.right.shake {
   -webkit-animation-name: shake-out, slide-out-up-right;
           animation-name: shake-out, slide-out-up-right;
 }
-.notification-animation.slide.out.up.right.shake.horizontally {
+.animate.slide.out.up.right.shake.horizontally {
   -webkit-animation-name: shake-horizontally-out, slide-out-up-right;
           animation-name: shake-horizontally-out, slide-out-up-right;
 }
-.notification-animation.slide.out.up.right.shake.vertically {
+.animate.slide.out.up.right.shake.vertically {
   -webkit-animation-name: shake-vertically-out, slide-out-up-right;
           animation-name: shake-vertically-out, slide-out-up-right;
 }
-.notification-animation.slide.out.up.right.pulsate {
+.animate.slide.out.up.right.pulsate {
   -webkit-animation-name: pulsate-out, slide-out-up-right;
           animation-name: pulsate-out, slide-out-up-right;
 }
-.notification-animation.slide.out.up.right.flash {
+.animate.slide.out.up.right.flash {
   -webkit-animation-name: flash-out, slide-out-up-right;
           animation-name: flash-out, slide-out-up-right;
 }
-.notification-animation.slide.out.down.right {
+.animate.slide.out.down.right {
   -webkit-animation-name: slide-out-down-right;
           animation-name: slide-out-down-right;
 }
-.notification-animation.slide.out.down.right.shake {
+.animate.slide.out.down.right.shake {
   -webkit-animation-name: shake-out, slide-out-down-right;
           animation-name: shake-out, slide-out-down-right;
 }
-.notification-animation.slide.out.down.right.shake.horizontally {
+.animate.slide.out.down.right.shake.horizontally {
   -webkit-animation-name: shake-horizontally-out, slide-out-down-right;
           animation-name: shake-horizontally-out, slide-out-down-right;
 }
-.notification-animation.slide.out.down.right.shake.vertically {
+.animate.slide.out.down.right.shake.vertically {
   -webkit-animation-name: shake-vertically-out, slide-out-down-right;
           animation-name: shake-vertically-out, slide-out-down-right;
 }
-.notification-animation.slide.out.down.right.pulsate {
+.animate.slide.out.down.right.pulsate {
   -webkit-animation-name: pulsate-out, slide-out-down-right;
           animation-name: pulsate-out, slide-out-down-right;
 }
-.notification-animation.slide.out.down.right.flash {
+.animate.slide.out.down.right.flash {
   -webkit-animation-name: flash-out, slide-out-down-right;
           animation-name: flash-out, slide-out-down-right;
 }
-.notification-animation.slide.out.shake {
+.animate.slide.out.shake {
   -webkit-animation-duration: 0.3s, 0.7s;
           animation-duration: 0.3s, 0.7s;
   -webkit-animation-delay: 0s, 0.3s;
@@ -982,15 +982,15 @@
   -webkit-animation-timing-function: ease, ease-in;
           animation-timing-function: ease, ease-in;
 }
-.notification-animation.slide.out.shake.horizontally {
+.animate.slide.out.shake.horizontally {
   -webkit-animation-name: shake-horizontally-out, slide-out-right;
           animation-name: shake-horizontally-out, slide-out-right;
 }
-.notification-animation.slide.out.shake.vertically {
+.animate.slide.out.shake.vertically {
   -webkit-animation-name: shake-vertically-out, slide-out-right;
           animation-name: shake-vertically-out, slide-out-right;
 }
-.notification-animation.slide.out.pulsate {
+.animate.slide.out.pulsate {
   -webkit-animation-duration: 0.4s, 0.7s;
           animation-duration: 0.4s, 0.7s;
   -webkit-animation-delay: 0s, 0.4s;
@@ -998,7 +998,7 @@
   -webkit-animation-timing-function: ease-in-out, ease-in;
           animation-timing-function: ease-in-out, ease-in;
 }
-.notification-animation.slide.out.flash {
+.animate.slide.out.flash {
   -webkit-animation-duration: 0.65s, 0.7s;
           animation-duration: 0.65s, 0.7s;
   -webkit-animation-delay: 0s, 0.65s;
