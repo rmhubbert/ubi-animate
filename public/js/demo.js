@@ -29,8 +29,8 @@ function updatePre() {
     var enterPre = document.getElementById("enter-code");
     var leavePre = document.getElementById("leave-code");
 
-    enterPre.innerHTML = "notification-animation " + enter;
-    leavePre.innerHTML = "notification-animation " + leave;
+    enterPre.innerHTML = "animate " + enter;
+    leavePre.innerHTML = "animate " + leave;
 }
 
 function handlePosition(pos, notify, enter, leave) {
@@ -101,7 +101,7 @@ function ubiAnimate(event) {
         enter = newEnterLeave[0];
         leave = newEnterLeave[1];
 
-        notify.className = "notification-animation " + enter;
+        notify.className = "animate " + enter;
 
         var templateElement = document.getElementById("notificationTemplate");
         var content = templateElement.content.querySelector("div");
