@@ -18,7 +18,7 @@ Yarn
 yarn add ubi-animate
 ```
 
-You can also link directly via CDN at [jsDelivr](https://www.jsdelivr.com/package/gh/rmhubbert/ubi-animate?path=dist).
+You can also [link directly via CDN at jsDelivr](https://www.jsdelivr.com/package/gh/rmhubbert/ubi-animate?path=dist).
 
 ## Usage
 
@@ -27,7 +27,7 @@ The easiest way to get your desired animation classes is via [the demo app](http
 Alternatively, start with the 'animate' class, followed by the animation effect class then the animation direction class (up|down|left|right|center). A full listing of animation effect class names can be found in src/ubianimate.scss.
 
 ```html
-<div class="animate slide-in-horizontally left">Your Animated Content</div>
+<div class="animate slide in left">Your Animated Content</div>
 ```
 
 ## Customisation
