@@ -12,7 +12,7 @@
   ],
   "scripts": {
     "dev": "sass src/ubianimate.scss:dist/ubianimate.css --no-source-map",
-    "watch": "sass --watch src/ubianimate.scss:dist/ubianimate.css",
+    "watch": "sass --watch --no-source-map src/ubianimate.scss:dist/ubianimate.css",
     "strip": "postcss --use postcss-discard-comments -o dist/ubianimate.css dist/ubianimate.css",
     "prefix": "postcss --use autoprefixer --no-map -o dist/ubianimate.css dist/ubianimate.css",
     "minify": "postcss --use cssnano --no-map -o dist/ubianimate.min.css dist/ubianimate.css",
