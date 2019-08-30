@@ -6,12 +6,16 @@ var isActive = false;
 var positionSelect = document.getElementById("position");
 var enterSelect = document.getElementById("enter");
 var leaveSelect = document.getElementById("leave");
+var enterChainableSelect = document.getElementById("enterChainable");
+var leaveChainableSelect = document.getElementById("leaveChainable");
 
 function getCurrentSelects() {
     return [
         positionSelect.options[positionSelect.selectedIndex].value,
         enterSelect.options[enterSelect.selectedIndex].value,
-        leaveSelect.options[leaveSelect.selectedIndex].value
+        leaveSelect.options[leaveSelect.selectedIndex].value,
+        enterChainableSelect.options[enterChainableSelect.selectedIndex].value,
+        leaveChainableSelect.options[leaveChainableSelect.selectedIndex].value
     ];
 }
 
@@ -20,11 +24,13 @@ function updatePre() {
     var position = selects[0];
     var enter = selects[1];
     var leave = selects[2];
+    var enterChainable = selects[3];
+    var leaveChainable = selects[4];
     var pos = position.split(" ");
     var notify = document.getElementById("notify");
     var newEnterLeave = handlePosition(pos, notify, enter, leave);
-    enter = newEnterLeave[0];
-    leave = newEnterLeave[1];
+    enter = newEnterLeave[0] + " " + enterChainable;
+    leave = newEnterLeave[1] + " " + leaveChainable;
 
     var enterPre = document.getElementById("enter-code");
     var leavePre = document.getElementById("leave-code");
@@ -92,14 +98,16 @@ function ubiAnimate(event) {
         var position = selects[0];
         var enter = selects[1];
         var leave = selects[2];
+        var enterChainable = selects[3];
+        var leaveChainable = selects[4];
 
         var notify = document.getElementById("notify");
 
         var pos = position.split(" ");
 
         var newEnterLeave = handlePosition(pos, notify, enter, leave);
-        enter = newEnterLeave[0];
-        leave = newEnterLeave[1];
+        enter = newEnterLeave[0] + " " + enterChainable;
+        leave = newEnterLeave[1] + " " + leaveChainable;
 
         notify.className = "animate " + enter;
 
