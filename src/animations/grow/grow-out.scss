@@ -1,0 +1,172 @@
+#{$rootClass}.grow.out {
+    animation-duration: $growOutDuration;
+    animation-timing-function: $growOutTimingFunction;
+
+    &.left {
+        @include chainable-anim-out(grow-out-left);
+        transform-origin: top left;
+    }
+
+    &.right {
+        @include chainable-anim-out(grow-out-right);
+        transform-origin: top right;
+    }
+
+    &.up {
+        @include chainable-anim-out(grow-out-up);
+        transform-origin: top center;
+    }
+
+    &.down {
+        @include chainable-anim-out(grow-out-down);
+        transform-origin: bottom center;
+    }
+
+    &.up.left {
+        @include chainable-anim-out(grow-out-up-left);
+        transform-origin: top left;
+    }
+
+    &.down.left {
+        @include chainable-anim-out(grow-out-down-left);
+        transform-origin: bottom left;
+    }
+
+    &.up.right {
+        @include chainable-anim-out(grow-out-up-right);
+        transform-origin: top right;
+    }
+
+    &.down.right {
+        @include chainable-anim-out(grow-out-down-right);
+        transform-origin: bottom right;
+    }
+
+    &.shake {
+        @include chainable(
+            $shakeDuration,
+            $shakeTimingFunction,
+            $growOutDuration,
+            $growOutTimingFunction
+        );
+    }
+
+    &.pulsate {
+        @include chainable(
+            $pulsateDuration,
+            $pulsateTimingFunction,
+            $growOutDuration,
+            $growOutTimingFunction
+        );
+    }
+
+    &.flash {
+        @include chainable(
+            $flashDuration,
+            $flashTimingFunction,
+            $growOutDuration,
+            $growOutTimingFunction
+        );
+    }
+
+    &.wave {
+        @include chainable(
+            $waveDuration,
+            $waveTimingFunction,
+            $growOutDuration,
+            $growOutTimingFunction
+        );
+    }
+}
+
+@keyframes grow-out-left {
+    0% {
+        transform: none;
+        transform-origin: top left;
+    }
+    50% {
+        transform: scale(0, 1);
+    }
+    100% {
+        transform: scale(0, 0);
+    }
+}
+
+@keyframes grow-out-right {
+    0% {
+        transform: none;
+        transform-origin: top right;
+    }
+    50% {
+        transform: scale(0, 1);
+    }
+    100% {
+        transform: scale(0, 0);
+    }
+}
+
+@keyframes grow-out-up {
+    0% {
+        transform: none;
+        transform-origin: top center;
+    }
+    50% {
+        transform: scale(1, 0);
+    }
+    100% {
+        transform: scale(0, 0);
+    }
+}
+
+@keyframes grow-out-down {
+    0% {
+        transform: none;
+        transform-origin: bottom center;
+    }
+    50% {
+        transform: scale(1, 0);
+    }
+    100% {
+        transform: scale(0, 0);
+    }
+}
+
+@keyframes grow-out-up-right {
+    0% {
+        transform: none;
+        transform-origin: top right;
+    }
+    100% {
+        transform: scale(0, 0);
+    }
+}
+
+@keyframes grow-out-up-left {
+    0% {
+        transform: none;
+        transform-origin: top left;
+    }
+    100% {
+        transform: scale(0, 0);
+    }
+}
+
+@keyframes grow-out-down-right {
+    0% {
+        transform: none;
+        transform-origin: bottom right;
+    }
+    100% {
+        transform: scale(0, 0);
+    }
+}
+
+@keyframes grow-out-down-left {
+    0% {
+        transform: none;
+        transform-origin: bottom left;
+    }
+    100% {
+        transform: scale(0, 0);
+    }
+}
