@@ -20,6 +20,10 @@
     &.flash {
         animation-name: flash-out, $anim;
     }
+
+    &.wave {
+        animation-name: wave-out, $anim;
+    }
 }
 
 #{$rootClass}.slide.out {
@@ -83,6 +87,12 @@
         animation-duration: $flashDuration, $slideOutDuration;
         animation-delay: 0s, $flashDuration;
         animation-timing-function: $flashTimingFunction, $slideOutTimingFunction;
+    }
+
+    &.wave {
+        animation-duration: $waveDuration, $slideOutDuration;
+        animation-delay: 0s, $waveDuration;
+        animation-timing-function: $waveTimingFunction, $slideOutTimingFunction;
     }
 }
 

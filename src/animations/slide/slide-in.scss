@@ -20,6 +20,10 @@
     &.flash {
         animation-name: $anim, flash-in;
     }
+
+    &.wave {
+        animation-name: $anim, wave-in;
+    }
 }
 
 #{$rootClass}.slide.in {
@@ -83,6 +87,12 @@
         animation-duration: $slideInDuration, $flashDuration;
         animation-delay: 0s, $slideInDuration;
         animation-timing-function: $slideInTimingFunction, $flashTimingFunction;
+    }
+
+    &.wave {
+        animation-duration: $slideInDuration, $waveDuration;
+        animation-delay: 0s, $slideInDuration;
+        animation-timing-function: $slideInTimingFunction, $waveTimingFunction;
     }
 }
 
