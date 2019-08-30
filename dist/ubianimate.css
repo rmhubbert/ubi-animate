@@ -296,6 +296,9 @@
 .animate.slide.in.left.flash {
   animation-name: slide-in-left, flash-in;
 }
+.animate.slide.in.left.wave {
+  animation-name: slide-in-left, wave-in;
+}
 .animate.slide.in.right {
   animation-name: slide-in-right;
 }
@@ -313,6 +316,9 @@
 }
 .animate.slide.in.right.flash {
   animation-name: slide-in-right, flash-in;
+}
+.animate.slide.in.right.wave {
+  animation-name: slide-in-right, wave-in;
 }
 .animate.slide.in.up {
   animation-name: slide-in-up;
@@ -332,6 +338,9 @@
 .animate.slide.in.up.flash {
   animation-name: slide-in-up, flash-in;
 }
+.animate.slide.in.up.wave {
+  animation-name: slide-in-up, wave-in;
+}
 .animate.slide.in.down {
   animation-name: slide-in-down;
 }
@@ -349,6 +358,9 @@
 }
 .animate.slide.in.down.flash {
   animation-name: slide-in-down, flash-in;
+}
+.animate.slide.in.down.wave {
+  animation-name: slide-in-down, wave-in;
 }
 .animate.slide.in.up.left {
   animation-name: slide-in-up-left;
@@ -368,6 +380,9 @@
 .animate.slide.in.up.left.flash {
   animation-name: slide-in-up-left, flash-in;
 }
+.animate.slide.in.up.left.wave {
+  animation-name: slide-in-up-left, wave-in;
+}
 .animate.slide.in.down.left {
   animation-name: slide-in-down-left;
 }
@@ -385,6 +400,9 @@
 }
 .animate.slide.in.down.left.flash {
   animation-name: slide-in-down-left, flash-in;
+}
+.animate.slide.in.down.left.wave {
+  animation-name: slide-in-down-left, wave-in;
 }
 .animate.slide.in.up.right {
   animation-name: slide-in-up-right;
@@ -404,6 +422,9 @@
 .animate.slide.in.up.right.flash {
   animation-name: slide-in-up-right, flash-in;
 }
+.animate.slide.in.up.right.wave {
+  animation-name: slide-in-up-right, wave-in;
+}
 .animate.slide.in.down.right {
   animation-name: slide-in-down-right;
 }
@@ -421,6 +442,9 @@
 }
 .animate.slide.in.down.right.flash {
   animation-name: slide-in-down-right, flash-in;
+}
+.animate.slide.in.down.right.wave {
+  animation-name: slide-in-down-right, wave-in;
 }
 .animate.slide.in.shake {
   animation-duration: 0.7s, 0.3s;
@@ -442,6 +466,11 @@
   animation-duration: 0.7s, 0.65s;
   animation-delay: 0s, 0.7s;
   animation-timing-function: ease-in, linear;
+}
+.animate.slide.in.wave {
+  animation-duration: 0.7s, 0.4s;
+  animation-delay: 0s, 0.7s;
+  animation-timing-function: ease-in, ease-in-out;
 }
 
 @keyframes slide-in-right {
@@ -530,6 +559,9 @@
 .animate.slide.out.left.flash {
   animation-name: flash-out, slide-out-left;
 }
+.animate.slide.out.left.wave {
+  animation-name: wave-out, slide-out-left;
+}
 .animate.slide.out.right {
   animation-name: slide-out-right;
 }
@@ -547,6 +579,9 @@
 }
 .animate.slide.out.right.flash {
   animation-name: flash-out, slide-out-right;
+}
+.animate.slide.out.right.wave {
+  animation-name: wave-out, slide-out-right;
 }
 .animate.slide.out.up {
   animation-name: slide-out-up;
@@ -566,6 +601,9 @@
 .animate.slide.out.up.flash {
   animation-name: flash-out, slide-out-up;
 }
+.animate.slide.out.up.wave {
+  animation-name: wave-out, slide-out-up;
+}
 .animate.slide.out.down {
   animation-name: slide-out-down;
 }
@@ -583,6 +621,9 @@
 }
 .animate.slide.out.down.flash {
   animation-name: flash-out, slide-out-down;
+}
+.animate.slide.out.down.wave {
+  animation-name: wave-out, slide-out-down;
 }
 .animate.slide.out.up.left {
   animation-name: slide-out-up-left;
@@ -602,6 +643,9 @@
 .animate.slide.out.up.left.flash {
   animation-name: flash-out, slide-out-up-left;
 }
+.animate.slide.out.up.left.wave {
+  animation-name: wave-out, slide-out-up-left;
+}
 .animate.slide.out.down.left {
   animation-name: slide-out-down-left;
 }
@@ -619,6 +663,9 @@
 }
 .animate.slide.out.down.left.flash {
   animation-name: flash-out, slide-out-down-left;
+}
+.animate.slide.out.down.left.wave {
+  animation-name: wave-out, slide-out-down-left;
 }
 .animate.slide.out.up.right {
   animation-name: slide-out-up-right;
@@ -638,6 +685,9 @@
 .animate.slide.out.up.right.flash {
   animation-name: flash-out, slide-out-up-right;
 }
+.animate.slide.out.up.right.wave {
+  animation-name: wave-out, slide-out-up-right;
+}
 .animate.slide.out.down.right {
   animation-name: slide-out-down-right;
 }
@@ -655,6 +705,9 @@
 }
 .animate.slide.out.down.right.flash {
   animation-name: flash-out, slide-out-down-right;
+}
+.animate.slide.out.down.right.wave {
+  animation-name: wave-out, slide-out-down-right;
 }
 .animate.slide.out.shake {
   animation-duration: 0.3s, 0.7s;
@@ -676,6 +729,11 @@
   animation-duration: 0.65s, 0.7s;
   animation-delay: 0s, 0.65s;
   animation-timing-function: linear, ease-in;
+}
+.animate.slide.out.wave {
+  animation-duration: 0.4s, 0.7s;
+  animation-delay: 0s, 0.4s;
+  animation-timing-function: ease-in-out, ease-in;
 }
 
 @keyframes slide-out-right {
@@ -742,5 +800,3 @@
     transform: translate3d(-480px, -480px, 0);
   }
 }
-
-/*# sourceMappingURL=ubianimate.css.map */
