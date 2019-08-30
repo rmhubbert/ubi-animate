@@ -29,235 +29,78 @@
                         </h2>
                         <form>
                             <fieldset>
-                                <div class="select" onchange="updatePre()">
-                                    <select id="enter">
+                                <div class="select">
+                                    <select id="enter" onchange="updatePre()">
                                         <optgroup label="Fade entrances">
                                             <option value="fade in"
                                                 >Fade in</option
-                                            >
-                                            <option value="fade in shake"
-                                                >Fade in with shake</option
-                                            >
-                                            <option
-                                                value="fade in shake horizontally"
-                                                >Fade in with horizontal
-                                                shake</option
-                                            >
-                                            <option
-                                                value="fade in shake vertically"
-                                                >Fade in with vertical
-                                                shake</option
-                                            >
-                                            <option value="fade in pulsate"
-                                                >Fade in with pulse</option
-                                            >
-                                            <option value="fade in flash"
-                                                >Fade in with flash</option
-                                            >
-                                            <option value="fade in wave"
-                                                >Fade in with wave</option
                                             >
                                         </optgroup>
                                         <optgroup label="Slide entrances">
                                             <option value="slide in hval"
                                                 >Slide in horizontally</option
                                             >
-
-                                            <option value="slide in hval shake"
-                                                >Slide in horizontally with
-                                                shake</option
-                                            >
-                                            <option
-                                                value="slide in hval shake horizontally"
-                                                >Slide in horizontally with
-                                                horizontal shake</option
-                                            >
-                                            <option
-                                                value="slide in hval shake vertically"
-                                                >Slide in horizontally with
-                                                vertical shake</option
-                                            >
-                                            <option
-                                                value="slide in hval pulsate"
-                                                >Slide in horizontally with
-                                                pulse</option
-                                            >
-                                            <option value="slide in hval flash"
-                                                >Slide in horizontally with
-                                                flash</option
-                                            >
-                                            <option value="slide in hval wave"
-                                                >Slide in horizontally with
-                                                wave</option
-                                            >
-                                            <option disabled="true"
-                                                >------------------------------</option
-                                            >
                                             <option value="slide in vval"
                                                 >Slide in vertically</option
                                             >
-                                            <option value="slide in vval shake"
-                                                >Slide in vertically with
-                                                shake</option
-                                            >
-                                            <option
-                                                value="slide in vval shake horizontally"
-                                                >Slide in vertically with
-                                                horizontal shake</option
-                                            >
-                                            <option
-                                                value="slide in vval shake vertically"
-                                                >Slide in vertically with
-                                                vertical shake</option
-                                            >
-                                            <option
-                                                value="slide in vval pulsate"
-                                                >Slide in vertically with
-                                                pulse</option
-                                            >
-                                            <option value="slide in vval flash"
-                                                >Slide in vertically with
-                                                flash</option
-                                            >
-                                            <option value="slide in vval wave"
-                                                >Slide in vertically with
-                                                wave</option
-                                            >
-                                            <option disabled="true"
-                                                >------------------------------</option
-                                            >
                                             <option value="slide in dval"
                                                 >Slide in diagonally</option
-                                            >
-                                            <option value="slide in dval shake"
-                                                >Slide in diagonally with
-                                                shake</option
-                                            >
-                                            <option
-                                                value="slide in dval shake horizontally"
-                                                >Slide in diagonally with
-                                                horizontal shake</option
-                                            >
-                                            <option
-                                                value="slide in dval shake vertically"
-                                                >Slide in diagonally with
-                                                vertical shake</option
-                                            >
-                                            <option
-                                                value="slide in dval pulsate"
-                                                >Slide in diagonally with
-                                                pulse</option
-                                            >
-                                            <option value="slide in dval flash"
-                                                >Slide in diagonally with
-                                                flash</option
-                                            >
-                                            <option value="slide in dval wave"
-                                                >Slide in diagonally with
-                                                wave</option
                                             >
                                         </optgroup>
                                         <optgroup label="Bounce entrances">
                                             <option value="bounce in hval"
                                                 >Bounce in horizontally</option
                                             >
-
-                                            <option value="bounce in hval shake"
-                                                >Bounce in horizontally with
-                                                shake</option
-                                            >
-                                            <option
-                                                value="bounce in hval shake horizontally"
-                                                >Bounce in horizontally with
-                                                horizontal shake</option
-                                            >
-                                            <option
-                                                value="bounce in hval shake vertically"
-                                                >Bounce in horizontally with
-                                                vertical shake</option
-                                            >
-                                            <option
-                                                value="bounce in hval pulsate"
-                                                >Bounce in horizontally with
-                                                pulse</option
-                                            >
-                                            <option value="bounce in hval flash"
-                                                >Bounce in horizontally with
-                                                flash</option
-                                            >
-                                            <option value="bounce in hval wave"
-                                                >Bounce in horizontally with
-                                                wave</option
-                                            >
-                                            <option disabled="true"
-                                                >------------------------------</option
-                                            >
                                             <option value="bounce in vval"
                                                 >Bounce in vertically</option
-                                            >
-                                            <option value="bounce in vval shake"
-                                                >Bounce in vertically with
-                                                shake</option
-                                            >
-                                            <option
-                                                value="bounce in vval shake horizontally"
-                                                >Bounce in vertically with
-                                                horizontal shake</option
-                                            >
-                                            <option
-                                                value="bounce in vval shake vertically"
-                                                >Bounce in vertically with
-                                                vertical shake</option
-                                            >
-                                            <option
-                                                value="bounce in vval pulsate"
-                                                >Bounce in vertically with
-                                                pulse</option
-                                            >
-                                            <option value="bounce in vval flash"
-                                                >Bounce in vertically with
-                                                flash</option
-                                            >
-                                            <option value="bounce in vval wave"
-                                                >Bounce in vertically with
-                                                wave</option
-                                            >
-                                            <option disabled="true"
-                                                >------------------------------</option
                                             >
                                             <option value="bounce in dval"
                                                 >Bounce in diagonally</option
                                             >
-                                            <option value="bounce in dval shake"
-                                                >Bounce in diagonally with
-                                                shake</option
+                                        </optgroup>
+                                        <optgroup label="Grow entrances">
+                                            <option value="grow in hval"
+                                                >Grow in horizontally</option
                                             >
-                                            <option
-                                                value="bounce in dval shake horizontally"
-                                                >Bounce in diagonally with
-                                                horizontal shake</option
+                                            <option value="grow in vval"
+                                                >Grow in vertically</option
                                             >
-                                            <option
-                                                value="bounce in dval shake vertically"
-                                                >Bounce in diagonally with
-                                                vertical shake</option
-                                            >
-                                            <option
-                                                value="bounce in dval pulsate"
-                                                >Bounce in diagonally with
-                                                pulse</option
-                                            >
-                                            <option value="bounce in dval flash"
-                                                >Bounce in diagonally with
-                                                flash</option
-                                            >
-                                            <option value="bounce in dval wave"
-                                                >Bounce in diagonally with
-                                                wave</option
+                                            <option value="grow in dval"
+                                                >Grow in diagonally</option
                                             >
                                         </optgroup>
                                     </select>
                                 </div>
+                                <div class="select">
+                                    <select
+                                        id="enterChainable"
+                                        onchange="updatePre()"
+                                    >
+                                        <option value=""
+                                            >with no other effect</option
+                                        >
+                                        <option value="shake"
+                                            >with a shake</option
+                                        >
+                                        <option value="shake horizontally"
+                                            >with a horizontal shake</option
+                                        >
+                                        <option value="shake vertically"
+                                            >with a vertical shake</option
+                                        >
+                                        <option value="pulsate"
+                                            >with a pulse</option
+                                        >
+                                        <option value="wave"
+                                            >with a wave</option
+                                        >
+                                        <option value="flash"
+                                            >with a flash</option
+                                        >
+                                    </select>
+                                </div>
+                            </fieldset>
+                            <fieldset>
                                 <div class="select">
                                     <select
                                         class="select"
@@ -268,231 +111,68 @@
                                             <option value="fade out"
                                                 >Fade out</option
                                             >
-                                            <option value="fade out shake"
-                                                >Fade out with shake</option
-                                            >
-                                            <option
-                                                value="fade out shake horizontally"
-                                                >Fade out with horizontal
-                                                shake</option
-                                            >
-                                            <option
-                                                value="fade out shake vertically"
-                                                >Fade out with vertical
-                                                shake</option
-                                            >
-                                            <option value="fade out pulsate"
-                                                >Fade out with pulse</option
-                                            >
-                                            <option value="fade out flash"
-                                                >Fade out with flash</option
-                                            >
-                                            <option value="fade out wave"
-                                                >Fade out with wave</option
-                                            >
                                         </optgroup>
                                         <optgroup label="Slide exits">
                                             <option value="slide out hval"
                                                 >Slide out horizontally</option
                                             >
-                                            <option value="slide out hval shake"
-                                                >Slide out horizontally with
-                                                shake</option
-                                            >
-                                            <option
-                                                value="slide out hval shake horizontally"
-                                                >Slide out horizontally with
-                                                horizontal shake</option
-                                            >
-                                            <option
-                                                value="slide out hval shake vertically"
-                                                >Slide out horizontally with
-                                                vertical shake</option
-                                            >
-                                            <option
-                                                value="slide out hval pulsate"
-                                                >Slide out horizontally with
-                                                pulse</option
-                                            >
-                                            <option value="slide out hval flash"
-                                                >Slide out horizontally with
-                                                flash</option
-                                            >
-                                            <option value="slide out hval wave"
-                                                >Slide out horizontally with
-                                                wave</option
-                                            >
-                                            <option disabled="true"
-                                                >------------------------------</option
-                                            >
                                             <option value="slide out vval"
                                                 >Slide out vertically</option
                                             >
-                                            <option value="slide out vval shake"
-                                                >Slide out vertically with
-                                                shake</option
-                                            >
-                                            <option
-                                                value="slide out vval shake horizontally"
-                                                >Slide out vertically with
-                                                horizontal shake</option
-                                            >
-                                            <option
-                                                value="slide out vval shake vertically"
-                                                >Slide out vertically with
-                                                vertical shake</option
-                                            >
-                                            <option
-                                                value="slide out vval pulsate"
-                                                >Slide out vertically with
-                                                pulse</option
-                                            >
-                                            <option value="slide out vval flash"
-                                                >Slide out vertically with
-                                                flash</option
-                                            >
-                                            <option value="slide out vval wave"
-                                                >Slide out vertically with
-                                                wave</option
-                                            >
-                                            <option disabled="true"
-                                                >------------------------------</option
-                                            >
                                             <option value="slide out dval"
                                                 >Slide out diagonally</option
-                                            >
-                                            <option value="slide out dval shake"
-                                                >Slide out diagonally with
-                                                shake</option
-                                            >
-                                            <option
-                                                value="slide out dval shake horizontally"
-                                                >Slide out diagonally with
-                                                horizontal shake</option
-                                            >
-                                            <option
-                                                value="slide out dval shake vertically"
-                                                >Slide out diagonally with
-                                                vertical shake</option
-                                            >
-                                            <option
-                                                value="slide out dval pulsate"
-                                                >Slide out diagonally with
-                                                pulse</option
-                                            >
-                                            <option value="slide out dval flash"
-                                                >Slide in diagonally with
-                                                flash</option
-                                            >
-                                            <option value="slide out dval wave"
-                                                >Slide in diagonally with
-                                                wave</option
                                             >
                                         </optgroup>
                                         <optgroup label="Bounce exits">
                                             <option value="bounce out hval"
                                                 >Bounce out horizontally</option
                                             >
-                                            <option
-                                                value="bounce out hval shake"
-                                                >Bounce out horizontally with
-                                                shake</option
-                                            >
-                                            <option
-                                                value="bounce out hval shake horizontally"
-                                                >Bounce out horizontally with
-                                                horizontal shake</option
-                                            >
-                                            <option
-                                                value="bounce out hval shake vertically"
-                                                >Bounce out horizontally with
-                                                vertical shake</option
-                                            >
-                                            <option
-                                                value="bounce out hval pulsate"
-                                                >Bounce out horizontally with
-                                                pulse</option
-                                            >
-                                            <option
-                                                value="bounce out hval flash"
-                                                >Bounce out horizontally with
-                                                flash</option
-                                            >
-                                            <option value="bounce out hval wave"
-                                                >Bounce out horizontally with
-                                                wave</option
-                                            >
-                                            <option disabled="true"
-                                                >------------------------------</option
-                                            >
                                             <option value="bounce out vval"
                                                 >Bounce out vertically</option
-                                            >
-                                            <option
-                                                value="bounce out vval shake"
-                                                >Bounce out vertically with
-                                                shake</option
-                                            >
-                                            <option
-                                                value="bounce out vval shake horizontally"
-                                                >Bounce out vertically with
-                                                horizontal shake</option
-                                            >
-                                            <option
-                                                value="bounce out vval shake vertically"
-                                                >Bounce out vertically with
-                                                vertical shake</option
-                                            >
-                                            <option
-                                                value="bounce out vval pulsate"
-                                                >Bounce out vertically with
-                                                pulse</option
-                                            >
-                                            <option
-                                                value="bounce out vval flash"
-                                                >Bounce out vertically with
-                                                flash</option
-                                            >
-                                            <option value="bounce out vval wave"
-                                                >Bounce out vertically with
-                                                wave</option
-                                            >
-                                            <option disabled="true"
-                                                >------------------------------</option
                                             >
                                             <option value="bounce out dval"
                                                 >Bounce out diagonally</option
                                             >
-                                            <option
-                                                value="bounce out dval shake"
-                                                >Bounce out diagonally with
-                                                shake</option
+                                        </optgroup>
+                                        <optgroup label="Grow exits">
+                                            <option value="grow out hval"
+                                                >Grow out horizontally</option
                                             >
-                                            <option
-                                                value="bounce out dval shake horizontally"
-                                                >Bounce out diagonally with
-                                                horizontal shake</option
+                                            <option value="grow out vval"
+                                                >Grow out vertically</option
                                             >
-                                            <option
-                                                value="bounce out dval shake vertically"
-                                                >Bounce out diagonally with
-                                                vertical shake</option
-                                            >
-                                            <option
-                                                value="bounce out dval pulsate"
-                                                >Bounce out diagonally with
-                                                pulse</option
-                                            >
-                                            <option
-                                                value="bounce out dval flash"
-                                                >Bounce in diagonally with
-                                                flash</option
-                                            >
-                                            <option value="bounce out dval wave"
-                                                >Bounce in diagonally with
-                                                wave</option
+                                            <option value="grow out dval"
+                                                >Grow out diagonally</option
                                             >
                                         </optgroup>
+                                    </select>
+                                </div>
+                                <div class="select">
+                                    <select
+                                        id="leaveChainable"
+                                        onchange="updatePre()"
+                                    >
+                                        <option value=""
+                                            >with no other effect</option
+                                        >
+                                        <option value="shake"
+                                            >with a shake</option
+                                        >
+                                        <option value="shake horizontally"
+                                            >with a horizontal shake</option
+                                        >
+                                        <option value="shake vertically"
+                                            >with a vertical shake</option
+                                        >
+                                        <option value="pulsate"
+                                            >with a pulse</option
+                                        >
+                                        <option value="wave"
+                                            >with a wave</option
+                                        >
+                                        <option value="flash"
+                                            >with a flash</option
+                                        >
                                     </select>
                                 </div>
                             </fieldset>
