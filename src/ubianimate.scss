@@ -9,7 +9,7 @@
 @import "./core/mixins";
 
 /**
- * Global
+ * Global rules
  */
 
 #{$rootClass} {
@@ -41,3 +41,8 @@
  */
 @import "./animations/bounce/bounce-in";
 @import "./animations/bounce/bounce-out";
+
+/**
+ * Grow
+ */
+@import "./animations/grow/grow-in";
