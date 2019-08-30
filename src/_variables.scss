@@ -49,3 +49,14 @@ $slideInDuration: 0.7s;
 $slideInTimingFunction: ease-in;
 $slideOutDuration: $slideInDuration;
 $slideOutTimingFunction: $slideInTimingFunction;
+
+/**
+ * Bounce
+ */
+$bounceInDuration: 0.7s;
+$bounceInTimingFunction: ease-in;
+$bounceOutDuration: $bounceInDuration;
+$bounceOutTimingFunction: $bounceInTimingFunction;
+$bounceIn: 6px;
+$bounceDuring: 4px;
+$bounceOut: 12px;

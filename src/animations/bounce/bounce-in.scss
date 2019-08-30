@@ -1,0 +1,217 @@
+@mixin bounce-in-common($anim) {
+    animation-name: $anim;
+
+    &.shake {
+        animation-name: $anim, shake-in;
+
+        &.horizontally {
+            animation-name: $anim, shake-horizontally-in;
+        }
+
+        &.vertically {
+            animation-name: $anim, shake-vertically-in;
+        }
+    }
+
+    &.pulsate {
+        animation-name: $anim, pulsate-in;
+    }
+
+    &.flash {
+        animation-name: $anim, flash-in;
+    }
+
+    &.wave {
+        animation-name: $anim, wave-in;
+    }
+}
+
+#{$rootClass}.bounce.in {
+    animation-duration: $bounceInDuration;
+    animation-timing-function: $bounceInTimingFunction;
+
+    &.left {
+        @include bounce-in-common(bounce-in-left);
+    }
+
+    &.right {
+        @include bounce-in-common(bounce-in-right);
+    }
+
+    &.up {
+        @include bounce-in-common(bounce-in-up);
+    }
+
+    &.down {
+        @include bounce-in-common(bounce-in-down);
+    }
+
+    &.up.left {
+        @include bounce-in-common(bounce-in-up-left);
+    }
+
+    &.down.left {
+        @include bounce-in-common(bounce-in-down-left);
+    }
+
+    &.up.right {
+        @include bounce-in-common(bounce-in-up-right);
+    }
+
+    &.down.right {
+        @include bounce-in-common(bounce-in-down-right);
+    }
+
+    &.shake {
+        animation-duration: $bounceInDuration, $shakeDuration;
+        animation-delay: 0s, $bounceInDuration;
+        animation-timing-function: $bounceInTimingFunction, $shakeTimingFunction;
+
+        &.horizontally {
+            animation-name: bounce-in-right, shake-horizontally-in;
+        }
+
+        &.vertically {
+            animation-name: bounce-in-right, shake-vertically-in;
+        }
+    }
+
+    &.pulsate {
+        animation-duration: $bounceInDuration, $pulsateDuration;
+        animation-delay: 0s, $bounceInDuration;
+        animation-timing-function: $bounceInTimingFunction,
+            $pulsateTimingFunction;
+    }
+
+    &.flash {
+        animation-duration: $bounceInDuration, $flashDuration;
+        animation-delay: 0s, $bounceInDuration;
+        animation-timing-function: $bounceInTimingFunction, $flashTimingFunction;
+    }
+
+    &.wave {
+        animation-duration: $bounceInDuration, $waveDuration;
+        animation-delay: 0s, $bounceInDuration;
+        animation-timing-function: $bounceInTimingFunction, $waveTimingFunction;
+    }
+}
+
+@keyframes bounce-in-right {
+    0% {
+        transform: translate3d(-#{$rightClearance}, 0, 0);
+    }
+    60% {
+        transform: translate3d(#{$bounceIn}, 0, 0);
+    }
+    80% {
+        transform: translate3d(-#{$bounceDuring}, 0, 0);
+    }
+    100% {
+        transform: none;
+    }
+}
+
+@keyframes bounce-in-left {
+    0% {
+        transform: translate3d(#{$leftClearance}, 0, 0);
+    }
+    60% {
+        transform: translate3d(-#{$bounceIn}, 0, 0);
+    }
+    80% {
+        transform: translate3d(#{$bounceDuring}, 0, 0);
+    }
+    100% {
+        transform: none;
+    }
+}
+
+@keyframes bounce-in-up {
+    0% {
+        transform: translate3d(0, #{$bottomClearance}, 0);
+    }
+    60% {
+        transform: translate3d(0, -#{$bounceIn}, 0);
+    }
+    80% {
+        transform: translate3d(0, #{$bounceDuring}, 0);
+    }
+    100% {
+        transform: none;
+    }
+}
+
+@keyframes bounce-in-down {
+    0% {
+        transform: translate3d(0, -#{$topClearance}, 0);
+    }
+    60% {
+        transform: translate3d(0, #{$bounceIn}, 0);
+    }
+    80% {
+        transform: translate3d(0, -#{$bounceDuring}, 0);
+    }
+    100% {
+        transform: none;
+    }
+}
+
+@keyframes bounce-in-down-right {
+    0% {
+        transform: translate3d(-#{$rightClearance}, -#{$topClearance}, 0);
+    }
+    60% {
+        transform: translate3d(#{$bounceIn}, #{$bounceIn}, 0);
+    }
+    80% {
+        transform: translate3d(-#{$bounceDuring}, -#{$bounceDuring}, 0);
+    }
+    100% {
+        transform: none;
+    }
+}
+
+@keyframes bounce-in-up-right {
+    0% {
+        transform: translate3d(-#{$rightClearance}, #{$bottomClearance}, 0);
+    }
+    60% {
+        transform: translate3d(#{$bounceIn}, -#{$bounceIn}, 0);
+    }
+    80% {
+        transform: translate3d(-#{$bounceDuring}, #{$bounceDuring}, 0);
+    }
+    100% {
+        transform: none;
+    }
+}
+
+@keyframes bounce-in-down-left {
+    0% {
+        transform: translate3d(#{$leftClearance}, -#{$topClearance}, 0);
+    }
+    60% {
+        transform: translate3d(-#{$bounceIn}, #{$bounceIn}, 0);
+    }
+    80% {
+        transform: translate3d(#{$bounceDuring}, -#{$bounceDuring}, 0);
+    }
+    100% {
+        transform: none;
+    }
+}
+
+@keyframes bounce-in-up-left {
+    0% {
+        transform: translate3d(#{$leftClearance}, #{$bottomClearance}, 0);
+    }
+    60% {
+        transform: translate3d(-#{$bounceIn}, -#{$bounceIn}, 0);
+    }
+    80% {
+        transform: translate3d(#{$bounceDuring}, #{$bounceDuring}, 0);
+    }
+    100% {
+        transform: none;
+    }
+}
