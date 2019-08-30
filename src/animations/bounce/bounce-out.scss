@@ -1,100 +1,73 @@
-@mixin bounce-out-common($anim) {
-    animation-name: $anim;
-
-    &.shake {
-        animation-name: shake-out, $anim;
-
-        &.horizontally {
-            animation-name: shake-horizontally-out, $anim;
-        }
-
-        &.vertically {
-            animation-name: shake-vertically-out, $anim;
-        }
-    }
-
-    &.pulsate {
-        animation-name: pulsate-out, $anim;
-    }
-
-    &.flash {
-        animation-name: flash-out, $anim;
-    }
-
-    &.wave {
-        animation-name: wave-out, $anim;
-    }
-}
-
 #{$rootClass}.bounce.out {
     animation-duration: $bounceInDuration;
     animation-timing-function: $bounceInTimingFunction;
 
     &.left {
-        @include bounce-out-common(bounce-out-left);
+        @include chainable-anim-out(bounce-out-left);
     }
 
     &.right {
-        @include bounce-out-common(bounce-out-right);
+        @include chainable-anim-out(bounce-out-right);
     }
 
     &.up {
-        @include bounce-out-common(bounce-out-up);
+        @include chainable-anim-out(bounce-out-up);
     }
 
     &.down {
-        @include bounce-out-common(bounce-out-down);
+        @include chainable-anim-out(bounce-out-down);
     }
 
     &.up.left {
-        @include bounce-out-common(bounce-out-up-left);
+        @include chainable-anim-out(bounce-out-up-left);
     }
 
     &.down.left {
-        @include bounce-out-common(bounce-out-down-left);
+        @include chainable-anim-out(bounce-out-down-left);
     }
 
     &.up.right {
-        @include bounce-out-common(bounce-out-up-right);
+        @include chainable-anim-out(bounce-out-up-right);
     }
 
     &.down.right {
-        @include bounce-out-common(bounce-out-down-right);
+        @include chainable-anim-out(bounce-out-down-right);
     }
 
     &.shake {
-        animation-duration: $shakeDuration, $bounceOutDuration;
-        animation-delay: 0s, $shakeDuration;
-        animation-timing-function: $shakeTimingFunction,
-            $bounceOutTimingFunction;
-
-        &.horizontally {
-            animation-name: shake-horizontally-out, bounce-out-right;
-        }
-
-        &.vertically {
-            animation-name: shake-vertically-out, bounce-out-right;
-        }
+        @include chainable(
+            $shakeDuration,
+            $shakeTimingFunction,
+            $bounceOutDuration,
+            $bounceOutTimingFunction
+        );
     }
 
     &.pulsate {
-        animation-duration: $pulsateDuration, $bounceOutDuration;
-        animation-delay: 0s, $pulsateDuration;
-        animation-timing-function: $pulsateTimingFunction,
-            $bounceOutTimingFunction;
+        @include chainable(
+            $pulsateDuration,
+            $pulsateTimingFunction,
+            $bounceOutDuration,
+            $bounceOutTimingFunction
+        );
     }
 
     &.flash {
-        animation-duration: $flashDuration, $bounceOutDuration;
-        animation-delay: 0s, $flashDuration;
-        animation-timing-function: $flashTimingFunction,
-            $bounceOutTimingFunction;
+        @include chainable(
+            $flashDuration,
+            $flashTimingFunction,
+            $bounceOutDuration,
+            $bounceOutTimingFunction
+        );
     }
 
     &.wave {
-        animation-duration: $waveDuration, $bounceOutDuration;
-        animation-delay: 0s, $waveDuration;
-        animation-timing-function: $waveTimingFunction, $bounceOutTimingFunction;
+        @include chainable(
+            $waveDuration,
+            $waveTimingFunction,
+            $bounceOutDuration,
+            $bounceOutTimingFunction
+        );
     }
 }
 

@@ -1,98 +1,73 @@
-@mixin slide-in-common($anim) {
-    animation-name: $anim;
-
-    &.shake {
-        animation-name: $anim, shake-in;
-
-        &.horizontally {
-            animation-name: $anim, shake-horizontally-in;
-        }
-
-        &.vertically {
-            animation-name: $anim, shake-vertically-in;
-        }
-    }
-
-    &.pulsate {
-        animation-name: $anim, pulsate-in;
-    }
-
-    &.flash {
-        animation-name: $anim, flash-in;
-    }
-
-    &.wave {
-        animation-name: $anim, wave-in;
-    }
-}
-
 #{$rootClass}.slide.in {
     animation-duration: $slideInDuration;
     animation-timing-function: $slideInTimingFunction;
 
     &.left {
-        @include slide-in-common(slide-in-left);
+        @include chainable-anim-in(slide-in-left);
     }
 
     &.right {
-        @include slide-in-common(slide-in-right);
+        @include chainable-anim-in(slide-in-right);
     }
 
     &.up {
-        @include slide-in-common(slide-in-up);
+        @include chainable-anim-in(slide-in-up);
     }
 
     &.down {
-        @include slide-in-common(slide-in-down);
+        @include chainable-anim-in(slide-in-down);
     }
 
     &.up.left {
-        @include slide-in-common(slide-in-up-left);
+        @include chainable-anim-in(slide-in-up-left);
     }
 
     &.down.left {
-        @include slide-in-common(slide-in-down-left);
+        @include chainable-anim-in(slide-in-down-left);
     }
 
     &.up.right {
-        @include slide-in-common(slide-in-up-right);
+        @include chainable-anim-in(slide-in-up-right);
     }
 
     &.down.right {
-        @include slide-in-common(slide-in-down-right);
+        @include chainable-anim-in(slide-in-down-right);
     }
 
     &.shake {
-        animation-duration: $slideInDuration, $shakeDuration;
-        animation-delay: 0s, $slideInDuration;
-        animation-timing-function: $slideInTimingFunction, $shakeTimingFunction;
-
-        &.horizontally {
-            animation-name: slide-in-right, shake-horizontally-in;
-        }
-
-        &.vertically {
-            animation-name: slide-in-right, shake-vertically-in;
-        }
+        @include chainable(
+            $slideInDuration,
+            $slideInTimingFunction,
+            $shakeDuration,
+            $shakeTimingFunction
+        );
     }
 
     &.pulsate {
-        animation-duration: $slideInDuration, $pulsateDuration;
-        animation-delay: 0s, $slideInDuration;
-        animation-timing-function: $slideInTimingFunction,
-            $pulsateTimingFunction;
+        @include chainable(
+            $slideInDuration,
+            $slideInTimingFunction,
+            $pulsateDuration,
+            $pulsateTimingFunction
+        );
     }
 
     &.flash {
-        animation-duration: $slideInDuration, $flashDuration;
-        animation-delay: 0s, $slideInDuration;
-        animation-timing-function: $slideInTimingFunction, $flashTimingFunction;
+        @include chainable(
+            $slideInDuration,
+            $slideInTimingFunction,
+            $flashDuration,
+            $flashTimingFunction
+        );
     }
 
     &.wave {
-        animation-duration: $slideInDuration, $waveDuration;
-        animation-delay: 0s, $slideInDuration;
-        animation-timing-function: $slideInTimingFunction, $waveTimingFunction;
+        @include chainable(
+            $slideInDuration,
+            $slideInTimingFunction,
+            $waveDuration,
+            $waveTimingFunction
+        );
     }
 }
 

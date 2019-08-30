@@ -1,43 +1,43 @@
 #{$rootClass}.fade.out {
-    animation-name: fade-out;
     animation-duration: $fadeOutDuration;
     animation-timing-function: $fadeOutTimingFunction;
 
+    @include chainable-anim-out(fade-out);
+
     &.shake {
-        animation-name: shake-out, fade-out;
-        animation-duration: $shakeDuration, $fadeOutDuration;
-        animation-delay: 0s, $shakeDuration;
-        animation-timing-function: $shakeTimingFunction, $fadeOutTimingFunction;
-
-        &.horizontally {
-            animation-name: shake-horizontally-out, fade-out;
-        }
-
-        &.vertically {
-            animation-name: shake-vertically-out, fade-out;
-        }
+        @include chainable(
+            $shakeDuration,
+            $shakeTimingFunction,
+            $fadeOutDuration,
+            $fadeOutTimingFunction
+        );
     }
 
     &.pulsate {
-        animation-name: pulsate-out, fade-out;
-        animation-duration: $pulsateDuration, $fadeOutDuration;
-        animation-delay: 0s, $pulsateDuration;
-        animation-timing-function: $pulsateTimingFunction,
-            $fadeOutTimingFunction;
+        @include chainable(
+            $pulsateDuration,
+            $pulsateTimingFunction,
+            $fadeOutDuration,
+            $fadeOutTimingFunction
+        );
     }
 
     &.flash {
-        animation-name: flash-out, fade-out;
-        animation-duration: $flashDuration, $fadeOutDuration;
-        animation-delay: 0s, $flashDuration;
-        animation-timing-function: $flashTimingFunction, $fadeOutTimingFunction;
+        @include chainable(
+            $flashDuration,
+            $flashTimingFunction,
+            $fadeOutDuration,
+            $fadeOutTimingFunction
+        );
     }
 
     &.wave {
-        animation-name: wave-out, fade-out;
-        animation-duration: $waveDuration, $fadeOutDuration;
-        animation-delay: 0s, $waveDuration;
-        animation-timing-function: $waveTimingFunction, $fadeOutTimingFunction;
+        @include chainable(
+            $waveDuration,
+            $waveTimingFunction,
+            $fadeOutDuration,
+            $fadeOutTimingFunction
+        );
     }
 }
 

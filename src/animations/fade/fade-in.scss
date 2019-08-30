@@ -1,42 +1,43 @@
 #{$rootClass}.fade.in {
-    animation-name: fade-in;
     animation-duration: $fadeInDuration;
     animation-timing-function: $fadeInTimingFunction;
 
+    @include chainable-anim-in(fade-in);
+
     &.shake {
-        animation-name: fade-in, shake-in;
-        animation-duration: $fadeInDuration, $shakeDuration;
-        animation-delay: 0s, $fadeInDuration;
-        animation-timing-function: $fadeInTimingFunction, $shakeTimingFunction;
-
-        &.horizontally {
-            animation-name: fade-in, shake-horizontally-in;
-        }
-
-        &.vertically {
-            animation-name: fade-in, shake-vertically-in;
-        }
+        @include chainable(
+            $fadeInDuration,
+            $fadeInTimingFunction,
+            $shakeDuration,
+            $shakeTimingFunction
+        );
     }
 
     &.pulsate {
-        animation-name: fade-in, pulsate-in;
-        animation-duration: $fadeInDuration, $pulsateDuration;
-        animation-delay: 0s, $fadeInDuration;
-        animation-timing-function: $fadeInTimingFunction, $pulsateTimingFunction;
+        @include chainable(
+            $fadeInDuration,
+            $fadeInTimingFunction,
+            $pulsateDuration,
+            $pulsateTimingFunction
+        );
     }
 
     &.flash {
-        animation-name: fade-in, flash-in;
-        animation-duration: $fadeInDuration, $flashDuration;
-        animation-delay: 0s, $fadeInDuration;
-        animation-timing-function: $fadeInTimingFunction, $flashTimingFunction;
+        @include chainable(
+            $fadeInDuration,
+            $fadeInTimingFunction,
+            $flashDuration,
+            $flashTimingFunction
+        );
     }
 
     &.wave {
-        animation-name: fade-in, wave-in;
-        animation-duration: $fadeInDuration, $waveDuration;
-        animation-delay: 0s, $fadeInDuration;
-        animation-timing-function: $fadeInTimingFunction, $waveTimingFunction;
+        @include chainable(
+            $fadeInDuration,
+            $fadeInTimingFunction,
+            $waveDuration,
+            $waveTimingFunction
+        );
     }
 }
 
