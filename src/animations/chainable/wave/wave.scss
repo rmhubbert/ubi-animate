@@ -1,0 +1,22 @@
+@mixin wave {
+    0%,
+    100% {
+        transform: none;
+    }
+    20%,
+    60% {
+        transform: rotate(-#{$wave});
+    }
+    40%,
+    80% {
+        transform: rotate(#{$wave});
+    }
+}
+
+@keyframes wave-in {
+    @include wave;
+}
+
+@keyframes wave-out {
+    @include wave;
+}
