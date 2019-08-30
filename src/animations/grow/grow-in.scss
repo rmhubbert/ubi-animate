@@ -1,0 +1,113 @@
+#{$rootClass}.grow.in {
+    animation-duration: $growInDuration;
+    animation-timing-function: $growInTimingFunction;
+
+    &.left {
+        @include chainable-anim-in(grow-in-horizontally);
+        transform-origin: top right;
+    }
+
+    &.right {
+        @include chainable-anim-in(grow-in-horizontally);
+        transform-origin: top left;
+    }
+
+    &.up {
+        @include chainable-anim-in(grow-in-vertically);
+        transform-origin: bottom center;
+    }
+
+    &.down {
+        @include chainable-anim-in(grow-in-vertically);
+        transform-origin: top center;
+    }
+
+    &.up.left {
+        @include chainable-anim-in(grow-in-diagonally);
+        transform-origin: bottom right;
+    }
+
+    &.down.left {
+        @include chainable-anim-in(grow-in-diagonally);
+        transform-origin: top right;
+    }
+
+    &.up.right {
+        @include chainable-anim-in(grow-in-diagonally);
+        transform-origin: bottom left;
+    }
+
+    &.down.right {
+        @include chainable-anim-in(grow-in-diagonally);
+        transform-origin: top left;
+    }
+
+    &.shake {
+        @include chainable(
+            $growInDuration,
+            $growInTimingFunction,
+            $shakeDuration,
+            $shakeTimingFunction
+        );
+    }
+
+    &.pulsate {
+        @include chainable(
+            $growInDuration,
+            $growInTimingFunction,
+            $pulsateDuration,
+            $pulsateTimingFunction
+        );
+    }
+
+    &.flash {
+        @include chainable(
+            $growInDuration,
+            $growInTimingFunction,
+            $flashDuration,
+            $flashTimingFunction
+        );
+    }
+
+    &.wave {
+        @include chainable(
+            $growInDuration,
+            $growInTimingFunction,
+            $waveDuration,
+            $waveTimingFunction
+        );
+    }
+}
+
+@keyframes grow-in-horizontally {
+    0% {
+        transform: scale(0, 0);
+    }
+    50% {
+        transform: scale(0, 1);
+    }
+    100% {
+        transform: none;
+    }
+}
+
+@keyframes grow-in-vertically {
+    0% {
+        transform: scale(0, 0);
+    }
+    50% {
+        transform: scale(1, 0);
+    }
+    100% {
+        transform: none;
+    }
+}
+
+@keyframes grow-in-diagonally {
+    0% {
+        transform: scale(0, 0);
+    }
+    100% {
+        transform: none;
+    }
+}
