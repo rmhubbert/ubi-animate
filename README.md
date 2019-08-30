@@ -24,17 +24,11 @@ You can also [link directly via CDN at jsDelivr](https://www.jsdelivr.com/packag
 
 The easiest way to get your desired animation classes is via [the demo app](https://rmhubbert.github.io/ubi-animate).
 
-Alternatively, start with the 'animate' class, followed by the animation effect class then the animation direction class (up|down|left|right|center). A full listing of animation effect class names can be found in src/ubianimate.scss.
-
-```html
-<div class="animate slide in left">Your Animated Content</div>
-```
-
 ## Customisation
 
 UbiAnimate can be easily customised via Sass variables.
 
-Simply override any variables (a full listing can be found in src/\_variables.scss) in your main Sass file before importing the library from src/ubianimate.scss.
+Simply override any variables (a full listing can be found in src/\variables.scss) in your main Sass file before importing the library from src/ubianimate.scss.
 
 ## Contributing
 
