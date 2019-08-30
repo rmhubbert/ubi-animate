@@ -60,3 +60,11 @@ $bounceOutTimingFunction: $bounceInTimingFunction !default;
 $bounceIn: 6px !default;
 $bounceDuring: 4px !default;
 $bounceOut: 12px !default;
+
+/**
+ * Grow
+ */
+$growInDuration: 0.7s !default;
+$growInTimingFunction: ease-in !default;
+$growOutDuration: $growInDuration !default;
+$growOutTimingFunction: $growInTimingFunction !default;
