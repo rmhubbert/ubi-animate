@@ -1,0 +1,159 @@
+@mixin slide-out-common($anim) {
+    animation-name: $anim;
+
+    &.shake {
+        animation-name: shake-out, $anim;
+
+        &.horizontally {
+            animation-name: shake-horizontally-out, $anim;
+        }
+
+        &.vertically {
+            animation-name: shake-vertically-out, $anim;
+        }
+    }
+
+    &.pulsate {
+        animation-name: pulsate-out, $anim;
+    }
+
+    &.flash {
+        animation-name: flash-out, $anim;
+    }
+}
+
+#{$rootClass}.slide.out {
+    animation-duration: $slideInDuration;
+    animation-timing-function: $slideInTimingFunction;
+
+    &.left {
+        @include slide-out-common(slide-out-left);
+    }
+
+    &.right {
+        @include slide-out-common(slide-out-right);
+    }
+
+    &.up {
+        @include slide-out-common(slide-out-up);
+    }
+
+    &.down {
+        @include slide-out-common(slide-out-down);
+    }
+
+    &.up.left {
+        @include slide-out-common(slide-out-up-left);
+    }
+
+    &.down.left {
+        @include slide-out-common(slide-out-down-left);
+    }
+
+    &.up.right {
+        @include slide-out-common(slide-out-up-right);
+    }
+
+    &.down.right {
+        @include slide-out-common(slide-out-down-right);
+    }
+
+    &.shake {
+        animation-duration: $shakeDuration, $slideOutDuration;
+        animation-delay: 0s, $shakeDuration;
+        animation-timing-function: $shakeTimingFunction, $slideOutTimingFunction;
+
+        &.horizontally {
+            animation-name: shake-horizontally-out, slide-out-right;
+        }
+
+        &.vertically {
+            animation-name: shake-vertically-out, slide-out-right;
+        }
+    }
+
+    &.pulsate {
+        animation-duration: $pulsateDuration, $slideOutDuration;
+        animation-delay: 0s, $pulsateDuration;
+        animation-timing-function: $pulsateTimingFunction,
+            $slideOutTimingFunction;
+    }
+
+    &.flash {
+        animation-duration: $flashDuration, $slideOutDuration;
+        animation-delay: 0s, $flashDuration;
+        animation-timing-function: $flashTimingFunction, $slideOutTimingFunction;
+    }
+}
+
+@keyframes slide-out-right {
+    0% {
+        transform: none;
+    }
+    100% {
+        transform: translate3d(#{$rightClearance}, 0, 0);
+    }
+}
+
+@keyframes slide-out-left {
+    0% {
+        transform: none;
+    }
+    100% {
+        transform: translate3d(-#{$leftClearance}, 0, 0);
+    }
+}
+
+@keyframes slide-out-up {
+    0% {
+        transform: none;
+    }
+    100% {
+        transform: translate3d(0, -#{$topClearance}, 0);
+    }
+}
+
+@keyframes slide-out-down {
+    0% {
+        transform: none;
+    }
+    100% {
+        transform: translate3d(0, #{$bottomClearance}, 0);
+    }
+}
+
+@keyframes slide-out-down-right {
+    0% {
+        transform: none;
+    }
+    100% {
+        transform: translate3d(#{$rightClearance}, #{$topClearance}, 0);
+    }
+}
+
+@keyframes slide-out-up-right {
+    0% {
+        transform: none;
+    }
+    100% {
+        transform: translate3d(#{$rightClearance}, -#{$topClearance}, 0);
+    }
+}
+
+@keyframes slide-out-down-left {
+    0% {
+        transform: none;
+    }
+    100% {
+        transform: translate3d(-#{$leftClearance}, #{$bottomClearance}, 0);
+    }
+}
+
+@keyframes slide-out-up-left {
+    0% {
+        transform: none;
+    }
+    100% {
+        transform: translate3d(-#{$leftClearance}, -#{$topClearance}, 0);
+    }
+}

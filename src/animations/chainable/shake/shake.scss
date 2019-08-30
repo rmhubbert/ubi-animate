@@ -1,0 +1,74 @@
+@mixin shake {
+    0%,
+    100% {
+        transform: none;
+    }
+    20% {
+        transform: translate3d(-#{$shake}, -#{$shake}, 0);
+    }
+    40% {
+        transform: translate3d(#{$shake}, #{$shake}, 0);
+    }
+    60% {
+        transform: translate3d(#{$shake}, -#{$shake}, 0);
+    }
+    80% {
+        transform: translate3d(-#{$shake}, #{$shake}, 0);
+    }
+}
+
+@mixin shake-horizontally {
+    0%,
+    100% {
+        transform: none;
+    }
+    25% {
+        transform: translate3d(-#{$shake}, 0, 0);
+    }
+    50% {
+        transform: translate3d(#{$shake}, 0, 0);
+    }
+    75% {
+        transform: translate3d(-#{$shake}, 0, 0);
+    }
+}
+
+@mixin shake-vertically {
+    0%,
+    100% {
+        transform: none;
+    }
+    25% {
+        transform: translate3d(0, -#{$shake}, 0);
+    }
+    50% {
+        transform: translate3d(0, #{$shake}, 0);
+    }
+    75% {
+        transform: translate3d(0, -#{$shake}, 0);
+    }
+}
+
+@keyframes shake-in {
+    @include shake;
+}
+
+@keyframes shake-out {
+    @include shake;
+}
+
+@keyframes shake-horizontally-in {
+    @include shake-horizontally;
+}
+
+@keyframes shake-horizontally-out {
+    @include shake-horizontally;
+}
+
+@keyframes shake-vertically-in {
+    @include shake-vertically;
+}
+
+@keyframes shake-vertically-out {
+    @include shake-vertically;
+}

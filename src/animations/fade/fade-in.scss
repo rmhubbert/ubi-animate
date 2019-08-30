@@ -1,5 +1,36 @@
-.animate.fade-in {
-    animation: fade-in $fadeInTime $fadeInEasing forwards;
+#{$rootClass}.fade.in {
+    animation-name: fade-in;
+    animation-duration: $fadeInDuration;
+    animation-timing-function: $fadeInTimingFunction;
+
+    &.shake {
+        animation-name: fade-in, shake-in;
+        animation-duration: $fadeInDuration, $shakeDuration;
+        animation-delay: 0s, $fadeInDuration;
+        animation-timing-function: $fadeInTimingFunction, $shakeTimingFunction;
+
+        &.horizontally {
+            animation-name: fade-in, shake-horizontally-in;
+        }
+
+        &.vertically {
+            animation-name: fade-in, shake-vertically-in;
+        }
+    }
+
+    &.pulsate {
+        animation-name: fade-in, pulsate-in;
+        animation-duration: $fadeInDuration, $pulsateDuration;
+        animation-delay: 0s, $fadeInDuration;
+        animation-timing-function: $fadeInTimingFunction, $pulsateTimingFunction;
+    }
+
+    &.flash {
+        animation-name: fade-in, flash-in;
+        animation-duration: $fadeInDuration, $flashDuration;
+        animation-delay: 0s, $fadeInDuration;
+        animation-timing-function: $fadeInTimingFunction, $flashTimingFunction;
+    }
 }
 
 @keyframes fade-in {

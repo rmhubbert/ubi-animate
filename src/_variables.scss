@@ -1,56 +1,44 @@
 /**
- * Global
+ * Global variables
  */
+$rootClass: ".notification-animation";
+$rightClearance: 480px;
+$leftClearance: $rightClearance;
 $topClearance: 480px;
 $bottomClearance: $topClearance;
-$leftClearance: 480px;
-$rightClearance: $leftClearance;
+
+/**
+ * Shake
+ */
+$shakeDuration: 0.3s;
+$shakeTimingFunction: ease;
+$shake: 3px;
+
+/**
+ * Pulsate
+ */
+$pulsateDuration: 0.4s;
+$pulsateTimingFunction: ease-in-out;
+$pulsate: 1.03;
+
+/**
+ * Flash
+ */
+$flashDuration: 0.65s;
+$flashTimingFunction: linear;
 
 /**
  * Fade
  */
-$fadeInEasing: ease;
-$fadeInTime: 1s;
-$fadeOutEasing: $fadeInEasing;
-$fadeOutTime: $fadeInTime;
-$fadeShake: 5px;
-
-/**
- * Grow
- */
-$growInEasing: cubic-bezier(0.9, 0.55, 0.9, 1);
-$growInTime: 0.5s;
-$growOutEasing: $growInEasing;
-$growOutTime: $growInTime;
-
-$growBounceInEasing: cubic-bezier(0.88, 0.54, 0.91, 1);
-$growBounceInTime: 0.7s;
-$growBounceOutEasing: $growBounceInEasing;
-$growBounceOutTime: $growBounceInTime;
-$growBounceIn: 1.05;
-$growBounceDuring: 0.95;
-$growBounceOut: 1.1;
-
-/**
- * Swing
- */
-$swingInEasing: cubic-bezier(0.9, 0.55, 0.9, 1);
-$swingInTime: 0.5s;
-$swingOutEasing: $swingInEasing;
-$swingOutTime: $swingInTime;
+$fadeInDuration: 1s;
+$fadeInTimingFunction: ease;
+$fadeOutDuration: $fadeInDuration;
+$fadeOutTimingFunction: $fadeInTimingFunction;
 
 /**
  * Slide
  */
-$slideInEasing: cubic-bezier(0.9, 0.55, 0.9, 1);
-$slideInTime: 0.7s;
-$slideOutEasing: $slideInEasing;
-$slideOutTime: $slideInTime;
-
-$slideBounceInEasing: cubic-bezier(0.88, 0.54, 0.91, 1);
-$slideBounceInTime: 0.8s;
-$slideBounceOutEasing: $slideBounceInEasing;
-$slideBounceOutTime: $slideBounceInTime;
-$slideBounceIn: 6px;
-$slideBounceDuring: 4px;
-$slideBounceOut: 12px;
+$slideInDuration: 0.7s;
+$slideInTimingFunction: ease-in;
+$slideOutDuration: $slideInDuration;
+$slideOutTimingFunction: $slideInTimingFunction;

@@ -1,0 +1,31 @@
+/**
+ * Variables
+ */
+@import "variables";
+
+/**
+ * Global
+ */
+
+#{$rootClass} {
+    animation-fill-mode: forwards;
+}
+
+/**
+ * Chainable animations
+ */
+@import "./animations/chainable/shake/shake";
+@import "./animations/chainable/pulsate/pulsate";
+@import "./animations/chainable/flash/flash";
+
+/**
+ * Fade
+ */
+@import "./animations/fade/fade-in";
+@import "./animations/fade/fade-out";
+
+/**
+ * Slide
+ */
+@import "./animations/slide/slide-in";
+@import "./animations/slide/slide-out";

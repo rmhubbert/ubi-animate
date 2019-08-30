@@ -1,0 +1,22 @@
+@mixin pulsate {
+    0%,
+    50%,
+    100% {
+        transform: none;
+    }
+    25%,
+    75% {
+        transform: scale3d(#{$pulsate}, #{$pulsate}, 0);
+        // The following stops flickering on Webkit browsers
+        -webkit-transform-style: preserve-3d;
+        -webkit-backface-visibility: hidden;
+    }
+}
+
+@keyframes pulsate-in {
+    @include pulsate;
+}
+
+@keyframes pulsate-out {
+    @include pulsate;
+}

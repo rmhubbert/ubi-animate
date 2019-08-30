@@ -1,5 +1,37 @@
-.animate.fade-out {
-    animation: fade-out $fadeOutTime $fadeOutEasing forwards;
+#{$rootClass}.fade.out {
+    animation-name: fade-out;
+    animation-duration: $fadeOutDuration;
+    animation-timing-function: $fadeOutTimingFunction;
+
+    &.shake {
+        animation-name: shake-out, fade-out;
+        animation-duration: $shakeDuration, $fadeOutDuration;
+        animation-delay: 0s, $shakeDuration;
+        animation-timing-function: $shakeTimingFunction, $fadeOutTimingFunction;
+
+        &.horizontally {
+            animation-name: shake-horizontally-out, fade-out;
+        }
+
+        &.vertically {
+            animation-name: shake-vertically-out, fade-out;
+        }
+    }
+
+    &.pulsate {
+        animation-name: pulsate-out, fade-out;
+        animation-duration: $pulsateDuration, $fadeOutDuration;
+        animation-delay: 0s, $pulsateDuration;
+        animation-timing-function: $pulsateTimingFunction,
+            $fadeOutTimingFunction;
+    }
+
+    &.flash {
+        animation-name: flash-out, fade-out;
+        animation-duration: $flashDuration, $fadeOutDuration;
+        animation-delay: 0s, $flashDuration;
+        animation-timing-function: $flashTimingFunction, $fadeOutTimingFunction;
+    }
 }
 
 @keyframes fade-out {
