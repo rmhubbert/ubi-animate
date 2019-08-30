@@ -1,1104 +1,746 @@
-.animate{
-  -webkit-animation-fill-mode:forwards;
-          animation-fill-mode:forwards;
-}
-@-webkit-keyframes shake-in{
-  0%, 100%{
-    transform:none;
-  }
-  20%{
-    transform:translate3d(-3px, -3px, 0);
-  }
-  40%{
-    transform:translate3d(3px, 3px, 0);
-  }
-  60%{
-    transform:translate3d(3px, -3px, 0);
-  }
-  80%{
-    transform:translate3d(-3px, 3px, 0);
-  }
-}
-@keyframes shake-in{
-  0%, 100%{
-    transform:none;
-  }
-  20%{
-    transform:translate3d(-3px, -3px, 0);
-  }
-  40%{
-    transform:translate3d(3px, 3px, 0);
-  }
-  60%{
-    transform:translate3d(3px, -3px, 0);
-  }
-  80%{
-    transform:translate3d(-3px, 3px, 0);
-  }
-}
-@-webkit-keyframes shake-out{
-  0%, 100%{
-    transform:none;
-  }
-  20%{
-    transform:translate3d(-3px, -3px, 0);
-  }
-  40%{
-    transform:translate3d(3px, 3px, 0);
-  }
-  60%{
-    transform:translate3d(3px, -3px, 0);
-  }
-  80%{
-    transform:translate3d(-3px, 3px, 0);
-  }
-}
-@keyframes shake-out{
-  0%, 100%{
-    transform:none;
-  }
-  20%{
-    transform:translate3d(-3px, -3px, 0);
-  }
-  40%{
-    transform:translate3d(3px, 3px, 0);
-  }
-  60%{
-    transform:translate3d(3px, -3px, 0);
-  }
-  80%{
-    transform:translate3d(-3px, 3px, 0);
-  }
-}
-@-webkit-keyframes shake-horizontally-in{
-  0%, 100%{
-    transform:none;
-  }
-  25%{
-    transform:translate3d(-3px, 0, 0);
-  }
-  50%{
-    transform:translate3d(3px, 0, 0);
-  }
-  75%{
-    transform:translate3d(-3px, 0, 0);
-  }
-}
-@keyframes shake-horizontally-in{
-  0%, 100%{
-    transform:none;
-  }
-  25%{
-    transform:translate3d(-3px, 0, 0);
-  }
-  50%{
-    transform:translate3d(3px, 0, 0);
-  }
-  75%{
-    transform:translate3d(-3px, 0, 0);
-  }
-}
-@-webkit-keyframes shake-horizontally-out{
-  0%, 100%{
-    transform:none;
-  }
-  25%{
-    transform:translate3d(-3px, 0, 0);
-  }
-  50%{
-    transform:translate3d(3px, 0, 0);
-  }
-  75%{
-    transform:translate3d(-3px, 0, 0);
-  }
-}
-@keyframes shake-horizontally-out{
-  0%, 100%{
-    transform:none;
-  }
-  25%{
-    transform:translate3d(-3px, 0, 0);
-  }
-  50%{
-    transform:translate3d(3px, 0, 0);
-  }
-  75%{
-    transform:translate3d(-3px, 0, 0);
-  }
-}
-@-webkit-keyframes shake-vertically-in{
-  0%, 100%{
-    transform:none;
-  }
-  25%{
-    transform:translate3d(0, -3px, 0);
-  }
-  50%{
-    transform:translate3d(0, 3px, 0);
-  }
-  75%{
-    transform:translate3d(0, -3px, 0);
-  }
-}
-@keyframes shake-vertically-in{
-  0%, 100%{
-    transform:none;
-  }
-  25%{
-    transform:translate3d(0, -3px, 0);
-  }
-  50%{
-    transform:translate3d(0, 3px, 0);
-  }
-  75%{
-    transform:translate3d(0, -3px, 0);
-  }
-}
-@-webkit-keyframes shake-vertically-out{
-  0%, 100%{
-    transform:none;
-  }
-  25%{
-    transform:translate3d(0, -3px, 0);
-  }
-  50%{
-    transform:translate3d(0, 3px, 0);
-  }
-  75%{
-    transform:translate3d(0, -3px, 0);
-  }
-}
-@keyframes shake-vertically-out{
-  0%, 100%{
-    transform:none;
-  }
-  25%{
-    transform:translate3d(0, -3px, 0);
-  }
-  50%{
-    transform:translate3d(0, 3px, 0);
-  }
-  75%{
-    transform:translate3d(0, -3px, 0);
-  }
-}
-@-webkit-keyframes pulsate-in{
-  0%, 50%, 100%{
-    transform:none;
-  }
-  25%, 75%{
-    transform:scale3d(1.03, 1.03, 0);
-    -webkit-transform-style:preserve-3d;
-    -webkit-backface-visibility:hidden;
-  }
-}
-@keyframes pulsate-in{
-  0%, 50%, 100%{
-    transform:none;
-  }
-  25%, 75%{
-    transform:scale3d(1.03, 1.03, 0);
-    -webkit-transform-style:preserve-3d;
-    -webkit-backface-visibility:hidden;
-  }
-}
-@-webkit-keyframes pulsate-out{
-  0%, 50%, 100%{
-    transform:none;
-  }
-  25%, 75%{
-    transform:scale3d(1.03, 1.03, 0);
-    -webkit-transform-style:preserve-3d;
-    -webkit-backface-visibility:hidden;
-  }
-}
-@keyframes pulsate-out{
-  0%, 50%, 100%{
-    transform:none;
-  }
-  25%, 75%{
-    transform:scale3d(1.03, 1.03, 0);
-    -webkit-transform-style:preserve-3d;
-    -webkit-backface-visibility:hidden;
-  }
-}
-@-webkit-keyframes flash-in{
-  0%, 50%, 100%{
-    opacity:1;
-  }
-  25%, 75%{
-    opacity:0;
-  }
-}
-@keyframes flash-in{
-  0%, 50%, 100%{
-    opacity:1;
-  }
-  25%, 75%{
-    opacity:0;
-  }
-}
-@-webkit-keyframes flash-out{
-  0%, 50%, 100%{
-    opacity:1;
-  }
-  25%, 75%{
-    opacity:0;
-  }
-}
-@keyframes flash-out{
-  0%, 50%, 100%{
-    opacity:1;
-  }
-  25%, 75%{
-    opacity:0;
-  }
-}
-.animate.fade.in{
-  -webkit-animation-name:fade-in;
-          animation-name:fade-in;
-  -webkit-animation-duration:1s;
-          animation-duration:1s;
-  -webkit-animation-timing-function:ease;
-          animation-timing-function:ease;
-}
-.animate.fade.in.shake{
-  -webkit-animation-name:fade-in, shake-in;
-          animation-name:fade-in, shake-in;
-  -webkit-animation-duration:1s, 0.3s;
-          animation-duration:1s, 0.3s;
-  -webkit-animation-delay:0s, 1s;
-          animation-delay:0s, 1s;
-  -webkit-animation-timing-function:ease, ease;
-          animation-timing-function:ease, ease;
-}
-.animate.fade.in.shake.horizontally{
-  -webkit-animation-name:fade-in, shake-horizontally-in;
-          animation-name:fade-in, shake-horizontally-in;
-}
-.animate.fade.in.shake.vertically{
-  -webkit-animation-name:fade-in, shake-vertically-in;
-          animation-name:fade-in, shake-vertically-in;
-}
-.animate.fade.in.pulsate{
-  -webkit-animation-name:fade-in, pulsate-in;
-          animation-name:fade-in, pulsate-in;
-  -webkit-animation-duration:1s, 0.4s;
-          animation-duration:1s, 0.4s;
-  -webkit-animation-delay:0s, 1s;
-          animation-delay:0s, 1s;
-  -webkit-animation-timing-function:ease, ease-in-out;
-          animation-timing-function:ease, ease-in-out;
-}
-.animate.fade.in.flash{
-  -webkit-animation-name:fade-in, flash-in;
-          animation-name:fade-in, flash-in;
-  -webkit-animation-duration:1s, 0.65s;
-          animation-duration:1s, 0.65s;
-  -webkit-animation-delay:0s, 1s;
-          animation-delay:0s, 1s;
-  -webkit-animation-timing-function:ease, linear;
-          animation-timing-function:ease, linear;
+/**
+ * Variables
+ */
+/**
+ * Global variables
+ */
+/**
+ * Shake
+ */
+/**
+ * Pulsate
+ */
+/**
+ * Flash
+ */
+/**
+ * Wave
+ */
+/**
+ * Fade
+ */
+/**
+ * Slide
+ */
+/**
+ * Global
+ */
+.animate {
+  animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes fade-in{
-  0%{
-    opacity:0;
+/**
+ * Chainable animations
+ */
+@keyframes shake-in {
+  0%, 100% {
+    transform: none;
   }
-  100%{
-    opacity:1;
+  20% {
+    transform: translate3d(-3px, -3px, 0);
   }
+  40% {
+    transform: translate3d(3px, 3px, 0);
+  }
+  60% {
+    transform: translate3d(3px, -3px, 0);
+  }
+  80% {
+    transform: translate3d(-3px, 3px, 0);
+  }
+}
+@keyframes shake-out {
+  0%, 100% {
+    transform: none;
+  }
+  20% {
+    transform: translate3d(-3px, -3px, 0);
+  }
+  40% {
+    transform: translate3d(3px, 3px, 0);
+  }
+  60% {
+    transform: translate3d(3px, -3px, 0);
+  }
+  80% {
+    transform: translate3d(-3px, 3px, 0);
+  }
+}
+@keyframes shake-horizontally-in {
+  0%, 100% {
+    transform: none;
+  }
+  25% {
+    transform: translate3d(-3px, 0, 0);
+  }
+  50% {
+    transform: translate3d(3px, 0, 0);
+  }
+  75% {
+    transform: translate3d(-3px, 0, 0);
+  }
+}
+@keyframes shake-horizontally-out {
+  0%, 100% {
+    transform: none;
+  }
+  25% {
+    transform: translate3d(-3px, 0, 0);
+  }
+  50% {
+    transform: translate3d(3px, 0, 0);
+  }
+  75% {
+    transform: translate3d(-3px, 0, 0);
+  }
+}
+@keyframes shake-vertically-in {
+  0%, 100% {
+    transform: none;
+  }
+  25% {
+    transform: translate3d(0, -3px, 0);
+  }
+  50% {
+    transform: translate3d(0, 3px, 0);
+  }
+  75% {
+    transform: translate3d(0, -3px, 0);
+  }
+}
+@keyframes shake-vertically-out {
+  0%, 100% {
+    transform: none;
+  }
+  25% {
+    transform: translate3d(0, -3px, 0);
+  }
+  50% {
+    transform: translate3d(0, 3px, 0);
+  }
+  75% {
+    transform: translate3d(0, -3px, 0);
+  }
+}
+@keyframes pulsate-in {
+  0%, 50%, 100% {
+    transform: none;
+  }
+  25%, 75% {
+    transform: scale3d(1.03, 1.03, 0);
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+  }
+}
+@keyframes pulsate-out {
+  0%, 50%, 100% {
+    transform: none;
+  }
+  25%, 75% {
+    transform: scale3d(1.03, 1.03, 0);
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+  }
+}
+@keyframes flash-in {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+@keyframes flash-out {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+@keyframes wave-in {
+  0%, 100% {
+    transform: none;
+  }
+  20%, 60% {
+    transform: rotate(-1deg);
+  }
+  40%, 80% {
+    transform: rotate(1deg);
+  }
+}
+@keyframes wave-out {
+  0%, 100% {
+    transform: none;
+  }
+  20%, 60% {
+    transform: rotate(-1deg);
+  }
+  40%, 80% {
+    transform: rotate(1deg);
+  }
+}
+/**
+ * Fade
+ */
+.animate.fade.in {
+  animation-name: fade-in;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+}
+.animate.fade.in.shake {
+  animation-name: fade-in, shake-in;
+  animation-duration: 1s, 0.3s;
+  animation-delay: 0s, 1s;
+  animation-timing-function: ease, ease;
+}
+.animate.fade.in.shake.horizontally {
+  animation-name: fade-in, shake-horizontally-in;
+}
+.animate.fade.in.shake.vertically {
+  animation-name: fade-in, shake-vertically-in;
+}
+.animate.fade.in.pulsate {
+  animation-name: fade-in, pulsate-in;
+  animation-duration: 1s, 0.4s;
+  animation-delay: 0s, 1s;
+  animation-timing-function: ease, ease-in-out;
+}
+.animate.fade.in.flash {
+  animation-name: fade-in, flash-in;
+  animation-duration: 1s, 0.65s;
+  animation-delay: 0s, 1s;
+  animation-timing-function: ease, linear;
+}
+.animate.fade.in.wave {
+  animation-name: fade-in, wave-in;
+  animation-duration: 1s, 0.4s;
+  animation-delay: 0s, 1s;
+  animation-timing-function: ease, ease-in-out;
 }
 
-@keyframes fade-in{
-  0%{
-    opacity:0;
+@keyframes fade-in {
+  0% {
+    opacity: 0;
   }
-  100%{
-    opacity:1;
+  100% {
+    opacity: 1;
   }
 }
-.animate.fade.out{
-  -webkit-animation-name:fade-out;
-          animation-name:fade-out;
-  -webkit-animation-duration:1s;
-          animation-duration:1s;
-  -webkit-animation-timing-function:ease;
-          animation-timing-function:ease;
+.animate.fade.out {
+  animation-name: fade-out;
+  animation-duration: 1s;
+  animation-timing-function: ease;
 }
-.animate.fade.out.shake{
-  -webkit-animation-name:shake-out, fade-out;
-          animation-name:shake-out, fade-out;
-  -webkit-animation-duration:0.3s, 1s;
-          animation-duration:0.3s, 1s;
-  -webkit-animation-delay:0s, 0.3s;
-          animation-delay:0s, 0.3s;
-  -webkit-animation-timing-function:ease, ease;
-          animation-timing-function:ease, ease;
+.animate.fade.out.shake {
+  animation-name: shake-out, fade-out;
+  animation-duration: 0.3s, 1s;
+  animation-delay: 0s, 0.3s;
+  animation-timing-function: ease, ease;
 }
-.animate.fade.out.shake.horizontally{
-  -webkit-animation-name:shake-horizontally-out, fade-out;
-          animation-name:shake-horizontally-out, fade-out;
+.animate.fade.out.shake.horizontally {
+  animation-name: shake-horizontally-out, fade-out;
 }
-.animate.fade.out.shake.vertically{
-  -webkit-animation-name:shake-vertically-out, fade-out;
-          animation-name:shake-vertically-out, fade-out;
+.animate.fade.out.shake.vertically {
+  animation-name: shake-vertically-out, fade-out;
 }
-.animate.fade.out.pulsate{
-  -webkit-animation-name:pulsate-out, fade-out;
-          animation-name:pulsate-out, fade-out;
-  -webkit-animation-duration:0.4s, 1s;
-          animation-duration:0.4s, 1s;
-  -webkit-animation-delay:0s, 0.4s;
-          animation-delay:0s, 0.4s;
-  -webkit-animation-timing-function:ease-in-out, ease;
-          animation-timing-function:ease-in-out, ease;
+.animate.fade.out.pulsate {
+  animation-name: pulsate-out, fade-out;
+  animation-duration: 0.4s, 1s;
+  animation-delay: 0s, 0.4s;
+  animation-timing-function: ease-in-out, ease;
 }
-.animate.fade.out.flash{
-  -webkit-animation-name:flash-out, fade-out;
-          animation-name:flash-out, fade-out;
-  -webkit-animation-duration:0.65s, 1s;
-          animation-duration:0.65s, 1s;
-  -webkit-animation-delay:0s, 0.65s;
-          animation-delay:0s, 0.65s;
-  -webkit-animation-timing-function:linear, ease;
-          animation-timing-function:linear, ease;
+.animate.fade.out.flash {
+  animation-name: flash-out, fade-out;
+  animation-duration: 0.65s, 1s;
+  animation-delay: 0s, 0.65s;
+  animation-timing-function: linear, ease;
+}
+.animate.fade.out.wave {
+  animation-name: wave-out, fade-out;
+  animation-duration: 0.4s, 1s;
+  animation-delay: 0s, 0.4s;
+  animation-timing-function: ease-in-out, ease;
 }
 
-@-webkit-keyframes fade-out{
-  0%{
-    opacity:1;
+@keyframes fade-out {
+  0% {
+    opacity: 1;
   }
-  100%{
-    opacity:0;
+  100% {
+    opacity: 0;
   }
+}
+/**
+ * Slide
+ */
+.animate.slide.in {
+  animation-duration: 0.7s;
+  animation-timing-function: ease-in;
+}
+.animate.slide.in.left {
+  animation-name: slide-in-left;
+}
+.animate.slide.in.left.shake {
+  animation-name: slide-in-left, shake-in;
+}
+.animate.slide.in.left.shake.horizontally {
+  animation-name: slide-in-left, shake-horizontally-in;
+}
+.animate.slide.in.left.shake.vertically {
+  animation-name: slide-in-left, shake-vertically-in;
+}
+.animate.slide.in.left.pulsate {
+  animation-name: slide-in-left, pulsate-in;
+}
+.animate.slide.in.left.flash {
+  animation-name: slide-in-left, flash-in;
+}
+.animate.slide.in.right {
+  animation-name: slide-in-right;
+}
+.animate.slide.in.right.shake {
+  animation-name: slide-in-right, shake-in;
+}
+.animate.slide.in.right.shake.horizontally {
+  animation-name: slide-in-right, shake-horizontally-in;
+}
+.animate.slide.in.right.shake.vertically {
+  animation-name: slide-in-right, shake-vertically-in;
+}
+.animate.slide.in.right.pulsate {
+  animation-name: slide-in-right, pulsate-in;
+}
+.animate.slide.in.right.flash {
+  animation-name: slide-in-right, flash-in;
+}
+.animate.slide.in.up {
+  animation-name: slide-in-up;
+}
+.animate.slide.in.up.shake {
+  animation-name: slide-in-up, shake-in;
+}
+.animate.slide.in.up.shake.horizontally {
+  animation-name: slide-in-up, shake-horizontally-in;
+}
+.animate.slide.in.up.shake.vertically {
+  animation-name: slide-in-up, shake-vertically-in;
+}
+.animate.slide.in.up.pulsate {
+  animation-name: slide-in-up, pulsate-in;
+}
+.animate.slide.in.up.flash {
+  animation-name: slide-in-up, flash-in;
+}
+.animate.slide.in.down {
+  animation-name: slide-in-down;
+}
+.animate.slide.in.down.shake {
+  animation-name: slide-in-down, shake-in;
+}
+.animate.slide.in.down.shake.horizontally {
+  animation-name: slide-in-down, shake-horizontally-in;
+}
+.animate.slide.in.down.shake.vertically {
+  animation-name: slide-in-down, shake-vertically-in;
+}
+.animate.slide.in.down.pulsate {
+  animation-name: slide-in-down, pulsate-in;
+}
+.animate.slide.in.down.flash {
+  animation-name: slide-in-down, flash-in;
+}
+.animate.slide.in.up.left {
+  animation-name: slide-in-up-left;
+}
+.animate.slide.in.up.left.shake {
+  animation-name: slide-in-up-left, shake-in;
+}
+.animate.slide.in.up.left.shake.horizontally {
+  animation-name: slide-in-up-left, shake-horizontally-in;
+}
+.animate.slide.in.up.left.shake.vertically {
+  animation-name: slide-in-up-left, shake-vertically-in;
+}
+.animate.slide.in.up.left.pulsate {
+  animation-name: slide-in-up-left, pulsate-in;
+}
+.animate.slide.in.up.left.flash {
+  animation-name: slide-in-up-left, flash-in;
+}
+.animate.slide.in.down.left {
+  animation-name: slide-in-down-left;
+}
+.animate.slide.in.down.left.shake {
+  animation-name: slide-in-down-left, shake-in;
+}
+.animate.slide.in.down.left.shake.horizontally {
+  animation-name: slide-in-down-left, shake-horizontally-in;
+}
+.animate.slide.in.down.left.shake.vertically {
+  animation-name: slide-in-down-left, shake-vertically-in;
+}
+.animate.slide.in.down.left.pulsate {
+  animation-name: slide-in-down-left, pulsate-in;
+}
+.animate.slide.in.down.left.flash {
+  animation-name: slide-in-down-left, flash-in;
+}
+.animate.slide.in.up.right {
+  animation-name: slide-in-up-right;
+}
+.animate.slide.in.up.right.shake {
+  animation-name: slide-in-up-right, shake-in;
+}
+.animate.slide.in.up.right.shake.horizontally {
+  animation-name: slide-in-up-right, shake-horizontally-in;
+}
+.animate.slide.in.up.right.shake.vertically {
+  animation-name: slide-in-up-right, shake-vertically-in;
+}
+.animate.slide.in.up.right.pulsate {
+  animation-name: slide-in-up-right, pulsate-in;
+}
+.animate.slide.in.up.right.flash {
+  animation-name: slide-in-up-right, flash-in;
+}
+.animate.slide.in.down.right {
+  animation-name: slide-in-down-right;
+}
+.animate.slide.in.down.right.shake {
+  animation-name: slide-in-down-right, shake-in;
+}
+.animate.slide.in.down.right.shake.horizontally {
+  animation-name: slide-in-down-right, shake-horizontally-in;
+}
+.animate.slide.in.down.right.shake.vertically {
+  animation-name: slide-in-down-right, shake-vertically-in;
+}
+.animate.slide.in.down.right.pulsate {
+  animation-name: slide-in-down-right, pulsate-in;
+}
+.animate.slide.in.down.right.flash {
+  animation-name: slide-in-down-right, flash-in;
+}
+.animate.slide.in.shake {
+  animation-duration: 0.7s, 0.3s;
+  animation-delay: 0s, 0.7s;
+  animation-timing-function: ease-in, ease;
+}
+.animate.slide.in.shake.horizontally {
+  animation-name: slide-in-right, shake-horizontally-in;
+}
+.animate.slide.in.shake.vertically {
+  animation-name: slide-in-right, shake-vertically-in;
+}
+.animate.slide.in.pulsate {
+  animation-duration: 0.7s, 0.4s;
+  animation-delay: 0s, 0.7s;
+  animation-timing-function: ease-in, ease-in-out;
+}
+.animate.slide.in.flash {
+  animation-duration: 0.7s, 0.65s;
+  animation-delay: 0s, 0.7s;
+  animation-timing-function: ease-in, linear;
 }
 
-@keyframes fade-out{
-  0%{
-    opacity:1;
+@keyframes slide-in-right {
+  0% {
+    transform: translate3d(-480px, 0, 0);
   }
-  100%{
-    opacity:0;
+  100% {
+    transform: none;
   }
 }
-.animate.slide.in{
-  -webkit-animation-duration:0.7s;
-          animation-duration:0.7s;
-  -webkit-animation-timing-function:ease-in;
-          animation-timing-function:ease-in;
+@keyframes slide-in-left {
+  0% {
+    transform: translate3d(480px, 0, 0);
+  }
+  100% {
+    transform: none;
+  }
 }
-.animate.slide.in.left{
-  -webkit-animation-name:slide-in-left;
-          animation-name:slide-in-left;
+@keyframes slide-in-up {
+  0% {
+    transform: translate3d(0, 480px, 0);
+  }
+  100% {
+    transform: none;
+  }
 }
-.animate.slide.in.left.shake{
-  -webkit-animation-name:slide-in-left, shake-in;
-          animation-name:slide-in-left, shake-in;
+@keyframes slide-in-down {
+  0% {
+    transform: translate3d(0, -480px, 0);
+  }
+  100% {
+    transform: none;
+  }
 }
-.animate.slide.in.left.shake.horizontally{
-  -webkit-animation-name:slide-in-left, shake-horizontally-in;
-          animation-name:slide-in-left, shake-horizontally-in;
+@keyframes slide-in-down-right {
+  0% {
+    transform: translate3d(-480px, -480px, 0);
+  }
+  100% {
+    transform: none;
+  }
 }
-.animate.slide.in.left.shake.vertically{
-  -webkit-animation-name:slide-in-left, shake-vertically-in;
-          animation-name:slide-in-left, shake-vertically-in;
+@keyframes slide-in-up-right {
+  0% {
+    transform: translate3d(-480px, 480px, 0);
+  }
+  100% {
+    transform: none;
+  }
 }
-.animate.slide.in.left.pulsate{
-  -webkit-animation-name:slide-in-left, pulsate-in;
-          animation-name:slide-in-left, pulsate-in;
+@keyframes slide-in-down-left {
+  0% {
+    transform: translate3d(480px, -480px, 0);
+  }
+  100% {
+    transform: none;
+  }
 }
-.animate.slide.in.left.flash{
-  -webkit-animation-name:slide-in-left, flash-in;
-          animation-name:slide-in-left, flash-in;
+@keyframes slide-in-up-left {
+  0% {
+    transform: translate3d(480px, 480px, 0);
+  }
+  100% {
+    transform: none;
+  }
 }
-.animate.slide.in.right{
-  -webkit-animation-name:slide-in-right;
-          animation-name:slide-in-right;
+.animate.slide.out {
+  animation-duration: 0.7s;
+  animation-timing-function: ease-in;
 }
-.animate.slide.in.right.shake{
-  -webkit-animation-name:slide-in-right, shake-in;
-          animation-name:slide-in-right, shake-in;
+.animate.slide.out.left {
+  animation-name: slide-out-left;
 }
-.animate.slide.in.right.shake.horizontally{
-  -webkit-animation-name:slide-in-right, shake-horizontally-in;
-          animation-name:slide-in-right, shake-horizontally-in;
+.animate.slide.out.left.shake {
+  animation-name: shake-out, slide-out-left;
 }
-.animate.slide.in.right.shake.vertically{
-  -webkit-animation-name:slide-in-right, shake-vertically-in;
-          animation-name:slide-in-right, shake-vertically-in;
+.animate.slide.out.left.shake.horizontally {
+  animation-name: shake-horizontally-out, slide-out-left;
 }
-.animate.slide.in.right.pulsate{
-  -webkit-animation-name:slide-in-right, pulsate-in;
-          animation-name:slide-in-right, pulsate-in;
+.animate.slide.out.left.shake.vertically {
+  animation-name: shake-vertically-out, slide-out-left;
 }
-.animate.slide.in.right.flash{
-  -webkit-animation-name:slide-in-right, flash-in;
-          animation-name:slide-in-right, flash-in;
+.animate.slide.out.left.pulsate {
+  animation-name: pulsate-out, slide-out-left;
 }
-.animate.slide.in.up{
-  -webkit-animation-name:slide-in-up;
-          animation-name:slide-in-up;
+.animate.slide.out.left.flash {
+  animation-name: flash-out, slide-out-left;
 }
-.animate.slide.in.up.shake{
-  -webkit-animation-name:slide-in-up, shake-in;
-          animation-name:slide-in-up, shake-in;
+.animate.slide.out.right {
+  animation-name: slide-out-right;
 }
-.animate.slide.in.up.shake.horizontally{
-  -webkit-animation-name:slide-in-up, shake-horizontally-in;
-          animation-name:slide-in-up, shake-horizontally-in;
+.animate.slide.out.right.shake {
+  animation-name: shake-out, slide-out-right;
 }
-.animate.slide.in.up.shake.vertically{
-  -webkit-animation-name:slide-in-up, shake-vertically-in;
-          animation-name:slide-in-up, shake-vertically-in;
+.animate.slide.out.right.shake.horizontally {
+  animation-name: shake-horizontally-out, slide-out-right;
 }
-.animate.slide.in.up.pulsate{
-  -webkit-animation-name:slide-in-up, pulsate-in;
-          animation-name:slide-in-up, pulsate-in;
+.animate.slide.out.right.shake.vertically {
+  animation-name: shake-vertically-out, slide-out-right;
 }
-.animate.slide.in.up.flash{
-  -webkit-animation-name:slide-in-up, flash-in;
-          animation-name:slide-in-up, flash-in;
+.animate.slide.out.right.pulsate {
+  animation-name: pulsate-out, slide-out-right;
 }
-.animate.slide.in.down{
-  -webkit-animation-name:slide-in-down;
-          animation-name:slide-in-down;
+.animate.slide.out.right.flash {
+  animation-name: flash-out, slide-out-right;
 }
-.animate.slide.in.down.shake{
-  -webkit-animation-name:slide-in-down, shake-in;
-          animation-name:slide-in-down, shake-in;
+.animate.slide.out.up {
+  animation-name: slide-out-up;
 }
-.animate.slide.in.down.shake.horizontally{
-  -webkit-animation-name:slide-in-down, shake-horizontally-in;
-          animation-name:slide-in-down, shake-horizontally-in;
+.animate.slide.out.up.shake {
+  animation-name: shake-out, slide-out-up;
 }
-.animate.slide.in.down.shake.vertically{
-  -webkit-animation-name:slide-in-down, shake-vertically-in;
-          animation-name:slide-in-down, shake-vertically-in;
+.animate.slide.out.up.shake.horizontally {
+  animation-name: shake-horizontally-out, slide-out-up;
 }
-.animate.slide.in.down.pulsate{
-  -webkit-animation-name:slide-in-down, pulsate-in;
-          animation-name:slide-in-down, pulsate-in;
+.animate.slide.out.up.shake.vertically {
+  animation-name: shake-vertically-out, slide-out-up;
 }
-.animate.slide.in.down.flash{
-  -webkit-animation-name:slide-in-down, flash-in;
-          animation-name:slide-in-down, flash-in;
+.animate.slide.out.up.pulsate {
+  animation-name: pulsate-out, slide-out-up;
 }
-.animate.slide.in.up.left{
-  -webkit-animation-name:slide-in-up-left;
-          animation-name:slide-in-up-left;
+.animate.slide.out.up.flash {
+  animation-name: flash-out, slide-out-up;
 }
-.animate.slide.in.up.left.shake{
-  -webkit-animation-name:slide-in-up-left, shake-in;
-          animation-name:slide-in-up-left, shake-in;
+.animate.slide.out.down {
+  animation-name: slide-out-down;
 }
-.animate.slide.in.up.left.shake.horizontally{
-  -webkit-animation-name:slide-in-up-left, shake-horizontally-in;
-          animation-name:slide-in-up-left, shake-horizontally-in;
+.animate.slide.out.down.shake {
+  animation-name: shake-out, slide-out-down;
 }
-.animate.slide.in.up.left.shake.vertically{
-  -webkit-animation-name:slide-in-up-left, shake-vertically-in;
-          animation-name:slide-in-up-left, shake-vertically-in;
+.animate.slide.out.down.shake.horizontally {
+  animation-name: shake-horizontally-out, slide-out-down;
 }
-.animate.slide.in.up.left.pulsate{
-  -webkit-animation-name:slide-in-up-left, pulsate-in;
-          animation-name:slide-in-up-left, pulsate-in;
+.animate.slide.out.down.shake.vertically {
+  animation-name: shake-vertically-out, slide-out-down;
 }
-.animate.slide.in.up.left.flash{
-  -webkit-animation-name:slide-in-up-left, flash-in;
-          animation-name:slide-in-up-left, flash-in;
+.animate.slide.out.down.pulsate {
+  animation-name: pulsate-out, slide-out-down;
 }
-.animate.slide.in.down.left{
-  -webkit-animation-name:slide-in-down-left;
-          animation-name:slide-in-down-left;
+.animate.slide.out.down.flash {
+  animation-name: flash-out, slide-out-down;
 }
-.animate.slide.in.down.left.shake{
-  -webkit-animation-name:slide-in-down-left, shake-in;
-          animation-name:slide-in-down-left, shake-in;
+.animate.slide.out.up.left {
+  animation-name: slide-out-up-left;
 }
-.animate.slide.in.down.left.shake.horizontally{
-  -webkit-animation-name:slide-in-down-left, shake-horizontally-in;
-          animation-name:slide-in-down-left, shake-horizontally-in;
+.animate.slide.out.up.left.shake {
+  animation-name: shake-out, slide-out-up-left;
 }
-.animate.slide.in.down.left.shake.vertically{
-  -webkit-animation-name:slide-in-down-left, shake-vertically-in;
-          animation-name:slide-in-down-left, shake-vertically-in;
+.animate.slide.out.up.left.shake.horizontally {
+  animation-name: shake-horizontally-out, slide-out-up-left;
 }
-.animate.slide.in.down.left.pulsate{
-  -webkit-animation-name:slide-in-down-left, pulsate-in;
-          animation-name:slide-in-down-left, pulsate-in;
+.animate.slide.out.up.left.shake.vertically {
+  animation-name: shake-vertically-out, slide-out-up-left;
 }
-.animate.slide.in.down.left.flash{
-  -webkit-animation-name:slide-in-down-left, flash-in;
-          animation-name:slide-in-down-left, flash-in;
+.animate.slide.out.up.left.pulsate {
+  animation-name: pulsate-out, slide-out-up-left;
 }
-.animate.slide.in.up.right{
-  -webkit-animation-name:slide-in-up-right;
-          animation-name:slide-in-up-right;
+.animate.slide.out.up.left.flash {
+  animation-name: flash-out, slide-out-up-left;
 }
-.animate.slide.in.up.right.shake{
-  -webkit-animation-name:slide-in-up-right, shake-in;
-          animation-name:slide-in-up-right, shake-in;
+.animate.slide.out.down.left {
+  animation-name: slide-out-down-left;
 }
-.animate.slide.in.up.right.shake.horizontally{
-  -webkit-animation-name:slide-in-up-right, shake-horizontally-in;
-          animation-name:slide-in-up-right, shake-horizontally-in;
+.animate.slide.out.down.left.shake {
+  animation-name: shake-out, slide-out-down-left;
 }
-.animate.slide.in.up.right.shake.vertically{
-  -webkit-animation-name:slide-in-up-right, shake-vertically-in;
-          animation-name:slide-in-up-right, shake-vertically-in;
+.animate.slide.out.down.left.shake.horizontally {
+  animation-name: shake-horizontally-out, slide-out-down-left;
 }
-.animate.slide.in.up.right.pulsate{
-  -webkit-animation-name:slide-in-up-right, pulsate-in;
-          animation-name:slide-in-up-right, pulsate-in;
+.animate.slide.out.down.left.shake.vertically {
+  animation-name: shake-vertically-out, slide-out-down-left;
 }
-.animate.slide.in.up.right.flash{
-  -webkit-animation-name:slide-in-up-right, flash-in;
-          animation-name:slide-in-up-right, flash-in;
+.animate.slide.out.down.left.pulsate {
+  animation-name: pulsate-out, slide-out-down-left;
 }
-.animate.slide.in.down.right{
-  -webkit-animation-name:slide-in-down-right;
-          animation-name:slide-in-down-right;
+.animate.slide.out.down.left.flash {
+  animation-name: flash-out, slide-out-down-left;
 }
-.animate.slide.in.down.right.shake{
-  -webkit-animation-name:slide-in-down-right, shake-in;
-          animation-name:slide-in-down-right, shake-in;
+.animate.slide.out.up.right {
+  animation-name: slide-out-up-right;
 }
-.animate.slide.in.down.right.shake.horizontally{
-  -webkit-animation-name:slide-in-down-right, shake-horizontally-in;
-          animation-name:slide-in-down-right, shake-horizontally-in;
+.animate.slide.out.up.right.shake {
+  animation-name: shake-out, slide-out-up-right;
 }
-.animate.slide.in.down.right.shake.vertically{
-  -webkit-animation-name:slide-in-down-right, shake-vertically-in;
-          animation-name:slide-in-down-right, shake-vertically-in;
+.animate.slide.out.up.right.shake.horizontally {
+  animation-name: shake-horizontally-out, slide-out-up-right;
 }
-.animate.slide.in.down.right.pulsate{
-  -webkit-animation-name:slide-in-down-right, pulsate-in;
-          animation-name:slide-in-down-right, pulsate-in;
+.animate.slide.out.up.right.shake.vertically {
+  animation-name: shake-vertically-out, slide-out-up-right;
 }
-.animate.slide.in.down.right.flash{
-  -webkit-animation-name:slide-in-down-right, flash-in;
-          animation-name:slide-in-down-right, flash-in;
+.animate.slide.out.up.right.pulsate {
+  animation-name: pulsate-out, slide-out-up-right;
 }
-.animate.slide.in.shake{
-  -webkit-animation-duration:0.7s, 0.3s;
-          animation-duration:0.7s, 0.3s;
-  -webkit-animation-delay:0s, 0.7s;
-          animation-delay:0s, 0.7s;
-  -webkit-animation-timing-function:ease-in, ease;
-          animation-timing-function:ease-in, ease;
+.animate.slide.out.up.right.flash {
+  animation-name: flash-out, slide-out-up-right;
 }
-.animate.slide.in.shake.horizontally{
-  -webkit-animation-name:slide-in-right, shake-horizontally-in;
-          animation-name:slide-in-right, shake-horizontally-in;
+.animate.slide.out.down.right {
+  animation-name: slide-out-down-right;
 }
-.animate.slide.in.shake.vertically{
-  -webkit-animation-name:slide-in-right, shake-vertically-in;
-          animation-name:slide-in-right, shake-vertically-in;
+.animate.slide.out.down.right.shake {
+  animation-name: shake-out, slide-out-down-right;
 }
-.animate.slide.in.pulsate{
-  -webkit-animation-duration:0.7s, 0.4s;
-          animation-duration:0.7s, 0.4s;
-  -webkit-animation-delay:0s, 0.7s;
-          animation-delay:0s, 0.7s;
-  -webkit-animation-timing-function:ease-in, ease-in-out;
-          animation-timing-function:ease-in, ease-in-out;
+.animate.slide.out.down.right.shake.horizontally {
+  animation-name: shake-horizontally-out, slide-out-down-right;
 }
-.animate.slide.in.flash{
-  -webkit-animation-duration:0.7s, 0.65s;
-          animation-duration:0.7s, 0.65s;
-  -webkit-animation-delay:0s, 0.7s;
-          animation-delay:0s, 0.7s;
-  -webkit-animation-timing-function:ease-in, linear;
-          animation-timing-function:ease-in, linear;
+.animate.slide.out.down.right.shake.vertically {
+  animation-name: shake-vertically-out, slide-out-down-right;
+}
+.animate.slide.out.down.right.pulsate {
+  animation-name: pulsate-out, slide-out-down-right;
+}
+.animate.slide.out.down.right.flash {
+  animation-name: flash-out, slide-out-down-right;
+}
+.animate.slide.out.shake {
+  animation-duration: 0.3s, 0.7s;
+  animation-delay: 0s, 0.3s;
+  animation-timing-function: ease, ease-in;
+}
+.animate.slide.out.shake.horizontally {
+  animation-name: shake-horizontally-out, slide-out-right;
+}
+.animate.slide.out.shake.vertically {
+  animation-name: shake-vertically-out, slide-out-right;
+}
+.animate.slide.out.pulsate {
+  animation-duration: 0.4s, 0.7s;
+  animation-delay: 0s, 0.4s;
+  animation-timing-function: ease-in-out, ease-in;
+}
+.animate.slide.out.flash {
+  animation-duration: 0.65s, 0.7s;
+  animation-delay: 0s, 0.65s;
+  animation-timing-function: linear, ease-in;
 }
 
-@-webkit-keyframes slide-in-right{
-  0%{
-    transform:translate3d(-480px, 0, 0);
+@keyframes slide-out-right {
+  0% {
+    transform: none;
   }
-  100%{
-    transform:none;
-  }
-}
-
-@keyframes slide-in-right{
-  0%{
-    transform:translate3d(-480px, 0, 0);
-  }
-  100%{
-    transform:none;
+  100% {
+    transform: translate3d(480px, 0, 0);
   }
 }
-@-webkit-keyframes slide-in-left{
-  0%{
-    transform:translate3d(480px, 0, 0);
+@keyframes slide-out-left {
+  0% {
+    transform: none;
   }
-  100%{
-    transform:none;
-  }
-}
-@keyframes slide-in-left{
-  0%{
-    transform:translate3d(480px, 0, 0);
-  }
-  100%{
-    transform:none;
+  100% {
+    transform: translate3d(-480px, 0, 0);
   }
 }
-@-webkit-keyframes slide-in-up{
-  0%{
-    transform:translate3d(0, 480px, 0);
+@keyframes slide-out-up {
+  0% {
+    transform: none;
   }
-  100%{
-    transform:none;
-  }
-}
-@keyframes slide-in-up{
-  0%{
-    transform:translate3d(0, 480px, 0);
-  }
-  100%{
-    transform:none;
+  100% {
+    transform: translate3d(0, -480px, 0);
   }
 }
-@-webkit-keyframes slide-in-down{
-  0%{
-    transform:translate3d(0, -480px, 0);
+@keyframes slide-out-down {
+  0% {
+    transform: none;
   }
-  100%{
-    transform:none;
-  }
-}
-@keyframes slide-in-down{
-  0%{
-    transform:translate3d(0, -480px, 0);
-  }
-  100%{
-    transform:none;
+  100% {
+    transform: translate3d(0, 480px, 0);
   }
 }
-@-webkit-keyframes slide-in-down-right{
-  0%{
-    transform:translate3d(-480px, -480px, 0);
+@keyframes slide-out-down-right {
+  0% {
+    transform: none;
   }
-  100%{
-    transform:none;
-  }
-}
-@keyframes slide-in-down-right{
-  0%{
-    transform:translate3d(-480px, -480px, 0);
-  }
-  100%{
-    transform:none;
+  100% {
+    transform: translate3d(480px, 480px, 0);
   }
 }
-@-webkit-keyframes slide-in-up-right{
-  0%{
-    transform:translate3d(-480px, 480px, 0);
+@keyframes slide-out-up-right {
+  0% {
+    transform: none;
   }
-  100%{
-    transform:none;
-  }
-}
-@keyframes slide-in-up-right{
-  0%{
-    transform:translate3d(-480px, 480px, 0);
-  }
-  100%{
-    transform:none;
+  100% {
+    transform: translate3d(480px, -480px, 0);
   }
 }
-@-webkit-keyframes slide-in-down-left{
-  0%{
-    transform:translate3d(480px, -480px, 0);
+@keyframes slide-out-down-left {
+  0% {
+    transform: none;
   }
-  100%{
-    transform:none;
-  }
-}
-@keyframes slide-in-down-left{
-  0%{
-    transform:translate3d(480px, -480px, 0);
-  }
-  100%{
-    transform:none;
+  100% {
+    transform: translate3d(-480px, 480px, 0);
   }
 }
-@-webkit-keyframes slide-in-up-left{
-  0%{
-    transform:translate3d(480px, 480px, 0);
+@keyframes slide-out-up-left {
+  0% {
+    transform: none;
   }
-  100%{
-    transform:none;
-  }
-}
-@keyframes slide-in-up-left{
-  0%{
-    transform:translate3d(480px, 480px, 0);
-  }
-  100%{
-    transform:none;
-  }
-}
-.animate.slide.out{
-  -webkit-animation-duration:0.7s;
-          animation-duration:0.7s;
-  -webkit-animation-timing-function:ease-in;
-          animation-timing-function:ease-in;
-}
-.animate.slide.out.left{
-  -webkit-animation-name:slide-out-left;
-          animation-name:slide-out-left;
-}
-.animate.slide.out.left.shake{
-  -webkit-animation-name:shake-out, slide-out-left;
-          animation-name:shake-out, slide-out-left;
-}
-.animate.slide.out.left.shake.horizontally{
-  -webkit-animation-name:shake-horizontally-out, slide-out-left;
-          animation-name:shake-horizontally-out, slide-out-left;
-}
-.animate.slide.out.left.shake.vertically{
-  -webkit-animation-name:shake-vertically-out, slide-out-left;
-          animation-name:shake-vertically-out, slide-out-left;
-}
-.animate.slide.out.left.pulsate{
-  -webkit-animation-name:pulsate-out, slide-out-left;
-          animation-name:pulsate-out, slide-out-left;
-}
-.animate.slide.out.left.flash{
-  -webkit-animation-name:flash-out, slide-out-left;
-          animation-name:flash-out, slide-out-left;
-}
-.animate.slide.out.right{
-  -webkit-animation-name:slide-out-right;
-          animation-name:slide-out-right;
-}
-.animate.slide.out.right.shake{
-  -webkit-animation-name:shake-out, slide-out-right;
-          animation-name:shake-out, slide-out-right;
-}
-.animate.slide.out.right.shake.horizontally{
-  -webkit-animation-name:shake-horizontally-out, slide-out-right;
-          animation-name:shake-horizontally-out, slide-out-right;
-}
-.animate.slide.out.right.shake.vertically{
-  -webkit-animation-name:shake-vertically-out, slide-out-right;
-          animation-name:shake-vertically-out, slide-out-right;
-}
-.animate.slide.out.right.pulsate{
-  -webkit-animation-name:pulsate-out, slide-out-right;
-          animation-name:pulsate-out, slide-out-right;
-}
-.animate.slide.out.right.flash{
-  -webkit-animation-name:flash-out, slide-out-right;
-          animation-name:flash-out, slide-out-right;
-}
-.animate.slide.out.up{
-  -webkit-animation-name:slide-out-up;
-          animation-name:slide-out-up;
-}
-.animate.slide.out.up.shake{
-  -webkit-animation-name:shake-out, slide-out-up;
-          animation-name:shake-out, slide-out-up;
-}
-.animate.slide.out.up.shake.horizontally{
-  -webkit-animation-name:shake-horizontally-out, slide-out-up;
-          animation-name:shake-horizontally-out, slide-out-up;
-}
-.animate.slide.out.up.shake.vertically{
-  -webkit-animation-name:shake-vertically-out, slide-out-up;
-          animation-name:shake-vertically-out, slide-out-up;
-}
-.animate.slide.out.up.pulsate{
-  -webkit-animation-name:pulsate-out, slide-out-up;
-          animation-name:pulsate-out, slide-out-up;
-}
-.animate.slide.out.up.flash{
-  -webkit-animation-name:flash-out, slide-out-up;
-          animation-name:flash-out, slide-out-up;
-}
-.animate.slide.out.down{
-  -webkit-animation-name:slide-out-down;
-          animation-name:slide-out-down;
-}
-.animate.slide.out.down.shake{
-  -webkit-animation-name:shake-out, slide-out-down;
-          animation-name:shake-out, slide-out-down;
-}
-.animate.slide.out.down.shake.horizontally{
-  -webkit-animation-name:shake-horizontally-out, slide-out-down;
-          animation-name:shake-horizontally-out, slide-out-down;
-}
-.animate.slide.out.down.shake.vertically{
-  -webkit-animation-name:shake-vertically-out, slide-out-down;
-          animation-name:shake-vertically-out, slide-out-down;
-}
-.animate.slide.out.down.pulsate{
-  -webkit-animation-name:pulsate-out, slide-out-down;
-          animation-name:pulsate-out, slide-out-down;
-}
-.animate.slide.out.down.flash{
-  -webkit-animation-name:flash-out, slide-out-down;
-          animation-name:flash-out, slide-out-down;
-}
-.animate.slide.out.up.left{
-  -webkit-animation-name:slide-out-up-left;
-          animation-name:slide-out-up-left;
-}
-.animate.slide.out.up.left.shake{
-  -webkit-animation-name:shake-out, slide-out-up-left;
-          animation-name:shake-out, slide-out-up-left;
-}
-.animate.slide.out.up.left.shake.horizontally{
-  -webkit-animation-name:shake-horizontally-out, slide-out-up-left;
-          animation-name:shake-horizontally-out, slide-out-up-left;
-}
-.animate.slide.out.up.left.shake.vertically{
-  -webkit-animation-name:shake-vertically-out, slide-out-up-left;
-          animation-name:shake-vertically-out, slide-out-up-left;
-}
-.animate.slide.out.up.left.pulsate{
-  -webkit-animation-name:pulsate-out, slide-out-up-left;
-          animation-name:pulsate-out, slide-out-up-left;
-}
-.animate.slide.out.up.left.flash{
-  -webkit-animation-name:flash-out, slide-out-up-left;
-          animation-name:flash-out, slide-out-up-left;
-}
-.animate.slide.out.down.left{
-  -webkit-animation-name:slide-out-down-left;
-          animation-name:slide-out-down-left;
-}
-.animate.slide.out.down.left.shake{
-  -webkit-animation-name:shake-out, slide-out-down-left;
-          animation-name:shake-out, slide-out-down-left;
-}
-.animate.slide.out.down.left.shake.horizontally{
-  -webkit-animation-name:shake-horizontally-out, slide-out-down-left;
-          animation-name:shake-horizontally-out, slide-out-down-left;
-}
-.animate.slide.out.down.left.shake.vertically{
-  -webkit-animation-name:shake-vertically-out, slide-out-down-left;
-          animation-name:shake-vertically-out, slide-out-down-left;
-}
-.animate.slide.out.down.left.pulsate{
-  -webkit-animation-name:pulsate-out, slide-out-down-left;
-          animation-name:pulsate-out, slide-out-down-left;
-}
-.animate.slide.out.down.left.flash{
-  -webkit-animation-name:flash-out, slide-out-down-left;
-          animation-name:flash-out, slide-out-down-left;
-}
-.animate.slide.out.up.right{
-  -webkit-animation-name:slide-out-up-right;
-          animation-name:slide-out-up-right;
-}
-.animate.slide.out.up.right.shake{
-  -webkit-animation-name:shake-out, slide-out-up-right;
-          animation-name:shake-out, slide-out-up-right;
-}
-.animate.slide.out.up.right.shake.horizontally{
-  -webkit-animation-name:shake-horizontally-out, slide-out-up-right;
-          animation-name:shake-horizontally-out, slide-out-up-right;
-}
-.animate.slide.out.up.right.shake.vertically{
-  -webkit-animation-name:shake-vertically-out, slide-out-up-right;
-          animation-name:shake-vertically-out, slide-out-up-right;
-}
-.animate.slide.out.up.right.pulsate{
-  -webkit-animation-name:pulsate-out, slide-out-up-right;
-          animation-name:pulsate-out, slide-out-up-right;
-}
-.animate.slide.out.up.right.flash{
-  -webkit-animation-name:flash-out, slide-out-up-right;
-          animation-name:flash-out, slide-out-up-right;
-}
-.animate.slide.out.down.right{
-  -webkit-animation-name:slide-out-down-right;
-          animation-name:slide-out-down-right;
-}
-.animate.slide.out.down.right.shake{
-  -webkit-animation-name:shake-out, slide-out-down-right;
-          animation-name:shake-out, slide-out-down-right;
-}
-.animate.slide.out.down.right.shake.horizontally{
-  -webkit-animation-name:shake-horizontally-out, slide-out-down-right;
-          animation-name:shake-horizontally-out, slide-out-down-right;
-}
-.animate.slide.out.down.right.shake.vertically{
-  -webkit-animation-name:shake-vertically-out, slide-out-down-right;
-          animation-name:shake-vertically-out, slide-out-down-right;
-}
-.animate.slide.out.down.right.pulsate{
-  -webkit-animation-name:pulsate-out, slide-out-down-right;
-          animation-name:pulsate-out, slide-out-down-right;
-}
-.animate.slide.out.down.right.flash{
-  -webkit-animation-name:flash-out, slide-out-down-right;
-          animation-name:flash-out, slide-out-down-right;
-}
-.animate.slide.out.shake{
-  -webkit-animation-duration:0.3s, 0.7s;
-          animation-duration:0.3s, 0.7s;
-  -webkit-animation-delay:0s, 0.3s;
-          animation-delay:0s, 0.3s;
-  -webkit-animation-timing-function:ease, ease-in;
-          animation-timing-function:ease, ease-in;
-}
-.animate.slide.out.shake.horizontally{
-  -webkit-animation-name:shake-horizontally-out, slide-out-right;
-          animation-name:shake-horizontally-out, slide-out-right;
-}
-.animate.slide.out.shake.vertically{
-  -webkit-animation-name:shake-vertically-out, slide-out-right;
-          animation-name:shake-vertically-out, slide-out-right;
-}
-.animate.slide.out.pulsate{
-  -webkit-animation-duration:0.4s, 0.7s;
-          animation-duration:0.4s, 0.7s;
-  -webkit-animation-delay:0s, 0.4s;
-          animation-delay:0s, 0.4s;
-  -webkit-animation-timing-function:ease-in-out, ease-in;
-          animation-timing-function:ease-in-out, ease-in;
-}
-.animate.slide.out.flash{
-  -webkit-animation-duration:0.65s, 0.7s;
-          animation-duration:0.65s, 0.7s;
-  -webkit-animation-delay:0s, 0.65s;
-          animation-delay:0s, 0.65s;
-  -webkit-animation-timing-function:linear, ease-in;
-          animation-timing-function:linear, ease-in;
-}
-
-@-webkit-keyframes slide-out-right{
-  0%{
-    transform:none;
-  }
-  100%{
-    transform:translate3d(480px, 0, 0);
+  100% {
+    transform: translate3d(-480px, -480px, 0);
   }
 }
 
-@keyframes slide-out-right{
-  0%{
-    transform:none;
-  }
-  100%{
-    transform:translate3d(480px, 0, 0);
-  }
-}
-@-webkit-keyframes slide-out-left{
-  0%{
-    transform:none;
-  }
-  100%{
-    transform:translate3d(-480px, 0, 0);
-  }
-}
-@keyframes slide-out-left{
-  0%{
-    transform:none;
-  }
-  100%{
-    transform:translate3d(-480px, 0, 0);
-  }
-}
-@-webkit-keyframes slide-out-up{
-  0%{
-    transform:none;
-  }
-  100%{
-    transform:translate3d(0, -480px, 0);
-  }
-}
-@keyframes slide-out-up{
-  0%{
-    transform:none;
-  }
-  100%{
-    transform:translate3d(0, -480px, 0);
-  }
-}
-@-webkit-keyframes slide-out-down{
-  0%{
-    transform:none;
-  }
-  100%{
-    transform:translate3d(0, 480px, 0);
-  }
-}
-@keyframes slide-out-down{
-  0%{
-    transform:none;
-  }
-  100%{
-    transform:translate3d(0, 480px, 0);
-  }
-}
-@-webkit-keyframes slide-out-down-right{
-  0%{
-    transform:none;
-  }
-  100%{
-    transform:translate3d(480px, 480px, 0);
-  }
-}
-@keyframes slide-out-down-right{
-  0%{
-    transform:none;
-  }
-  100%{
-    transform:translate3d(480px, 480px, 0);
-  }
-}
-@-webkit-keyframes slide-out-up-right{
-  0%{
-    transform:none;
-  }
-  100%{
-    transform:translate3d(480px, -480px, 0);
-  }
-}
-@keyframes slide-out-up-right{
-  0%{
-    transform:none;
-  }
-  100%{
-    transform:translate3d(480px, -480px, 0);
-  }
-}
-@-webkit-keyframes slide-out-down-left{
-  0%{
-    transform:none;
-  }
-  100%{
-    transform:translate3d(-480px, 480px, 0);
-  }
-}
-@keyframes slide-out-down-left{
-  0%{
-    transform:none;
-  }
-  100%{
-    transform:translate3d(-480px, 480px, 0);
-  }
-}
-@-webkit-keyframes slide-out-up-left{
-  0%{
-    transform:none;
-  }
-  100%{
-    transform:translate3d(-480px, -480px, 0);
-  }
-}
-@keyframes slide-out-up-left{
-  0%{
-    transform:none;
-  }
-  100%{
-    transform:translate3d(-480px, -480px, 0);
-  }
-}
+/*# sourceMappingURL=ubianimate.css.map */
