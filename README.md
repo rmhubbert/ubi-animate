@@ -28,7 +28,7 @@ The easiest way to get your desired animation classes is via [the demo app](http
 
 UbiAnimate can be easily customised via Sass variables.
 
-Simply override any variables (a full listing can be found in src/\variables.scss) in your main Sass file before importing the library from src/ubianimate.scss.
+Simply override any variables (a full listing can be found in src/variables.scss) in your main Sass file before importing the library from src/ubianimate.scss.
 
 ## Contributing
 
