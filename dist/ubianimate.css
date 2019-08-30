@@ -23,6 +23,9 @@
  * Slide
  */
 /**
+ * Bounce
+ */
+/**
  * Global
  */
 .animate {
@@ -37,16 +40,16 @@
     transform: none;
   }
   20% {
-    transform: translate3d(-3px, -3px, 0);
+    transform: translate3d(-2px, -2px, 0);
   }
   40% {
-    transform: translate3d(3px, 3px, 0);
+    transform: translate3d(2px, 2px, 0);
   }
   60% {
-    transform: translate3d(3px, -3px, 0);
+    transform: translate3d(2px, -2px, 0);
   }
   80% {
-    transform: translate3d(-3px, 3px, 0);
+    transform: translate3d(-2px, 2px, 0);
   }
 }
 @keyframes shake-out {
@@ -54,16 +57,16 @@
     transform: none;
   }
   20% {
-    transform: translate3d(-3px, -3px, 0);
+    transform: translate3d(-2px, -2px, 0);
   }
   40% {
-    transform: translate3d(3px, 3px, 0);
+    transform: translate3d(2px, 2px, 0);
   }
   60% {
-    transform: translate3d(3px, -3px, 0);
+    transform: translate3d(2px, -2px, 0);
   }
   80% {
-    transform: translate3d(-3px, 3px, 0);
+    transform: translate3d(-2px, 2px, 0);
   }
 }
 @keyframes shake-horizontally-in {
@@ -71,13 +74,13 @@
     transform: none;
   }
   25% {
-    transform: translate3d(-3px, 0, 0);
+    transform: translate3d(-2px, 0, 0);
   }
   50% {
-    transform: translate3d(3px, 0, 0);
+    transform: translate3d(2px, 0, 0);
   }
   75% {
-    transform: translate3d(-3px, 0, 0);
+    transform: translate3d(-2px, 0, 0);
   }
 }
 @keyframes shake-horizontally-out {
@@ -85,13 +88,13 @@
     transform: none;
   }
   25% {
-    transform: translate3d(-3px, 0, 0);
+    transform: translate3d(-2px, 0, 0);
   }
   50% {
-    transform: translate3d(3px, 0, 0);
+    transform: translate3d(2px, 0, 0);
   }
   75% {
-    transform: translate3d(-3px, 0, 0);
+    transform: translate3d(-2px, 0, 0);
   }
 }
 @keyframes shake-vertically-in {
@@ -99,13 +102,13 @@
     transform: none;
   }
   25% {
-    transform: translate3d(0, -3px, 0);
+    transform: translate3d(0, -2px, 0);
   }
   50% {
-    transform: translate3d(0, 3px, 0);
+    transform: translate3d(0, 2px, 0);
   }
   75% {
-    transform: translate3d(0, -3px, 0);
+    transform: translate3d(0, -2px, 0);
   }
 }
 @keyframes shake-vertically-out {
@@ -113,13 +116,13 @@
     transform: none;
   }
   25% {
-    transform: translate3d(0, -3px, 0);
+    transform: translate3d(0, -2px, 0);
   }
   50% {
-    transform: translate3d(0, 3px, 0);
+    transform: translate3d(0, 2px, 0);
   }
   75% {
-    transform: translate3d(0, -3px, 0);
+    transform: translate3d(0, -2px, 0);
   }
 }
 @keyframes pulsate-in {
@@ -147,7 +150,7 @@
     opacity: 1;
   }
   25%, 75% {
-    opacity: 0;
+    opacity: 0.5;
   }
 }
 @keyframes flash-out {
@@ -155,7 +158,7 @@
     opacity: 1;
   }
   25%, 75% {
-    opacity: 0;
+    opacity: 0.5;
   }
 }
 @keyframes wave-in {
@@ -795,6 +798,607 @@
 @keyframes slide-out-up-left {
   0% {
     transform: none;
+  }
+  100% {
+    transform: translate3d(-480px, -480px, 0);
+  }
+}
+/**
+ * Bounce
+ */
+.animate.bounce.in {
+  animation-duration: 0.7s;
+  animation-timing-function: ease-in;
+}
+.animate.bounce.in.left {
+  animation-name: bounce-in-left;
+}
+.animate.bounce.in.left.shake {
+  animation-name: bounce-in-left, shake-in;
+}
+.animate.bounce.in.left.shake.horizontally {
+  animation-name: bounce-in-left, shake-horizontally-in;
+}
+.animate.bounce.in.left.shake.vertically {
+  animation-name: bounce-in-left, shake-vertically-in;
+}
+.animate.bounce.in.left.pulsate {
+  animation-name: bounce-in-left, pulsate-in;
+}
+.animate.bounce.in.left.flash {
+  animation-name: bounce-in-left, flash-in;
+}
+.animate.bounce.in.left.wave {
+  animation-name: bounce-in-left, wave-in;
+}
+.animate.bounce.in.right {
+  animation-name: bounce-in-right;
+}
+.animate.bounce.in.right.shake {
+  animation-name: bounce-in-right, shake-in;
+}
+.animate.bounce.in.right.shake.horizontally {
+  animation-name: bounce-in-right, shake-horizontally-in;
+}
+.animate.bounce.in.right.shake.vertically {
+  animation-name: bounce-in-right, shake-vertically-in;
+}
+.animate.bounce.in.right.pulsate {
+  animation-name: bounce-in-right, pulsate-in;
+}
+.animate.bounce.in.right.flash {
+  animation-name: bounce-in-right, flash-in;
+}
+.animate.bounce.in.right.wave {
+  animation-name: bounce-in-right, wave-in;
+}
+.animate.bounce.in.up {
+  animation-name: bounce-in-up;
+}
+.animate.bounce.in.up.shake {
+  animation-name: bounce-in-up, shake-in;
+}
+.animate.bounce.in.up.shake.horizontally {
+  animation-name: bounce-in-up, shake-horizontally-in;
+}
+.animate.bounce.in.up.shake.vertically {
+  animation-name: bounce-in-up, shake-vertically-in;
+}
+.animate.bounce.in.up.pulsate {
+  animation-name: bounce-in-up, pulsate-in;
+}
+.animate.bounce.in.up.flash {
+  animation-name: bounce-in-up, flash-in;
+}
+.animate.bounce.in.up.wave {
+  animation-name: bounce-in-up, wave-in;
+}
+.animate.bounce.in.down {
+  animation-name: bounce-in-down;
+}
+.animate.bounce.in.down.shake {
+  animation-name: bounce-in-down, shake-in;
+}
+.animate.bounce.in.down.shake.horizontally {
+  animation-name: bounce-in-down, shake-horizontally-in;
+}
+.animate.bounce.in.down.shake.vertically {
+  animation-name: bounce-in-down, shake-vertically-in;
+}
+.animate.bounce.in.down.pulsate {
+  animation-name: bounce-in-down, pulsate-in;
+}
+.animate.bounce.in.down.flash {
+  animation-name: bounce-in-down, flash-in;
+}
+.animate.bounce.in.down.wave {
+  animation-name: bounce-in-down, wave-in;
+}
+.animate.bounce.in.up.left {
+  animation-name: bounce-in-up-left;
+}
+.animate.bounce.in.up.left.shake {
+  animation-name: bounce-in-up-left, shake-in;
+}
+.animate.bounce.in.up.left.shake.horizontally {
+  animation-name: bounce-in-up-left, shake-horizontally-in;
+}
+.animate.bounce.in.up.left.shake.vertically {
+  animation-name: bounce-in-up-left, shake-vertically-in;
+}
+.animate.bounce.in.up.left.pulsate {
+  animation-name: bounce-in-up-left, pulsate-in;
+}
+.animate.bounce.in.up.left.flash {
+  animation-name: bounce-in-up-left, flash-in;
+}
+.animate.bounce.in.up.left.wave {
+  animation-name: bounce-in-up-left, wave-in;
+}
+.animate.bounce.in.down.left {
+  animation-name: bounce-in-down-left;
+}
+.animate.bounce.in.down.left.shake {
+  animation-name: bounce-in-down-left, shake-in;
+}
+.animate.bounce.in.down.left.shake.horizontally {
+  animation-name: bounce-in-down-left, shake-horizontally-in;
+}
+.animate.bounce.in.down.left.shake.vertically {
+  animation-name: bounce-in-down-left, shake-vertically-in;
+}
+.animate.bounce.in.down.left.pulsate {
+  animation-name: bounce-in-down-left, pulsate-in;
+}
+.animate.bounce.in.down.left.flash {
+  animation-name: bounce-in-down-left, flash-in;
+}
+.animate.bounce.in.down.left.wave {
+  animation-name: bounce-in-down-left, wave-in;
+}
+.animate.bounce.in.up.right {
+  animation-name: bounce-in-up-right;
+}
+.animate.bounce.in.up.right.shake {
+  animation-name: bounce-in-up-right, shake-in;
+}
+.animate.bounce.in.up.right.shake.horizontally {
+  animation-name: bounce-in-up-right, shake-horizontally-in;
+}
+.animate.bounce.in.up.right.shake.vertically {
+  animation-name: bounce-in-up-right, shake-vertically-in;
+}
+.animate.bounce.in.up.right.pulsate {
+  animation-name: bounce-in-up-right, pulsate-in;
+}
+.animate.bounce.in.up.right.flash {
+  animation-name: bounce-in-up-right, flash-in;
+}
+.animate.bounce.in.up.right.wave {
+  animation-name: bounce-in-up-right, wave-in;
+}
+.animate.bounce.in.down.right {
+  animation-name: bounce-in-down-right;
+}
+.animate.bounce.in.down.right.shake {
+  animation-name: bounce-in-down-right, shake-in;
+}
+.animate.bounce.in.down.right.shake.horizontally {
+  animation-name: bounce-in-down-right, shake-horizontally-in;
+}
+.animate.bounce.in.down.right.shake.vertically {
+  animation-name: bounce-in-down-right, shake-vertically-in;
+}
+.animate.bounce.in.down.right.pulsate {
+  animation-name: bounce-in-down-right, pulsate-in;
+}
+.animate.bounce.in.down.right.flash {
+  animation-name: bounce-in-down-right, flash-in;
+}
+.animate.bounce.in.down.right.wave {
+  animation-name: bounce-in-down-right, wave-in;
+}
+.animate.bounce.in.shake {
+  animation-duration: 0.7s, 0.3s;
+  animation-delay: 0s, 0.7s;
+  animation-timing-function: ease-in, ease;
+}
+.animate.bounce.in.shake.horizontally {
+  animation-name: bounce-in-right, shake-horizontally-in;
+}
+.animate.bounce.in.shake.vertically {
+  animation-name: bounce-in-right, shake-vertically-in;
+}
+.animate.bounce.in.pulsate {
+  animation-duration: 0.7s, 0.4s;
+  animation-delay: 0s, 0.7s;
+  animation-timing-function: ease-in, ease-in-out;
+}
+.animate.bounce.in.flash {
+  animation-duration: 0.7s, 0.65s;
+  animation-delay: 0s, 0.7s;
+  animation-timing-function: ease-in, linear;
+}
+.animate.bounce.in.wave {
+  animation-duration: 0.7s, 0.4s;
+  animation-delay: 0s, 0.7s;
+  animation-timing-function: ease-in, ease-in-out;
+}
+
+@keyframes bounce-in-right {
+  0% {
+    transform: translate3d(-480px, 0, 0);
+  }
+  60% {
+    transform: translate3d(6px, 0, 0);
+  }
+  80% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  100% {
+    transform: none;
+  }
+}
+@keyframes bounce-in-left {
+  0% {
+    transform: translate3d(480px, 0, 0);
+  }
+  60% {
+    transform: translate3d(-6px, 0, 0);
+  }
+  80% {
+    transform: translate3d(4px, 0, 0);
+  }
+  100% {
+    transform: none;
+  }
+}
+@keyframes bounce-in-up {
+  0% {
+    transform: translate3d(0, 480px, 0);
+  }
+  60% {
+    transform: translate3d(0, -6px, 0);
+  }
+  80% {
+    transform: translate3d(0, 4px, 0);
+  }
+  100% {
+    transform: none;
+  }
+}
+@keyframes bounce-in-down {
+  0% {
+    transform: translate3d(0, -480px, 0);
+  }
+  60% {
+    transform: translate3d(0, 6px, 0);
+  }
+  80% {
+    transform: translate3d(0, -4px, 0);
+  }
+  100% {
+    transform: none;
+  }
+}
+@keyframes bounce-in-down-right {
+  0% {
+    transform: translate3d(-480px, -480px, 0);
+  }
+  60% {
+    transform: translate3d(6px, 6px, 0);
+  }
+  80% {
+    transform: translate3d(-4px, -4px, 0);
+  }
+  100% {
+    transform: none;
+  }
+}
+@keyframes bounce-in-up-right {
+  0% {
+    transform: translate3d(-480px, 480px, 0);
+  }
+  60% {
+    transform: translate3d(6px, -6px, 0);
+  }
+  80% {
+    transform: translate3d(-4px, 4px, 0);
+  }
+  100% {
+    transform: none;
+  }
+}
+@keyframes bounce-in-down-left {
+  0% {
+    transform: translate3d(480px, -480px, 0);
+  }
+  60% {
+    transform: translate3d(-6px, 6px, 0);
+  }
+  80% {
+    transform: translate3d(4px, -4px, 0);
+  }
+  100% {
+    transform: none;
+  }
+}
+@keyframes bounce-in-up-left {
+  0% {
+    transform: translate3d(480px, 480px, 0);
+  }
+  60% {
+    transform: translate3d(-6px, -6px, 0);
+  }
+  80% {
+    transform: translate3d(4px, 4px, 0);
+  }
+  100% {
+    transform: none;
+  }
+}
+.animate.bounce.out {
+  animation-duration: 0.7s;
+  animation-timing-function: ease-in;
+}
+.animate.bounce.out.left {
+  animation-name: bounce-out-left;
+}
+.animate.bounce.out.left.shake {
+  animation-name: shake-out, bounce-out-left;
+}
+.animate.bounce.out.left.shake.horizontally {
+  animation-name: shake-horizontally-out, bounce-out-left;
+}
+.animate.bounce.out.left.shake.vertically {
+  animation-name: shake-vertically-out, bounce-out-left;
+}
+.animate.bounce.out.left.pulsate {
+  animation-name: pulsate-out, bounce-out-left;
+}
+.animate.bounce.out.left.flash {
+  animation-name: flash-out, bounce-out-left;
+}
+.animate.bounce.out.left.wave {
+  animation-name: wave-out, bounce-out-left;
+}
+.animate.bounce.out.right {
+  animation-name: bounce-out-right;
+}
+.animate.bounce.out.right.shake {
+  animation-name: shake-out, bounce-out-right;
+}
+.animate.bounce.out.right.shake.horizontally {
+  animation-name: shake-horizontally-out, bounce-out-right;
+}
+.animate.bounce.out.right.shake.vertically {
+  animation-name: shake-vertically-out, bounce-out-right;
+}
+.animate.bounce.out.right.pulsate {
+  animation-name: pulsate-out, bounce-out-right;
+}
+.animate.bounce.out.right.flash {
+  animation-name: flash-out, bounce-out-right;
+}
+.animate.bounce.out.right.wave {
+  animation-name: wave-out, bounce-out-right;
+}
+.animate.bounce.out.up {
+  animation-name: bounce-out-up;
+}
+.animate.bounce.out.up.shake {
+  animation-name: shake-out, bounce-out-up;
+}
+.animate.bounce.out.up.shake.horizontally {
+  animation-name: shake-horizontally-out, bounce-out-up;
+}
+.animate.bounce.out.up.shake.vertically {
+  animation-name: shake-vertically-out, bounce-out-up;
+}
+.animate.bounce.out.up.pulsate {
+  animation-name: pulsate-out, bounce-out-up;
+}
+.animate.bounce.out.up.flash {
+  animation-name: flash-out, bounce-out-up;
+}
+.animate.bounce.out.up.wave {
+  animation-name: wave-out, bounce-out-up;
+}
+.animate.bounce.out.down {
+  animation-name: bounce-out-down;
+}
+.animate.bounce.out.down.shake {
+  animation-name: shake-out, bounce-out-down;
+}
+.animate.bounce.out.down.shake.horizontally {
+  animation-name: shake-horizontally-out, bounce-out-down;
+}
+.animate.bounce.out.down.shake.vertically {
+  animation-name: shake-vertically-out, bounce-out-down;
+}
+.animate.bounce.out.down.pulsate {
+  animation-name: pulsate-out, bounce-out-down;
+}
+.animate.bounce.out.down.flash {
+  animation-name: flash-out, bounce-out-down;
+}
+.animate.bounce.out.down.wave {
+  animation-name: wave-out, bounce-out-down;
+}
+.animate.bounce.out.up.left {
+  animation-name: bounce-out-up-left;
+}
+.animate.bounce.out.up.left.shake {
+  animation-name: shake-out, bounce-out-up-left;
+}
+.animate.bounce.out.up.left.shake.horizontally {
+  animation-name: shake-horizontally-out, bounce-out-up-left;
+}
+.animate.bounce.out.up.left.shake.vertically {
+  animation-name: shake-vertically-out, bounce-out-up-left;
+}
+.animate.bounce.out.up.left.pulsate {
+  animation-name: pulsate-out, bounce-out-up-left;
+}
+.animate.bounce.out.up.left.flash {
+  animation-name: flash-out, bounce-out-up-left;
+}
+.animate.bounce.out.up.left.wave {
+  animation-name: wave-out, bounce-out-up-left;
+}
+.animate.bounce.out.down.left {
+  animation-name: bounce-out-down-left;
+}
+.animate.bounce.out.down.left.shake {
+  animation-name: shake-out, bounce-out-down-left;
+}
+.animate.bounce.out.down.left.shake.horizontally {
+  animation-name: shake-horizontally-out, bounce-out-down-left;
+}
+.animate.bounce.out.down.left.shake.vertically {
+  animation-name: shake-vertically-out, bounce-out-down-left;
+}
+.animate.bounce.out.down.left.pulsate {
+  animation-name: pulsate-out, bounce-out-down-left;
+}
+.animate.bounce.out.down.left.flash {
+  animation-name: flash-out, bounce-out-down-left;
+}
+.animate.bounce.out.down.left.wave {
+  animation-name: wave-out, bounce-out-down-left;
+}
+.animate.bounce.out.up.right {
+  animation-name: bounce-out-up-right;
+}
+.animate.bounce.out.up.right.shake {
+  animation-name: shake-out, bounce-out-up-right;
+}
+.animate.bounce.out.up.right.shake.horizontally {
+  animation-name: shake-horizontally-out, bounce-out-up-right;
+}
+.animate.bounce.out.up.right.shake.vertically {
+  animation-name: shake-vertically-out, bounce-out-up-right;
+}
+.animate.bounce.out.up.right.pulsate {
+  animation-name: pulsate-out, bounce-out-up-right;
+}
+.animate.bounce.out.up.right.flash {
+  animation-name: flash-out, bounce-out-up-right;
+}
+.animate.bounce.out.up.right.wave {
+  animation-name: wave-out, bounce-out-up-right;
+}
+.animate.bounce.out.down.right {
+  animation-name: bounce-out-down-right;
+}
+.animate.bounce.out.down.right.shake {
+  animation-name: shake-out, bounce-out-down-right;
+}
+.animate.bounce.out.down.right.shake.horizontally {
+  animation-name: shake-horizontally-out, bounce-out-down-right;
+}
+.animate.bounce.out.down.right.shake.vertically {
+  animation-name: shake-vertically-out, bounce-out-down-right;
+}
+.animate.bounce.out.down.right.pulsate {
+  animation-name: pulsate-out, bounce-out-down-right;
+}
+.animate.bounce.out.down.right.flash {
+  animation-name: flash-out, bounce-out-down-right;
+}
+.animate.bounce.out.down.right.wave {
+  animation-name: wave-out, bounce-out-down-right;
+}
+.animate.bounce.out.shake {
+  animation-duration: 0.3s, 0.7s;
+  animation-delay: 0s, 0.3s;
+  animation-timing-function: ease, ease-in;
+}
+.animate.bounce.out.shake.horizontally {
+  animation-name: shake-horizontally-out, bounce-out-right;
+}
+.animate.bounce.out.shake.vertically {
+  animation-name: shake-vertically-out, bounce-out-right;
+}
+.animate.bounce.out.pulsate {
+  animation-duration: 0.4s, 0.7s;
+  animation-delay: 0s, 0.4s;
+  animation-timing-function: ease-in-out, ease-in;
+}
+.animate.bounce.out.flash {
+  animation-duration: 0.65s, 0.7s;
+  animation-delay: 0s, 0.65s;
+  animation-timing-function: linear, ease-in;
+}
+.animate.bounce.out.wave {
+  animation-duration: 0.4s, 0.7s;
+  animation-delay: 0s, 0.4s;
+  animation-timing-function: ease-in-out, ease-in;
+}
+
+@keyframes bounce-out-right {
+  0%, 40% {
+    transform: none;
+  }
+  70% {
+    transform: translate3d(-12px, 0, 0);
+  }
+  100% {
+    transform: translate3d(480px, 0, 0);
+  }
+}
+@keyframes bounce-out-left {
+  0%, 40% {
+    transform: none;
+  }
+  70% {
+    transform: translate3d(12px, 0, 0);
+  }
+  100% {
+    transform: translate3d(-480px, 0, 0);
+  }
+}
+@keyframes bounce-out-up {
+  0%, 40% {
+    transform: none;
+  }
+  70% {
+    transform: translate3d(0, 12px, 0);
+  }
+  100% {
+    transform: translate3d(0, -480px, 0);
+  }
+}
+@keyframes bounce-out-down {
+  0%, 40% {
+    transform: none;
+  }
+  70% {
+    transform: translate3d(0, -12px, 0);
+  }
+  100% {
+    transform: translate3d(0, 480px, 0);
+  }
+}
+@keyframes bounce-out-down-right {
+  0%, 40% {
+    transform: none;
+  }
+  70% {
+    transform: translate3d(-12px, -12px, 0);
+  }
+  100% {
+    transform: translate3d(480px, 480px, 0);
+  }
+}
+@keyframes bounce-out-up-right {
+  0%, 40% {
+    transform: none;
+  }
+  70% {
+    transform: translate3d(-12px, 12px, 0);
+  }
+  100% {
+    transform: translate3d(480px, -480px, 0);
+  }
+}
+@keyframes bounce-out-down-left {
+  0%, 40% {
+    transform: none;
+  }
+  70% {
+    transform: translate3d(12px, -12px, 0);
+  }
+  100% {
+    transform: translate3d(-480px, 480px, 0);
+  }
+}
+@keyframes bounce-out-up-left {
+  0%, 40% {
+    transform: none;
+  }
+  70% {
+    transform: translate3d(12px, 12px, 0);
   }
   100% {
     transform: translate3d(-480px, -480px, 0);

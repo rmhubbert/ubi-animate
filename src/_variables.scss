@@ -1,62 +1,62 @@
 /**
  * Global variables
  */
-$rootClass: ".animate";
-$rightClearance: 480px;
-$leftClearance: $rightClearance;
-$topClearance: 480px;
-$bottomClearance: $topClearance;
+$rootClass: ".animate" !default;
+$rightClearance: 480px !default;
+$leftClearance: $rightClearance !default;
+$topClearance: 480px !default;
+$bottomClearance: $topClearance !default;
 
 /**
  * Shake
  */
-$shakeDuration: 0.3s;
-$shakeTimingFunction: ease;
-$shake: 3px;
+$shakeDuration: 0.3s !default;
+$shakeTimingFunction: ease !default;
+$shake: 2px !default;
 
 /**
  * Pulsate
  */
-$pulsateDuration: 0.4s;
-$pulsateTimingFunction: ease-in-out;
-$pulsate: 1.03;
+$pulsateDuration: 0.4s !default;
+$pulsateTimingFunction: ease-in-out !default;
+$pulsate: 1.03 !default;
 
 /**
  * Flash
  */
-$flashDuration: 0.65s;
-$flashTimingFunction: linear;
+$flashDuration: 0.65s !default;
+$flashTimingFunction: linear !default;
 
 /**
  * Wave
  */
-$waveDuration: 0.4s;
-$waveTimingFunction: ease-in-out;
-$wave: 1deg;
+$waveDuration: 0.4s !default;
+$waveTimingFunction: ease-in-out !default;
+$wave: 1deg !default;
 
 /**
  * Fade
  */
-$fadeInDuration: 1s;
-$fadeInTimingFunction: ease;
-$fadeOutDuration: $fadeInDuration;
-$fadeOutTimingFunction: $fadeInTimingFunction;
+$fadeInDuration: 1s !default;
+$fadeInTimingFunction: ease !default;
+$fadeOutDuration: $fadeInDuration !default;
+$fadeOutTimingFunction: $fadeInTimingFunction !default;
 
 /**
  * Slide
  */
-$slideInDuration: 0.7s;
-$slideInTimingFunction: ease-in;
-$slideOutDuration: $slideInDuration;
-$slideOutTimingFunction: $slideInTimingFunction;
+$slideInDuration: 0.7s !default;
+$slideInTimingFunction: ease-in !default;
+$slideOutDuration: $slideInDuration !default;
+$slideOutTimingFunction: $slideInTimingFunction !default;
 
 /**
  * Bounce
  */
-$bounceInDuration: 0.7s;
-$bounceInTimingFunction: ease-in;
-$bounceOutDuration: $bounceInDuration;
-$bounceOutTimingFunction: $bounceInTimingFunction;
-$bounceIn: 6px;
-$bounceDuring: 4px;
-$bounceOut: 12px;
+$bounceInDuration: 0.7s !default;
+$bounceInTimingFunction: ease-in !default;
+$bounceOutDuration: $bounceInDuration !default;
+$bounceOutTimingFunction: $bounceInTimingFunction !default;
+$bounceIn: 6px !default;
+$bounceDuring: 4px !default;
+$bounceOut: 12px !default;
