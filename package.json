@@ -16,8 +16,7 @@
     "strip": "postcss --use postcss-discard-comments -o dist/ubianimate.css dist/ubianimate.css",
     "prefix": "postcss --use autoprefixer --no-map -o dist/ubianimate.css dist/ubianimate.css",
     "minify": "postcss --use cssnano --no-map -o dist/ubianimate.min.css dist/ubianimate.css",
-    "build-docs": "cp public/js/demo.js docs/js/demo.js && cp dist/ubianimate.css docs/css/ubianimate.css",
-    "build": "npm run dev && npm run strip && npm run prefix && npm run minify && npm run build-docs"
+    "build": "npm run dev && npm run strip && npm run prefix && npm run minify"
   },
   "author": "RM Hubbert",
   "license": "MIT",
